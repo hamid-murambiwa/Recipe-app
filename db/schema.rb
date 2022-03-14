@@ -83,10 +83,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_14_132257) do
 
   add_foreign_key "foods", "users"
   add_foreign_key "inventories", "users"
-  add_foreign_key "recipes", "users"
   add_foreign_key "inventory_foods", "foods"
   add_foreign_key "inventory_foods", "inventories"
   add_foreign_key "recipe_foods", "foods"
   add_foreign_key "recipe_foods", "recipes"
-  
+  add_foreign_key "recipes", "users"
 end
