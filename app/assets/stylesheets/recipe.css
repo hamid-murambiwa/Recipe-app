@@ -32,6 +32,12 @@
   padding: 0.8rem 0;
 }
 
+.name-remove a {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .name-remove button {
   margin-top: 2rem;
 }
