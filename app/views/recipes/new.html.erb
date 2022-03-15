@@ -1,0 +1,29 @@
+<%=current_user.id%>
+<div>
+  <div>
+    <h1>New Recipe</h1>
+    <br>
+    <%= form_with(model: @recipe, url: recipes_path) do |form| %>
+
+    <%= form.text_field :name, placeholder: 'Name' %>
+    <br>
+    <%= form.text_field :cook_time, placeholder: 'Cooking time' %>
+    <br>
+    <%= form.text_field :prep_time, placeholder: 'Preparation time'%>
+    <br>
+    <%= form.text_area :description, placeholder: 'Description'%>
+    <br>
+    <div class="form-check form-switch">
+      <%= form.check_box :public, id:"public-tick" %>
+      <label for="public-tick">Public</label>
+    </div>
+    <br>
+    <div>
+      <%= form.submit%>
+    </div>
+    <br>
+    <% end %>
+    <br>
+    <%= link_to 'Back', recipes_path, class: 'btn btn-secondary' %>
+  </div>
+</div>
