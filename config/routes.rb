@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   get 'recipe/index'
   get 'recipe/show'
   get 'food/index'
-  get 'food/show'
+  get 'food/create'
+  get 'food/destroy'
   get 'users/index'
   get 'users/show'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
