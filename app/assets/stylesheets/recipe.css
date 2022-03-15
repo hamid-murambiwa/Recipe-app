@@ -1,0 +1,128 @@
+.recipe {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.recipe .button {
+  justify-self: center;
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: rgb(192, 191, 191);
+  margin-top: 1rem;
+  padding: 7px 8px;
+  color: black;
+}
+
+.recipe-div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+.recipe-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 3rem;
+}
+
+.name-remove {
+  padding: 0.8rem 0;
+}
+
+.name-remove button {
+  margin-top: 2rem;
+}
+
+.recipe-cont p {
+  margin: 0;
+  width: 20rem;
+  padding: 1rem 1rem;
+}
+
+.new-recipe-form {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.new-recipe-form h1,
+h3 {
+  text-align: center;
+}
+
+.new-recipe-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inp {
+  margin: 1rem 3rem;
+  height: 3rem;
+  font-size: large;
+}
+
+.new-recipe-form textarea {
+  margin: 1rem 3rem;
+  height: 5rem;
+  font-size: large;
+}
+
+.check {
+  margin: 1rem 3rem;
+}
+
+.check label {
+  font-size: large;
+}
+
+.action-btn {
+  justify-self: center;
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: rgb(192, 191, 191);
+  margin: 1rem auto;
+  padding: 10px 0;
+  color: black;
+  width: 30%;
+}
+
+.recipe-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.recipe-show h1 {
+  text-align: center;
+}
+
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.show-btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.show-btns .btn {
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: rgb(192, 191, 191);
+  padding: 10px 0;
+  color: black;
+  width: 20%;
+  cursor: pointer;
+}
+
+hr {
+  width: 60%;
+  margin: 0 auto;
+}
