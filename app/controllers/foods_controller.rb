@@ -3,7 +3,15 @@ class FoodsController < ApplicationController
     @foods = Food.all
   end
 
-  def create; end
+  def create
+
+  end
 
   def destroy; end
+
+  private
+
+  def mass_params
+    params.require(:food).permit(:name, :price, :unit)
+  end
 end
