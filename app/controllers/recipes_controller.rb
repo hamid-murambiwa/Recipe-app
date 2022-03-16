@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def index
-    @recipes = Recipe.where(user_id: current_user.id)
+    @recipes = Recipe.all
   end
 
   def show
@@ -28,6 +28,20 @@ class RecipesController < ApplicationController
     @recipe.destroy
     flash[:notice] = 'The recipe was successfully destroyed.'
     redirect_to recipes_url
+  end
+
+  def public
+    @recipes = Recipe.where(public: true)
+  end
+
+  def update
+    @recipe = Recipe.find(params[:id])
+    if @recipe.update(public: params[:public])
+      flash[:success] = 'Recipe was successfully updated'
+    else
+      flash[:error] = 'Something went wrong'
+    end
+    redirect_to recipe_path(@recipe)
   end
 
   private
