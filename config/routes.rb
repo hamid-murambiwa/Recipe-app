@@ -15,5 +15,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   put 'recipes/:id/update', to: 'recipes#update', as: 'update'
+  get 'public', to: 'recipes#public', as: 'public'
   root 'foods#index'
 end
