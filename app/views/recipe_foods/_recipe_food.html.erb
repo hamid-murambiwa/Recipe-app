@@ -1,0 +1,26 @@
+<section class='app-con'>
+  <div>
+    <table>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Value</th>
+        <th>Actions</th>
+      </tr>
+      <% @recipe.recipe_foods.each do |rf| %>
+      <tr>
+        <td><%= rf.food.name %></td>
+        <td><%= rf.quantity %><%= rf.food.unit  %></td>
+        <td><%= rf.quantity * rf.food.price %> USD</td>
+        <td>
+        <div class=''>
+          <%=link_to "Update", edit_recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), class:"btn"%>
+
+          <%=button_to "Delete", recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), method: :delete, class:"btn"%>
+          </div>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</section>
