@@ -72,5 +72,16 @@ th {
   margin-top: 20px;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-expand-lg {
+  width: 100%;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
 
 @import "bootstrap";
