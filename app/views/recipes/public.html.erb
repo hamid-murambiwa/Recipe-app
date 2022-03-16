@@ -1,0 +1,16 @@
+<section class="recipe">
+
+  <% @recipes.each do |recipe|%>
+    <div class="recipe-div">
+      <div class="recipe-cont">
+
+        <div class="name-remove">
+        <%= link_to "#{recipe.name}", recipe_path(recipe)%>
+
+        </div>
+        <p><%= recipe.description %></p>
+      </div>
+
+    </div>
+  <% end %>
+</section>
