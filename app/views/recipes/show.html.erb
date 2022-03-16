@@ -31,8 +31,15 @@
   <div class="show-btns">
 
     <button class="btn">Generate Shopping List</button>
-    <button class="btn">Add Ingredients</button>
+    <% if can? :update, @recipe%>
+      <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'btn' %>
+    
+    <%end%>
 
   </div>
   
-</section><hr>
+</section>
+
+<hr>
+
+<%= render 'recipe_foods/recipe_food' %>
