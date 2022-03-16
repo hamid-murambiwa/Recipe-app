@@ -1,5 +1,5 @@
 <section class="recipe">
-  <%=link_to 'Add Recipe', new_recipe_path, class:"button"%>
+  <%=link_to 'Add Recipe', new_user_recipe_path(current_user.id), class:"button"%>
 
 
   <% @recipes.each do |recipe|%>
