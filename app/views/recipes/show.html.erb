@@ -9,6 +9,22 @@
 
     <p class=""><%=@recipe.description%></p>
 
+  <% if can? :update, @recipe%>
+    <div class="status">
+      <%= form_with url: update_path(@recipe), method: "put" do |form| %>
+        <div>
+          <% if @recipe.public == false %>
+            <%= form.check_box :public, class:"", id:"", onchange: "this.form.submit();"%>
+            <label class="" for="">Public</label>
+            <% else %>
+            <%= form.check_box :public, class:"", id:"", checked: true, onchange: "this.form.submit();" %>
+            <label class="" for="">Public</label>
+          <%end%>
+        </div>
+      <%end%>
+    </div>
+  <%end%>
+
   </div>
 
 
