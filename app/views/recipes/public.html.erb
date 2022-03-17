@@ -1,6 +1,4 @@
-<%= render 'layouts/header' %>
 <section class="recipe">
-
   <% @recipes.each do |recipe|%>
     <div class="recipe-div">
       <div class="recipe-cont">
@@ -8,13 +6,11 @@
         <div class="name-remove">
         <%= link_to "#{recipe.name}", recipe_path(recipe)%>
         <p>By: <%=recipe.user.name%></p>
-
         </div>
-        <div>
+        <div class="price">
         <p> Total Food Items: <%= recipe.description %></p>
         <p>Total Price: <%= recipe.description %></p>
         </div>
-        
       </div>
 
     </div>

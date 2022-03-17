@@ -1,6 +1,5 @@
 .recipe {
   display: grid;
-  width: 80%;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -31,6 +30,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: 3rem;
+  width: 80vw;
 }
 
 .name-remove {
