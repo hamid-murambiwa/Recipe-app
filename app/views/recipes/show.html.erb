@@ -1,3 +1,4 @@
+<%= render 'layouts/header' %>
 <section class="recipe-show">
   <h1><%= @recipe.name %></h1>
 
@@ -30,11 +31,13 @@
 
   <div class="show-btns">
 
+
       <%= link_to 'Generate Shopping List',  recipe_shopping_lists_path(@recipe), class: 'btn' %>
     <% if can? :update, @recipe%>
       <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'btn' %>
     
     <%end%>
+
 
   </div>
   

@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
+  get 'public', to: 'recipes#public', as: 'public'
   put 'recipes/:id/update', to: 'recipes#update', as: 'update'
   put '/recipes/:id/recipe_foods/new', to: 'recipe_foods#new', as: 'new'
 
