@@ -11,45 +11,51 @@
 - Git
 - Postgresql
 
+---
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-
-- Copy Repo Link
-
-```
-https://github.com/hamid-murambiwa/Recipe-app.git
-```
-- Get the directory that you want to clone the repository.
+> To get a local copy up and running please follow these steps:
 
 - Open the command prompt in this directory.
 
-- Copy clone of the Repo
+- Clone of the Repo:
 
-```
-git clone https://github.com/hamid-murambiwa/Recipe-app.git
-```
+      $ git clone https://github.com/hamid-murambiwa/Recipe-app.git
 
-- Go to the repository folder in your command prompt.
+- Go to the repository folder in your command prompt and navigate into the project file:
 
-```
-cd blog_of_everything
-```
-- Install bundles
+      $ cd Blog-App
 
-```
-bundle install
-```
+- Install the Ruby on Rails Gems:
 
-- rails s 
+      $ bundle install or bundle i
+
+- To analyze and format the applictaion code run:
+
+      $ rubocop -A
+
+- Start the server:
+
+      $ rails s
+
+---
+
+## To run the tests
+
+- Install rspec:
+
+      $ bundle install
+
+- and
+
+      $ rails generate rpesc:install
+
+- run all rspec tests:
+
+      $ rspec spec
 
 
-- rails db:setup to create databases and populate them with seeds.rb
-```
-
-
-
-
+---
 ### Prerequisites
 
 - Ruby
@@ -71,12 +77,6 @@ bundle install
 - LinkedIn: [You-Wei(Adam) Chang](https://www.linkedin.com/in/adamteddychang/)
 
 
-
-
-
-
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -94,3 +94,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
