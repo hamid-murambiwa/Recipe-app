@@ -11,7 +11,7 @@
       <tr>
         <td><%= rf.food.name %></td>
         <td><%= rf.quantity %><%= rf.food.unit  %></td>
-        <td><%= rf.quantity * rf.food.price %> USD</td>
+        <td>$<%= rf.quantity * rf.food.price %></td>
         <td>
         <div class=''>
           <%=link_to "Update", edit_recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), class:"btn"%>
