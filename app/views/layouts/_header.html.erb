@@ -3,6 +3,7 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
+        <% if user_signed_in? %>
 
         <li class="nav-item">
           <%= link_to 'Food list', user_foods_path(current_user.id), class: "nav-link active" %>
@@ -16,8 +17,6 @@
           <%= link_to 'Public recipes', public_path, class: "nav-link" %>
         </li>
 
-       
-
         <li class="list">
           <%= link_to 'Edit Account', edit_user_registration_path, class: "nav-link account" %>
         </li>
@@ -26,6 +25,7 @@
           <%= link_to 'Logout', '/users/sign_out', class: "nav-link account" %>
         </li>
 
+        <% end %> 
       </ul>
     </div>
   </div>
