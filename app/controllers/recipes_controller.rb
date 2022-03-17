@@ -31,7 +31,8 @@ class RecipesController < ApplicationController
   end
 
   def public
-    @recipes = Recipe.where(public: true)
+    @public_recipes = Recipe.where(public: true)
+    @public_recipe = Recipe.new
   end
 
   def update

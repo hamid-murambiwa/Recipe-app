@@ -1,5 +1,5 @@
 <section class="recipe">
-  <% @recipes.each do |recipe|%>
+  <% @public_recipes.each do |recipe|%>
     <div class="recipe-div">
       <div class="recipe-cont">
 
@@ -8,8 +8,8 @@
         <p>By: <%=recipe.user.name%></p>
         </div>
         <div class="price">
-        <p> Total Food Items: <%= recipe.description %></p>
-        <p>Total Price: <%= recipe.description %></p>
+        <p> Total Food Count: <%= @public_recipe.total_food_counts(@public_recipe.food_arr(recipe.id), recipe.id) %></p>
+        <p>Total Price: $<%= @public_recipe.total_food_price(@public_recipe.food_arr(recipe.id), recipe.id ) %></p>
         </div>
       </div>
 
