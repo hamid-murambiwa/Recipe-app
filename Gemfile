@@ -9,6 +9,7 @@ gem 'ffi'
 gem 'jquery-rails'
 
 gem 'rails-controller-testing'
+gem 'rails-helper', '~> 0.1.0'
 gem 'rspec', '~>3.0'
 gem 'rspec-rails'
 gem 'rubocop', '>= 1.0', '< 2.0'
