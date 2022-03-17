@@ -1,12 +1,10 @@
 class Recipe < ApplicationRecord
   belongs_to :user, class_name: 'User'
-
   has_many :recipe_foods, dependent: :destroy
 
   def food_arr(recipe)
     food_arr = []
     recipe_foods = RecipeFood.where(recipe_id: recipe)
-
     recipe_foods.each do |recipe_food|
       Food.where(id: recipe_food.food_id).each do |food|
         food_arr.push(food)
