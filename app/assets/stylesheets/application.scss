@@ -222,4 +222,23 @@ th {
   margin-right: 15px;
 }
 
+.action-btns-td {
+  width: 20rem;
+}
+
+.ingr-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.ingr-btn {
+  display: flex;
+  height: 2.5rem;
+  width: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
 @import "bootstrap";

@@ -12,11 +12,11 @@
         <td><%= rf.food.name %></td>
         <td><%= rf.quantity %><%= rf.food.unit  %></td>
         <td>$<%= rf.quantity * rf.food.price %></td>
-        <td>
-        <div class=''>
-          <%=link_to "Update", edit_recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), class:"btn"%>
+        <td class="action-btns-td">
+        <div class='ingr-btns'>
+          <%=link_to "Update", edit_recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), class:"add-button ingr-btn"%>
 
-          <%=button_to "Delete", recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), method: :delete, class:"btn"%>
+          <%=button_to "Delete", recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), method: :delete, class:"delete ingr-btn"%>
           </div>
         </td>
       </tr>

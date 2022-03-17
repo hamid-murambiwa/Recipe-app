@@ -7,9 +7,14 @@
 
         <div class="name-remove">
         <%= link_to "#{recipe.name}", recipe_path(recipe)%>
+        <p>By: <%=recipe.user.name%></p>
 
         </div>
-        <p><%= recipe.description %></p>
+        <div>
+        <p> Total Food Items: <%= recipe.description %></p>
+        <p>Total Price: <%= recipe.description %></p>
+        </div>
+        
       </div>
 
     </div>
