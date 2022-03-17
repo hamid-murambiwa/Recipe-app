@@ -33,7 +33,7 @@ git clone https://github.com/hamid-murambiwa/Recipe-app.git
 - Go to the repository folder in your command prompt.
 
 ```
-cd blog_of_everything
+cd Recipe-app
 ```
 - Install bundles
 
@@ -41,10 +41,17 @@ cd blog_of_everything
 bundle install
 ```
 
+
+- Create databases
+```
+- rails db:setup
+```
+```
+- rails db:migrate
+```
+- Start the server
+```
 - rails s 
-
-
-- rails db:setup to create databases and populate them with seeds.rb
 ```
 
 
