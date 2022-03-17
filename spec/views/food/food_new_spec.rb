@@ -15,7 +15,6 @@ RSpec.describe 'food', type: :feature do
       end
       click_button 'Log in'
       visit new_user_food_path(@user.id)
-      
     end
 
     it 'New page shows the right content' do
