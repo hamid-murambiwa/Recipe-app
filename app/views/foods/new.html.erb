@@ -1,6 +1,9 @@
+<%= render 'layouts/header' %>
 <section class='app-con'>
   <div class='content-con'>
+  <div class='food-con'>
     <h2>Add Food</h2>
+  </div>
 
     <%= form_with model: @food, url: user_foods_path, scope: :food, data: { turbo: false } do |f| %>
       <div class="field">
@@ -16,12 +19,12 @@
       <div class="field">
         <%= f.label :price %><br />
         <div class="price-field">
-          <p>$ </p><%= f.number_field :price, autofocus: true, autocomplete: "price", placeholder: "price in US dollars"%>
+          <p>$ <%= f.number_field :price, autofocus: true, autocomplete: "price", placeholder: "price in US dollars"%></p>
         </div>
       </div>
 
       <div class="actions">
-        <%= f.submit "Add Food" %>
+        <%= f.submit "Add Food", class:'add-button' %>
       </div>
     <% end %>
   </div>

@@ -1,6 +1,8 @@
+<%= render 'layouts/header' %>
 <section class="recipe">
-  <%=link_to 'Add Recipe', new_recipe_path, class:"button"%>
-
+  <div class='food-con'>
+    <%=link_to 'Add Recipe', new_recipe_path, class: "add-button"%>
+  </div>
 
   <% @recipes.each do |recipe|%>
   <% if can? :read, recipe%>
@@ -12,7 +14,7 @@
 
         <%if can? :destroy, recipe%>
 
-        <%= button_to 'Remove', recipe_path(recipe), method: :delete%>
+        <%= button_to 'Remove', recipe_path(recipe), method: :delete, class: 'delete'%>
         <%end%>
         </div>
         <p><%= recipe.description %></p>

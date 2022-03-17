@@ -13,23 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+.r-app {
+  color: rgb(155, 9, 9);
+  border-bottom: 2px solid rgb(230, 174, 21);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
 .app-con {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .app-con table {
   margin-top: 30px;
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 70vw;
+  border: 3px solid black;
 }
 
 .app-con td,
 th {
-  border: 1px solid rgb(26, 26, 26);
+  border: 2px solid rgb(26, 26, 26);
   text-align: left;
   padding: 8px;
 }
@@ -38,12 +47,29 @@ th {
   background-color: #ddd;
 }
 
+.food-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .add-button {
-  color: black;
+  background-color: rgb(23, 116, 23);
+  color: white;
   text-decoration: none;
   border: 1px solid black;
+  border-radius: 5px;
   padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
   box-shadow: 2px 2px 2px rgba(12, 1, 1, 0.815);
+}
+
+.add-button:hover {
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 0;
 }
 
 .content-con {
@@ -54,14 +80,18 @@ th {
 
 .price-field {
   display: flex;
+  align-items: center;
 }
 
 .field {
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .field input {
-  margin-top: 6px;
   padding: 5px;
 }
 
@@ -82,6 +112,114 @@ th {
 
 .nav-item {
   margin-left: 20px;
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.account {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  border: 3px solid rgba(187, 168, 0, 0.856);
+  border-radius: 5px;
+  color: rgb(187, 168, 0) !important;
+}
+
+.account:hover {
+  text-decoration: none;
+  color: rgb(236, 236, 6) !important;
+  border: 3px solid rgb(236, 236, 6) !important;
+}
+
+.list {
+  margin-left: 30px;
+}
+
+.delete {
+  background-color: rgb(207, 23, 23);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+
+#devise-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+}
+
+.edit {
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.edit-user {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cancel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.back {
+  border: 1px solid black;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.forgot {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.sign {
+  background-color: rgb(19, 151, 228);
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 2px 2px 2px rgba(12, 1, 1, 0.815);
+}
+
+.sign:hover {
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 0;
+}
+
+.me-con {
+  display: flex;
+  align-items: center;
+}
+
+#user_remember_me {
+  margin-bottom: 8px;
+  margin-right: 15px;
 }
 
 @import "bootstrap";
