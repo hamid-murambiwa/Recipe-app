@@ -20,6 +20,7 @@ class Ability
       can :destroy, Food do |food|
         food.user_id == user.id
       end
+
       can %i[create], :all
     end
     #

@@ -5,7 +5,7 @@
     <%= form_with model: [@recipe, @recipe.recipe_foods.create], data: { turbo: false } do |f| %>
     <div class="field">
       <%= f.label :food %><br />
-      <%= f.select :food_id, current_user.foods.collect {|food| [food.name, food.id]},{ include_blank: true} , class:"" %><br>
+      <%= f.collection_select :food_id, Food.all, :id, :name, prompt:true%><br>
     </div>
 
     <div class="field">

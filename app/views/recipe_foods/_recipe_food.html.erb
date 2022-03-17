@@ -14,9 +14,12 @@
         <td>$<%= rf.quantity * rf.food.price %></td>
         <td class="action-btns-td">
         <div class='ingr-btns'>
+        <%if can? :update, @recipe%>
           <%=link_to "Update", edit_recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), class:"add-button ingr-btn"%>
-
+      <%end%>
+      <%if can? :destroy, @recipe %>
           <%=button_to "Delete", recipe_recipe_food_path(recipe_id: @recipe.id, id: rf.id), method: :delete, class:"delete ingr-btn"%>
+          <%end%>
           </div>
         </td>
       </tr>

@@ -6,8 +6,7 @@ RSpec.describe 'Recipe', type: :feature do
       visit user_session_path
       @user = User.create!(name: 'first',
                            email: 'first@first.com',
-                           password: '123456',
-                           confirmed_at: Time.now)
+                           password: '123456')
 
       within('#new_user') do
         fill_in 'Email', with: 'first@first.com'

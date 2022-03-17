@@ -33,10 +33,10 @@
 
       <%= link_to 'Generate Shopping List',  recipe_shopping_lists_path(@recipe), class: 'add-button' %>
     <% if can? :update, @recipe%>
+
       <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'add-button' %>
     
-    <%end%>
-
+    <%end %>
 
   </div>
   
