@@ -1,0 +1,24 @@
+<section class='app-con'>
+  <div class='content-con'>
+    <h2>Add Ingredient</h2>
+
+    <%= form_with model: [@recipe, @recipe.recipe_foods.create], data: { turbo: false } do |f| %>
+    <div class="field">
+      <%= f.label :food %><br />
+      <%= f.collection_select :food_id, Food.all, :id, :name, prompt:true%><br>
+    </div>
+
+    <div class="field">
+
+      <%= f.label :quantity, class:"form-label" %><br>
+      <%= f.number_field :quantity ,  class:"" , required: true, placeholder: 'quantity',  min: 1%><br>
+    </div>
+
+
+
+    <div class="actions">
+      <%= f.submit "Create Recipe Food" %>
+    </div>
+    <% end %>
+  </div>
+</section>

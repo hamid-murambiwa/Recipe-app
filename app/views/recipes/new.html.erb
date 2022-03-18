@@ -1,0 +1,28 @@
+<div class="new-recipe-form">
+  <div class='food-con'>
+    <p>Wecome <%=current_user.name%>, you can add a new recipe!</p>
+  </div>
+  <h1>New Recipe</h1>
+
+  <%= form_with(model: @recipe, url: recipes_path) do |form| %>
+
+  <%= form.text_field :name, placeholder: 'Name', class: 'form-inp'%>
+
+  <%= form.number_field :cook_time, placeholder: 'Cooking time(In Minutes)', class: 'form-inp', min: '0' %>
+
+  <%= form.number_field :prep_time, placeholder: 'Preparation time(In Minutes)', class: 'form-inp', min:'0'%>
+
+  <%= form.text_area :description, placeholder: 'Description', class: 'form-inp' %>
+
+  <div class="check">
+    <%= form.check_box :public, id:"public-tick" %>
+    <label for="public-tick">Public</label>
+  </div>
+  <br>
+
+  <div class='food-con'>
+  <%= form.submit :Submit , class: "add-button" %>
+  </div>
+
+  <% end %>
+</div>

@@ -1,0 +1,30 @@
+<section class='app-con'>
+
+
+
+  <div>
+
+
+    <div class="d-">
+      <h3>Total food items: <%= @total_quantity %> </h3>
+      <h3>Total price: $ <%= @total_price  %></h3>
+    </div>
+
+
+
+    <table>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+      </tr>
+      <% @recipe_foods.each do |rf| %>
+      <tr>
+        <td><%= rf.food.name %></td>
+        <td><%= rf.quantity %></td>
+        <td>$<%= rf.food.price * rf.quantity %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</section>

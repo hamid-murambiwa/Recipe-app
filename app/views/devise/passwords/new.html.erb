@@ -1,0 +1,27 @@
+<section id='devise-con'>
+<h1 class='r-app'>Recipe App</h1>
+<div class='edit'>
+<div class='edit-user'>
+<%= link_to user_session_url do %>
+  <p>&#8592; back </p>
+<% end %>
+</div>
+<div class='edit-user'>
+<h2>Forgot your password?</h2>
+</div>
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }, data: { turbo: false }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Send me reset password instructions", class: 'add-button' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+</section>

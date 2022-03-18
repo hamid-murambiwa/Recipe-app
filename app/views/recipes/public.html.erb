@@ -1,0 +1,18 @@
+<section class="recipe">
+  <% @public_recipes.each do |recipe|%>
+    <div class="recipe-div">
+      <div class="recipe-cont">
+
+        <div class="name-remove">
+        <%= link_to "#{recipe.name}", recipe_path(recipe)%>
+        <p>By: <%=recipe.user.name%></p>
+        </div>
+        <div class="price">
+        <p> Total Food Count: <%= @public_recipe.total_food_counts(@public_recipe.food_arr(recipe.id), recipe.id) %></p>
+        <p>Total Price: $<%= @public_recipe.total_food_price(@public_recipe.food_arr(recipe.id), recipe.id ) %></p>
+        </div>
+      </div>
+
+    </div>
+  <% end %>
+</section>
