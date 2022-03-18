@@ -9,21 +9,23 @@
 
     <p class=""><%=@recipe.description%></p>
 
-  <% if can? :update, @recipe%>
+    <% if can? :update, @recipe%>
     <div class="status">
       <%= form_with url: update_path(@recipe), method: "put" do |form| %>
-        <div>
-          <% if @recipe.public == false %>
-            <%= form.check_box :public, class:"", id:"", onchange: "this.form.submit();"%>
-            <label class="" for="">Public</label>
-            <% else %>
-            <%= form.check_box :public, class:"", id:"", checked: true, onchange: "this.form.submit();" %>
-            <label class="" for="">Public</label>
-          <%end%>
-        </div>
+      <div class="form-check form-switch">
+        <% if @recipe.public == false %>
+        <%= form.check_box :public, class:"form-check-input", id:"flexSwitchCheckDefault",role: "switch", onchange: "this.form.submit();"%>
+        <label class="form-check-label" for="flexSwitchCheckDefault">Public</label>
+        <% else %>
+        <%= form.check_box :public, class:"form-check-input", id:"flexSwitchCheckChecked",role: "switch", checked: true, onchange: "this.form.submit();" %>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Public</label>
+        <%end%>
+
+
+      </div>
       <%end%>
     </div>
-  <%end%>
+    <%end%>
 
   </div>
 
@@ -31,15 +33,15 @@
   <div class="show-btns">
 
 
-      <%= link_to 'Generate Shopping List',  recipe_shopping_lists_path(@recipe), class: 'add-button' %>
+    <%= link_to 'Generate Shopping List',  recipe_shopping_lists_path(@recipe), class: 'add-button' %>
     <% if can? :update, @recipe%>
 
-      <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'add-button' %>
-    
+    <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'add-button' %>
+
     <%end %>
 
   </div>
-  
+
 </section>
 
 <hr>
