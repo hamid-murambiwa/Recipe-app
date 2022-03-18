@@ -7,8 +7,7 @@ gem 'cancancan'
 gem 'devise'
 gem 'ffi'
 gem 'jquery-rails'
-gem "sassc-rails"
-
+gem 'sassc-rails'
 
 gem 'rails-controller-testing'
 gem 'rails-helper', '~> 0.1.0'
