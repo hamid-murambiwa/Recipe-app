@@ -17,6 +17,9 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
+  config.sass.inline_source_maps = true
+  config.sass.line_comments = false
+
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Enable/disable caching. By default caching is disabled.
