@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-ruby "3.1.1"
+ruby '3.1.1'
 gem 'bootstrap', '~> 4.4.1'
 gem 'bullet'
 gem 'cancancan'
 gem 'devise'
 gem 'ffi'
 gem 'jquery-rails'
+gem 'webpacker', '~> 5.0'  
+
 
 gem 'rails-controller-testing'
 gem 'rails-helper', '~> 0.1.0'
