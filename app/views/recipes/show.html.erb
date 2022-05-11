@@ -21,7 +21,6 @@
         <label class="form-check-label" for="flexSwitchCheckChecked">Public</label>
         <%end%>
 
-
       </div>
       <%end%>
     </div>
@@ -29,6 +28,12 @@
 
   </div>
 
+  <% @recipe.instructions.each_with_index do |instruction, index| %>
+  <div class="instruction">
+    <p class="instruction-number"><%= index + 1 %></p>
+    <p class="instruction-text"><%= instruction %></p>
+  </div>
+  <% end %>
 
   <div class="show-btns">
 

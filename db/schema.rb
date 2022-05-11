@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_16_080844) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_05_112008) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "foods", force: :cascade do |t|
     t.string "name"
     t.string "unit"
-    t.integer "price"
+    t.decimal "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
@@ -42,25 +42,37 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_16_080844) do
     t.index ["inventory_id"], name: "index_inventory_foods_on_inventory_id"
   end
 
+  create_table "recipe_catogories", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "recipe_foods", force: :cascade do |t|
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "recipe_id", null: false
     t.bigint "food_id", null: false
+    t.bigint "recipe_id", null: false
     t.index ["food_id"], name: "index_recipe_foods_on_food_id"
     t.index ["recipe_id"], name: "index_recipe_foods_on_recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
-    t.integer "prep_time"
-    t.integer "cook_time"
-    t.text "description"
+    t.string "prep_time"
+    t.string "cook_time"
+    t.string "description"
     t.boolean "public"
+    t.string "img"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
+    t.bigint "recipe_catogory_id", null: false
+    t.string "instructions", default: [], array: true
+    t.index ["recipe_catogory_id"], name: "index_recipes_on_recipe_catogory_id"
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
@@ -73,10 +85,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_16_080844) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string "unconfirmed_email"
     t.string "role"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -88,5 +96,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_16_080844) do
   add_foreign_key "inventory_foods", "inventories"
   add_foreign_key "recipe_foods", "foods"
   add_foreign_key "recipe_foods", "recipes"
+  add_foreign_key "recipes", "recipe_catogories"
   add_foreign_key "recipes", "users"
 end

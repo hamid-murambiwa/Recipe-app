@@ -1,5 +1,6 @@
 class Recipe < ApplicationRecord
   belongs_to :user, class_name: 'User'
+  belongs_to :recipe_catogory, class_name: 'RecipeCatogory'
   has_many :recipe_foods, dependent: :destroy
 
   def food_arr(recipe)

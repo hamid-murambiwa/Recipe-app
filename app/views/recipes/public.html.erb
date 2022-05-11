@@ -1,18 +1,24 @@
-<section class="recipe">
-  <% @public_recipes.each do |recipe|%>
-    <div class="recipe-div">
-      <div class="recipe-cont">
-
-        <div class="name-remove">
-        <%= link_to "#{recipe.name}", recipe_path(recipe)%>
-        <p>By: <%=recipe.user.name%></p>
-        </div>
-        <div class="price">
-        <p> Total Food Count: <%= @public_recipe.total_food_counts(@public_recipe.food_arr(recipe.id), recipe.id) %></p>
-        <p>Total Price: $<%= @public_recipe.total_food_price(@public_recipe.food_arr(recipe.id), recipe.id ) %></p>
+<div id="category-container">
+  <% @categories.includes(:recipes).each do |category| %>
+  <h1><%= category.name %></h1>
+  <%= image_tag url_for(category.image_url), :class => "cat-img" %>
+  <p><%= category.description %></p>
+  <section class="recipe">
+    <%category.recipes.each do |recipe|%>
+      <div class="recipe-div">
+        <div class="recipe-cont">
+          <%= image_tag url_for(recipe.img), :class => "rep-img" %>
+          <div class="name-remove">
+          <%= link_to "#{recipe.name}", recipe_path(recipe)%>
+          <p><%=recipe.description %></p>
+          <div class="recipe-prep-time">
+          <p><%=recipe.prep_time %></p>
+          <p><%= recipe.cook_time %></p>
+          </div>
+          </div>
         </div>
       </div>
-
-    </div>
+    <% end %>
+  </section>
   <% end %>
-</section>
+</div>

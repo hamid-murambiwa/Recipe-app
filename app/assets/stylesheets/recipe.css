@@ -139,3 +139,13 @@ hr {
   width: 60%;
   margin: 0 auto;
 }
+
+.cat-img {
+  height: 200px;
+  width: 250px;
+}
+
+.rep-img {
+  height: 200px;
+  width: 200px;
+}

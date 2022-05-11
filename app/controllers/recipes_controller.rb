@@ -35,6 +35,7 @@ class RecipesController < ApplicationController
   def public
     @public_recipes = Recipe.where(public: true)
     @public_recipe = Recipe.new
+    @categories = RecipeCatogory.all
   end
 
   def update
