@@ -1,25 +1,35 @@
-<section class="recipe">
-  <div class='food-con'>
-    <%=link_to 'Add Recipe', new_recipe_path, class: "add-button"%>
+<div class="recipe-con">
+  <div class="recipe-title">
+  <h1><%= @category.name %> Recipes</h1>
   </div>
-
-  <% @recipes.each do |recipe|%>
-  <% if can? :read, recipe%>
-    <div class="recipe-div">
-      <div class="recipe-cont">
-
-        <div class="name-remove">
-        <%= link_to "#{recipe.name}", recipe_path(recipe)%>
-
-        <%if can? :destroy, recipe%>
-
-        <%= button_to 'Remove', recipe_path(recipe), method: :delete, class: 'delete'%>
-        <%end%>
+  <section class="recipe">
+    <% @recipes.each do |recipe|%>
+      <% if can? :read, recipe%>
+        <div class="recipe-div" style="background-image: url(<%= recipe.img %>)">
+          <div class="recipe-cont">
+            <h1><%= recipe.name %></h1>
+            <p><%= recipe.description %></p>
+          </div>
+          <div class="name-remove">
+          <%= link_to "View Recipe", recipe_catogory_recipe_path(recipe, id: recipe.id), :class => "recipe-view-btn" %>
+          </div>
+          <%if can? :destroy, recipe%>
+          <%= button_to 'Remove', recipe_catogory_recipe_path(recipe, id: recipe.id), method: :delete, class: 'delete'%>
+          <%end%>
         </div>
-        <p><%= recipe.description %></p>
-      </div>
-
-    </div>
-  <%end%>
-  <% end %>
-</section>
+      <% end %>
+    <% end %>
+  </section>
+  <div class="wrap">
+  <%= image_tag url_for('diet.png'), :class => "svg", :style => "height: 300px" %>
+  <%= image_tag url_for('diet2.png'), :class => "svg", :style => "height: 200px" %>
+  <%= image_tag url_for('food.png'), :class => "svg", :style => "height: 300px" %>
+  <%= image_tag url_for('salad.png'), :class => "svg", :style => "height: 200px" %>
+  <%= image_tag url_for('hot-pot.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('dish.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('hot.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('healthy-eating.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('food2.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png'), :class => "svg", :style => "height: 100px" %>
+  </div>
+</div>

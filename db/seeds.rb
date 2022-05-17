@@ -491,7 +491,7 @@ recipe11 = Recipe.create(
         'For the beetroot topping, first pile the chickpeas on top, then toss the beetroot with the tomato, mint, cumin, a good pinch of cinnamon, the oil and vinegar. Toss well, add the orange, then 
         pile onto the remaining portions of bulghur, scatter with the pine nuts and sprinkle with extra cinnamon. Chill in the fridge until needed.',
     ],
-    img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/440-400-bulgur-quinoa-lunch-bowls-dea6596.jpg?quality=90&webp=true&resize=440,400'
+    img: 'https://www.cleaneatingmag.com/wp-content/uploads/2022/04/CleanEating_CE102Spring2022_MixandMatch_Bulgur-Bowl_web.jpg?crop=16:9&width=1600'
 )
 
 recipe_food015 = RecipeFood.create(quantity: 1, food_id: 15, recipe_id: 11);
@@ -558,7 +558,7 @@ recipe12 = Recipe.create(
         'Cover with foil, then bake for 1 hr, or until the loaf reaches 70C on a meat thermometer. Heat grill to medium, then grill the loaf for 5-10 mins until golden on top. Leave to rest in the tin 
         for 20 mins, then carefully tip the loaf onto a carving board or platter. Serve in slices with the usual trimmings, gravy and bread sauce.',
     ],
-    img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/last-minute-christmas-loaf-cake-46aaf37.jpg?quality=90&webp=true&resize=440,400'
+    img: 'https://c0.wallpaperflare.com/preview/287/612/879/stollen-christmas-food-bread.jpg'
 )
 
 recipe_food017 = RecipeFood.create(quantity: 3, food_id: 15, recipe_id: 12);
@@ -1021,7 +1021,7 @@ recipe22 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/06/large-photos.jpg'
 )
 
-food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00 ml', price: 10, user_id: admin.id);
+food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00g', price: 10, user_id: admin.id);
 recipe_food163 = RecipeFood.create(quantity: 5, food_id: 163, recipe_id: 22);
 
 food164 = Food.create(name: 'Heavy Cream', unit: '', price: 36, user_id: admin.id);

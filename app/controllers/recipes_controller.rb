@@ -1,6 +1,7 @@
 class RecipesController < ApplicationController
   def index
-    @recipes = Recipe.all
+    @category = RecipeCatogory.find(params[:recipe_catogory_id])
+    @recipes = @category.recipes
   end
 
   def show
@@ -45,7 +46,11 @@ class RecipesController < ApplicationController
     else
       flash[:error] = 'Something went wrong'
     end
-    redirect_to recipe_path(@recipe)
+    redirect_to recipe_catogory_recipe_path(@recipe, id: @recipe.id)
+  end
+
+  def own
+    @recipes = Recipe.all
   end
 
   private

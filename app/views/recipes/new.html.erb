@@ -4,7 +4,7 @@
   </div>
   <h1>New Recipe</h1>
 
-  <%= form_with(model: @recipe, url: recipes_path) do |form| %>
+  <%= form_with(model: @recipe, url: recipe_catogories_path) do |form| %>
 
   <%= form.text_field :name, placeholder: 'Name', class: 'form-inp'%>
 
