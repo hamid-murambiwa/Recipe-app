@@ -21,32 +21,6 @@
   margin-bottom: 20px;
 }
 
-.app-con {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.app-con table {
-  margin-top: 30px;
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 70vw;
-  border: 3px solid black;
-}
-
-.app-con td,
-th {
-  border: 2px solid rgb(26, 26, 26);
-  text-align: left;
-  padding: 8px;
-}
-
-.app-con tr:nth-child(even) {
-  background-color: #ddd;
-}
-
 .food-con {
   display: flex;
   flex-direction: column;
@@ -54,22 +28,24 @@ th {
 }
 
 .add-button {
-  background-color: rgb(23, 116, 23);
+  background-color: #C56824;
   color: white;
   text-decoration: none;
-  border: 1px solid black;
+  border: none;
   border-radius: 5px;
   padding: 5px;
   padding-left: 8px;
   padding-right: 8px;
   box-shadow: 2px 2px 2px rgba(12, 1, 1, 0.815);
+  margin-right: 15px;
 }
 
 .add-button:hover {
+  background-color: #A09F57;
   text-decoration: none;
   color: white;
-  border: 2px solid black;
-  box-shadow: 0 0 0;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(12, 1, 1, 0.815);
 }
 
 .content-con {
@@ -89,10 +65,33 @@ th {
   align-items: center;
   width: 100%;
   margin-top: 20px;
+  height: min-content;
 }
 
 .field input {
-  padding: 5px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 1vw;
+}
+
+.field input:focus {
+  outline: none;
+}
+
+.field label {
+  color: white;
+}
+
+.up-con {
+  background-image: url('d36d462db827833805497d9ea78a1343.jpeg') !important;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+hr {
+  width: 100%;
 }
 
 .actions {
@@ -100,6 +99,11 @@ th {
   justify-content: center;
   width: 100%;
   margin-top: 20px;
+}
+
+.navbar {
+  z-index: 3;
+  background-color: #05595B;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -110,6 +114,12 @@ th {
   width: 100%;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -118,6 +128,36 @@ th {
 
 .nav-item:hover {
   border-bottom: 1px solid #fff;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dropdown-toggle:hover {
+  border-bottom: 1px solid white !important;
+}
+
+.dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  background-color: #647C90 !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  background-color: #D0C9C0 !important;
 }
 
 .account {
@@ -142,19 +182,23 @@ th {
 }
 
 .delete {
-  background-color: rgb(207, 23, 23);
+  background-color: #B22727;
   color: white;
   border-radius: 5px;
-  border: 1px solid black;
+  border: none;
   box-shadow: 2px 2px 2px black;
+  padding: 0.5vw;
 }
 
 #devise-con {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   width: 100%;
+  background-color: #EADEB8;
+  min-height: 100vh;
 }
 
 .form {
@@ -162,10 +206,13 @@ th {
 }
 
 .edit {
-  width: 50%;
-  border: 3px solid black;
+  width: auto;
+  min-width: 30vw;
+  border: none;
   border-radius: 10px;
-  padding: 15px;
+  background-color: #5F7161;
+  padding: 2vw;
+  box-shadow: 7px 7px 7px black;
 }
 
 .edit-user {
@@ -179,15 +226,30 @@ th {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 1vh;
+  margin-top: 5vh;
+  border: 3px solid #B22727;
+  border-radius: 10px;
+  padding: 1vw;
+}
+
+.cancel p {
+  color: white;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center !important;
+  width: 100%;
+  margin-top: 1vw;
 }
 
 .back {
-  border: 1px solid black;
-  padding: 5px;
-  color: black;
+  padding: 1vw;
+  color: white;
   border-radius: 5px;
   margin-bottom: 10px;
+  text-decoration: none;
+  background-color: black;
 }
 
 .forgot {

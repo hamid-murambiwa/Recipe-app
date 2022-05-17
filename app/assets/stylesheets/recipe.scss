@@ -1,0 +1,365 @@
+.recipe-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: #EADEB8;
+  min-height: 100vh;
+}
+
+.recipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  width: 100vw;
+  padding: 40px;
+  z-index: 3;
+}
+
+.recipe .button {
+  justify-self: center;
+  color: black;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgba(12, 1, 1, 0.815);
+  margin-top: 1rem;
+}
+
+.recipe-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: 100% 150%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  color: rgb(214, 212, 212);
+  gap: 1.5vw;
+  padding: 2vw;
+  z-index: 3;
+  border-radius: 1vw;
+}
+
+.f-button {
+  color: white;
+}
+
+.recipe-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a09f57b5;
+  color: white;
+  border-radius: 2vw;
+  text-align: center;
+  padding: 1vw;
+}
+
+.recipe-view-btn {
+  text-decoration: none !important;
+  background-color: #261C2C;
+  color: white;
+  padding: 1vw;
+  font-size: large;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(12, 1, 1, 0.815);
+}
+
+.recipe-view-btn:hover {
+  background-color: #614124;
+  color: white;
+}
+
+.r-img {
+  height: 400px;
+  width: 400px;
+  border-radius: 2vw;
+}
+
+.recipe-cont p {
+  margin: 0;
+  width: 35rem;
+  padding: 1.5rem 1rem;
+}
+
+.new-recipe-form {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.new-recipe-form h1,
+h3 {
+  text-align: center;
+}
+
+.new-recipe-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inp {
+  margin: 1rem 3rem;
+  height: 3rem;
+  font-size: large;
+  padding: 15px;
+}
+
+.new-recipe-form textarea {
+  margin: 1rem 3rem;
+  height: 5rem;
+  font-size: large;
+}
+
+.check {
+  margin: 0 3rem;
+}
+
+.check label {
+  font-size: large;
+}
+
+.action-btn {
+  justify-self: center;
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: rgb(192, 191, 191);
+  margin: 1rem auto;
+  padding: 10px 0;
+  color: black;
+  width: 30%;
+}
+
+.recipe-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+  background-color: #EADEB8;
+
+}
+
+.recipe-show h1 {
+  text-align: center;
+  z-index: 3;
+}
+
+.recipe-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  color: rgb(92, 92, 92);
+  z-index: 3;
+}
+
+.recipe-details-cont {
+  padding: 1rem;
+  width: 60%;
+}
+
+.recipe-instructions {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 75%;
+  gap: 1vw;
+  margin-top: 2vh;
+  z-index: 3;
+}
+
+.i-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #708160;
+  padding: 1vw;
+  color: white;
+  border-radius: 2vw;
+  height: min-content;
+}
+
+.instruction-number {
+  background-color: black;
+  color: white;
+  border-radius: 45%;
+  width: min-content;
+  padding: 1vw;
+}
+
+.show-btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.show-btns .btn {
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: rgb(192, 191, 191);
+  padding: 10px 0;
+  color: black;
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
+}
+
+hr {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cat-img {
+  height: 270px;
+  width: 350px;
+  margin-bottom: 2vh;
+  border-radius: 1vw;
+}
+
+.rep-img {
+  height: 200px;
+  width: 200px;
+}
+
+#category-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 45px;
+  width: 100vw;
+  padding: 40px;
+  background-color: #EADEB8;
+}
+
+.category-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px 2px rgba(88, 88, 88, 0.815);
+  padding: 20px;
+  background-color: #6D8B74;
+  z-index: 2;
+  border-radius: 15px;
+  color: white;
+  opacity: 0.95;
+}
+
+.view-btn {
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #C56824;
+  color: white;
+  width: 100%;
+}
+
+.view-btn:hover {
+  background-color: #A09F57;
+  color: white;
+}
+
+#shop-con {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #EADEB8;
+  min-height: 100vh;
+}
+
+.d- {
+  padding: 1vw;
+  background-color: #BABD42;
+  font-size: larger;
+  width: min-content;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  margin: 2vw;
+  box-shadow: 2px 2px 2px rgba(12, 1, 1, 0.815);
+  white-space: nowrap;
+}
+
+#ingr-tbl {
+  width: 70vw !important;
+}
+
+.app-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70% !important;
+  z-index: 3 !important;
+}
+
+.app-con table {
+  width: 100% !important;
+  border: none !important;
+  text-align: center;
+  margin-bottom: 30vh;
+}
+
+.app-con td {
+  border: none !important;
+  border-right: 1px solid white !important;
+  padding: 1vw;
+  color: white;
+}
+
+.app-con tr {
+  border: 1px solid white !important;
+  background-color: #9A9483;
+}
+
+.app-con tr:nth-child(even) {
+  background-color: #C7BEA2 !important;
+  padding-left: 1vw;
+}
+
+.status {
+  z-index: 3;
+}
+
+.wrap{
+  perspective-origin: 50% 50%;
+}
+
+.svg{
+  stroke:green;
+  position:absolute;
+  bottom: -100vh;
+  transform-style: preserve-3d;
+  opacity: 0.4;
+}
+
+$total: 10;
+@for $i from 1 through $total {
+  $scale:random(2) - .4;
+  
+  .svg:nth-child(#{$i}){
+    left:random(120) * 1% - 20;
+    animation: raise#{$i} 6 + random(15) +s linear infinite;
+    animation-delay:random(5) - 5 + s;
+    transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+    z-index: 1;
+
+    @keyframes raise#{$i} {
+      to{
+       bottom:150vh;
+       transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+      }
+    }
+  }
+}
