@@ -1,0 +1,22 @@
+<div id="category-container">
+  <% @categories.includes(:recipes).each do |category| %>
+  <div class="category-div">
+  <h1><%= category.name %></h1>
+  <%= image_tag url_for(category.image_url), :class => "cat-img" %>
+  <p><%= category.description %></p>
+  <%= link_to "View meals", recipe_catogory_recipes_path(category), :class => 'view-btn' %>
+  </div>
+  <% end %>
+  <div class="wrap">
+  <%= image_tag url_for('diet.png'), :class => "svg", :style => "height: 300px" %>
+  <%= image_tag url_for('diet2.png'), :class => "svg", :style => "height: 200px" %>
+  <%= image_tag url_for('food.png'), :class => "svg", :style => "height: 300px" %>
+  <%= image_tag url_for('salad.png'), :class => "svg", :style => "height: 200px" %>
+  <%= image_tag url_for('hot-pot.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('dish.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('hot.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('healthy-eating.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('food2.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png'), :class => "svg", :style => "height: 100px" %>
+  </div>
+</div>
