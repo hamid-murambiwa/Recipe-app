@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   end
 
   get 'public', to: 'recipes#public', as: 'public'
-  get 'own', to: 'recipes#own', as: 'own'
+  get 'index', to: 'users#index', as: 'index'
   put 'recipes/:id/update', to: 'recipes#update', as: 'update'
   put '/recipes/:id/recipe_foods/new', to: 'recipe_foods#new', as: 'new'
 
