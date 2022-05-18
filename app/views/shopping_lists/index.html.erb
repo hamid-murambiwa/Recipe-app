@@ -1,8 +1,13 @@
 <div id="shop-con">
 <section class='app-con'>
+    <div class="back-btn">
+    <%= link_to :back, class: 'back' do %>
+      <p>&#8592; Go back</p>
+    <% end %>
+    </div>
     <div class="d-">
       <p>Total food items: <strong><%= @total_quantity %></strong> </p>
-      <p>Total price: <strong>R <%= @total_price  %></strong></p>
+      <p>Total price: <strong>R<%= @total_price  %></strong></p>
     </div>
 
     <table id="ingr-tbl">
@@ -15,7 +20,7 @@
       <tr>
         <td><%= rf.food.name %></td>
         <td><%= rf.quantity %></td>
-        <td>$<%= rf.food.price * rf.quantity %></td>
+        <td>R<%= rf.food.price * rf.quantity %></td>
       </tr>
       <% end %>
     </table>
