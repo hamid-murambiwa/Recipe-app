@@ -9,7 +9,7 @@ category1 = RecipeCatogory.create(
 category2 = RecipeCatogory.create(
     name: "Lunch",
     description: "Lunch is the second meal of the day. It is usually eaten with other meals such as breakfast or dinner.",
-    image_url: "https://images.unsplash.com/photo-1626200085261-42d788d8865d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bHVuY2glMjBtZW51fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+    image_url: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg"
 )
 
 category3 = RecipeCatogory.create(
@@ -19,9 +19,9 @@ category3 = RecipeCatogory.create(
 )
 
 category4 = RecipeCatogory.create(
-    name: "Snack",
+    name: "Snacks",
     description: "Snack is the fourth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
-    image_url: "https://www.garnishandglaze.com/wp-content/uploads/2020/01/snack-board-2.jpg"
+    image_url: "https://wallpaperaccess.com/full/1891212.jpg"
 )
 
 category5 = RecipeCatogory.create(
@@ -1018,7 +1018,7 @@ recipe22 = Recipe.create(
         'If eating Swedish Meatballs without noodles or a side dish, serve with a teaspoon of Lingonberry Jam or Cranberry Sauce on the side, optional.',
         'Enjoy!'
     ],
-    img: 'https://www.thecookierookie.com/wp-content/uploads/2018/06/large-photos.jpg'
+    img: 'https://www.livingchirpy.com/wp-content/uploads/2021/03/keto-swedish-meatballs-1.jpg'
 )
 
 food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00g', price: 10, user_id: admin.id);

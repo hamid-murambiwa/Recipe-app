@@ -73,6 +73,7 @@
   width: 100%;
   border: none;
   border-radius: 1vw;
+  padding-left: 2vw;
 }
 
 .field input:focus {
@@ -210,7 +211,7 @@ hr {
   min-width: 30vw;
   border: none;
   border-radius: 10px;
-  background-color: #5F7161;
+  background-color: #5f7161e8;
   padding: 2vw;
   box-shadow: 7px 7px 7px black;
   text-align: center;
@@ -282,6 +283,15 @@ hr {
 .me-con {
   display: flex;
   align-items: center;
+  justify-content: center !important;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#user_remember_me {
+  margin-bottom: 0 !important;
+  margin-right: 15px;
+  width: min-content;
 }
 
 #user_remember_me {
