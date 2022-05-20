@@ -4,6 +4,7 @@
   <h1><%= category.name %></h1>
   <%= image_tag url_for(category.image_url), :class => "cat-img" %>
   <p><%= category.description %></p>
+  <p class="category-p"><%= category.recipes.length %> recipes </p>
   <%= link_to "View meals", recipe_catogory_recipes_path(category), :class => 'view-btn' %>
   </div>
   <% end %>

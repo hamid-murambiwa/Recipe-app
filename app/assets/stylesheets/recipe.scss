@@ -265,6 +265,10 @@ hr {
   color: white;
 }
 
+.category-div p {
+  width: 350px;
+}
+
 .view-btn {
   padding: 20px;
   text-decoration: none;
@@ -386,6 +390,17 @@ hr {
   margin: 0 !important;
 }
 
+.logo-2 {
+  height: 30vh;
+  width: 30vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.category-p {
+  font-weight: 100;
+}
+
 .wrap{
   perspective-origin: auto auto;
 }
@@ -430,8 +445,8 @@ $total: 10;
     display: none !important;
   }
   .cat-img {
-    height: 50vw;
-    width: 55vw;
+    height: 70vw;
+    width: 75vw;
   }
   .svg {
     height: 5vw !important;
@@ -521,6 +536,11 @@ $total: 10;
     height: 200px !important;
     width: 200px !important;
   }
+  .logo-3 {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 5vh;
+  }
   #devise-con {
     padding-top: 80px !important;
   }
@@ -530,5 +550,8 @@ $total: 10;
   }
   .ingr-btn {
     width: auto !important;
+  }
+  .category-div p {
+    width: auto;
   }
 }

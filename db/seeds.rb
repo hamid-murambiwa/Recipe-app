@@ -2,43 +2,43 @@ admin = User.create(name: 'Hamid', email: 'machipisajunior@gmail.com', password:
 
 category1 = RecipeCatogory.create(
     name: "Breakfast",
-    description: "Breakfast is the first meal of the day. It is usually eaten with other meals such as lunch or dinner.",
+    description: "Breakfast is the first meal of the day. It is usually eaten in the early part of the morning. Discover budget-friendly affordable breakfast recipes with storecupboard ingredients",
     image_url: "https://c4.wallpaperflare.com/wallpaper/668/319/828/food-breakfast-coffee-croissant-wallpaper-preview.jpg"
 )
 
 category2 = RecipeCatogory.create(
     name: "Lunch",
-    description: "Lunch is the second meal of the day. It is usually eaten with other meals such as breakfast or dinner.",
+    description: "Lunch is the meal that you have in the middle of the day. Discover budget-friendly affordable lunch recipes with storecupboard ingredients",
     image_url: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg"
 )
 
 category3 = RecipeCatogory.create(
     name: "Dinner",
-    description: "Dinner is the third meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    description: "Dinner is the main meal of the day, usually served in the early part of the evening. Discover budget-friendly affordable dinner recipes with storecupboard ingredients",
     image_url: "https://cdn.cnn.com/cnnnext/dam/assets/181116201733-01-thanksgiving-stock-dinner-full-169.jpg"
 )
 
 category4 = RecipeCatogory.create(
     name: "Snacks",
-    description: "Snack is the fourth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    description: "Snacks is are simple foods that are quick and easy to prepare and eat. Discover budget-friendly affordable snack recipes with storecupboard ingredients",
     image_url: "https://wallpaperaccess.com/full/1891212.jpg"
 )
 
 category5 = RecipeCatogory.create(
-    name: "Dessert",
-    description: "Dessert is the fifth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    name: "Desserts",
+    description: "Dessert is something sweet, such as fruit or a pudding, that you eat at the end of a meal. Discover budget-friendly affordable dessert recipes with storecupboard ingredients",
     image_url: "https://static.onecms.io/wp-content/uploads/sites/24/2021/03/18/Brownie-Ice-Cream-Sandwiches.jpg"
 )
 
 category6 = RecipeCatogory.create(
-    name: "Drink",
-    description: "Drink is the sixth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    name: "Drinks",
+    description: "From cocktails to punch for kids, find the perfect party drink.",
     image_url: "https://www.teahub.io/photos/full/171-1718856_food-cocktail-drinks-hd-wallpaper-soft-drinks-images.jpg"
 )
 
 category7 = RecipeCatogory.create(
     name: "Other",
-    description: "Other is the seventh meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    description: "These are recipes for special or social occasions. Discover budget-friendly affordable special recipes with storecupboard ingredients",
     image_url: "https://www.caldea.com/blog/wp-content/uploads/2018/03/tailandia-ingredientes.png"
 )
 
