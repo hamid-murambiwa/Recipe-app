@@ -3,3 +3,14 @@
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
   //= link popper.js
+  //= link diet.png
+  //= link diet2.png
+  //= link food.png
+  //= link salad.png
+  //= link food2.png
+  //= link healthy-eating.png
+  //= link hot-pot.png
+  //= link hot.png
+  //= link dish.png
+  //= link restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png
+  //= link cooking.png

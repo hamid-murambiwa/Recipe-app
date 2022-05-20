@@ -1,54 +1,61 @@
 <section class="recipe-show">
   <h1><%= @recipe.name %></h1>
 
-  <div class="recipe-details">
-
-    <p>Preparation time: <%=@recipe.prep_time%> Minutes</p>
-
-    <p>Cooking time: <%=@recipe.cook_time%> Minutes</p>
-
-    <p class=""><%=@recipe.description%></p>
-
-    <% if can? :update, @recipe%>
-    <div class="status">
-      <%= form_with url: update_path(@recipe), method: "put" do |form| %>
-      <div class="form-check form-switch">
-        <% if @recipe.public == false %>
-        <%= form.check_box :public, class:"form-check-input", id:"flexSwitchCheckDefault",role: "switch", onchange: "this.form.submit();"%>
-        <label class="form-check-label" for="flexSwitchCheckDefault">Public</label>
-        <% else %>
-        <%= form.check_box :public, class:"form-check-input", id:"flexSwitchCheckChecked",role: "switch", checked: true, onchange: "this.form.submit();" %>
-        <label class="form-check-label" for="flexSwitchCheckChecked">Public</label>
-        <%end%>
-
-      </div>
+  <% if can? :update, @recipe%>
+  <div class="status">
+    <%= form_with url: update_path(@recipe), method: "put" do |form| %>
+    <div class="form-check form-switch">
+      <% if @recipe.public == false %>
+      <%= form.check_box :public, class:"form-check-input", id:"flexSwitchCheckDefault",role: "switch", onchange: "this.form.submit();"%>
+      <label class="form-check-label" for="flexSwitchCheckDefault">Public</label>
+      <% else %>
+      <%= form.check_box :public, class:"form-check-input", id:"flexSwitchCheckChecked",role: "switch", checked: true, onchange: "this.form.submit();" %>
+      <label class="form-check-label" for="flexSwitchCheckChecked">Public</label>
       <%end%>
+
     </div>
     <%end%>
+  </div>
+  <%end%>
 
+  <div class="recipe-details">
+    <%= image_tag url_for(@recipe.img), :class => "r-img" %>
+    <div class="recipe-details-cont">
+    <p class=""><%=@recipe.description%></p>
+
+    <p>Preparation time: <strong><%=@recipe.prep_time%></strong></p>
+
+    <p>Cooking time: <strong><%=@recipe.cook_time%></strong></p>
+    </div>
   </div>
 
+  <h2>Instructions</h2>
+  
+  <section class="recipe-instructions">
   <% @recipe.instructions.each_with_index do |instruction, index| %>
+  <div class="i-con">
   <div class="instruction">
     <p class="instruction-number"><%= index + 1 %></p>
     <p class="instruction-text"><%= instruction %></p>
   </div>
-  <% end %>
-
-  <div class="show-btns">
-
-
-    <%= link_to 'Generate Shopping List',  recipe_shopping_lists_path(@recipe), class: 'add-button' %>
-    <% if can? :update, @recipe%>
-
-    <%= link_to 'Add ingredient', new_recipe_recipe_food_path(@recipe), class: 'add-button' %>
-
-    <%end %>
-
   </div>
+  <% end %>
+  </section>
 
+  <hr>
+
+  <%= render 'recipe_foods/recipe_food' %>
+
+  <div class="wrap">
+  <%= image_tag url_for('diet.png'), :class => "svg", :style => "height: 300px" %>
+  <%= image_tag url_for('diet2.png'), :class => "svg", :style => "height: 200px" %>
+  <%= image_tag url_for('food.png'), :class => "svg", :style => "height: 300px" %>
+  <%= image_tag url_for('salad.png'), :class => "svg", :style => "height: 200px" %>
+  <%= image_tag url_for('hot-pot.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('dish.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('hot.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('healthy-eating.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('food2.png'), :class => "svg", :style => "height: 100px" %>
+  <%= image_tag url_for('restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png'), :class => "svg", :style => "height: 100px" %>
+  </div>
 </section>
-
-<hr>
-
-<%= render 'recipe_foods/recipe_food' %>

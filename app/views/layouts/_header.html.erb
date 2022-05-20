@@ -1,36 +1,95 @@
-<nav class="navbar navbar-dark bg-dark">
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li>
-        <%= image_tag "Asset_1.svg", style: 'height:5vw;width:5vw;' %>
-        </li>
-        <% if user_signed_in? %>
+<% if user_signed_in? %>
+  <div id="desktop-header">
+  <nav class="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light" id="desktop-header">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li>
+            <%= link_to recipe_catogories_path do %>
+              <%= image_tag "cooking.png", style: 'height:5vw;width:5vw;' %>
+            <% end %>
+          </li>
 
-        <li class="nav-item">
-          <%= link_to 'Food list', user_foods_path(current_user.id), class: "nav-link active" %>
+          <li class="list">
+            <div class="btn-group dropend">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Meal Catagories
+              </button>
+              <ul class="dropdown-menu">
+                <li><%= link_to 'Breakfast', recipe_catogory_recipes_path(recipe_catogory_id: 1), class: "dropdown-item" %></li>
+                <li><%= link_to 'Lunch', recipe_catogory_recipes_path(recipe_catogory_id: 2), class: "dropdown-item" %></li>
+                <li><%= link_to 'Dinner', recipe_catogory_recipes_path(recipe_catogory_id: 3), class: "dropdown-item" %></li>
+                <li><%= link_to 'Snacks', recipe_catogory_recipes_path(recipe_catogory_id: 4), class: "dropdown-item" %></li>
+                <li><%= link_to 'Dessert', recipe_catogory_recipes_path(recipe_catogory_id: 5), class: "dropdown-item" %></li>
+                <li><%= link_to 'Drinks', recipe_catogory_recipes_path(recipe_catogory_id: 6), class: "dropdown-item" %></li>
+                <li><%= link_to 'Other', recipe_catogory_recipes_path(recipe_catogory_id: 7), class: "dropdown-item" %></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="list">
+            <div class="btn-group dropend">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+             Account Settings
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+              <%= link_to 'Edit Account', edit_user_registration_path, class: "dropdown-item" %>
+              </li>
+              <li>
+              <%= link_to 'Logout', '/users/sign_out', class: "dropdown-item" %>
+              </li>
+            </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+          <%= link_to 'About', index_path, class: "nav-link" %>
         </li>
 
-        <li class="nav-item">
-          <%= link_to 'Your recipes', recipes_path(current_user.id), class: "nav-link" %>
-        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
+  </div>
 
-        <li class="nav-item">
-          <%= link_to 'Public recipes', public_path, class: "nav-link" %>
-        </li>
-
-        <li class="list">
-          <%= link_to 'Edit Account', edit_user_registration_path, class: "nav-link account" %>
-        </li>
-
-        <li class="list">
-          <%= link_to 'Logout', '/users/sign_out', class: "nav-link account" %>
-        </li>
-
-        <% end %> 
-      </ul>
+  <div id="mobile-header">
+  <%= link_to recipe_catogories_path do %>
+    <%= image_tag "cooking.png", style: 'height:5vw;width:5vw;', :class => 'logo' %>
+  <% end %>
+  <div class="collapse" id="navbarToggleExternalContent">
+  <div>
+    <h5 class="text-white h4"><%= link_to 'Edit Account', edit_user_registration_path, class: "dropdown-item" %></h5>
+    <h5 class="text-white h4"><%= link_to 'Logout', '/users/sign_out', class: "dropdown-item" %></h5>
+    <h5 class="text-white h4"><%= link_to 'About', index_path, class: "nav-link" %></h5>
+    <p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Meal Catagories
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+    <ul>
+    <li><%= link_to 'Breakfast', recipe_catogory_recipes_path(recipe_catogory_id: 1), class: "dropdown-item" %></li>
+    <li><%= link_to 'Lunch', recipe_catogory_recipes_path(recipe_catogory_id: 2), class: "dropdown-item" %></li>
+    <li><%= link_to 'Dinner', recipe_catogory_recipes_path(recipe_catogory_id: 3), class: "dropdown-item" %></li>
+    <li><%= link_to 'Snacks', recipe_catogory_recipes_path(recipe_catogory_id: 4), class: "dropdown-item" %></li>
+    <li><%= link_to 'Dessert', recipe_catogory_recipes_path(recipe_catogory_id: 5), class: "dropdown-item" %></li>
+    <li><%= link_to 'Drinks', recipe_catogory_recipes_path(recipe_catogory_id: 6), class: "dropdown-item" %></li>
+    <li><%= link_to 'Other', recipe_catogory_recipes_path(recipe_catogory_id: 7), class: "dropdown-item" %></li>
+  </ul>
     </div>
   </div>
+  </div>
+</div>
+<nav class="navbar navbar-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
 </nav>
-</nav>
+  </div>
+<% end %> 

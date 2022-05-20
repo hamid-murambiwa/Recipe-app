@@ -1,25 +1,13 @@
-<div class="recipe-con">
-  <div class="recipe-title">
-  <h1><%= @category.name %> Recipes</h1>
+<div id="category-container">
+  <% @categories.includes(:recipes).each do |category| %>
+  <div class="category-div">
+  <h1><%= category.name %></h1>
+  <%= image_tag url_for(category.image_url), :class => "cat-img" %>
+  <p><%= category.description %></p>
+  <p class="category-p"><%= category.recipes.length %> recipes </p>
+  <%= link_to "View meals", recipe_catogory_recipes_path(category), :class => 'view-btn' %>
   </div>
-  <section class="recipe">
-    <% @recipes.each do |recipe|%>
-      <% if can? :read, recipe%>
-        <div class="recipe-div" style="background-image: url(<%= recipe.img %>)">
-          <div class="recipe-cont">
-            <h1><%= recipe.name %></h1>
-            <p><%= recipe.description %></p>
-          </div>
-          <div class="name-remove">
-          <%= link_to "View Recipe", recipe_catogory_recipe_path(recipe, id: recipe.id), :class => "recipe-view-btn" %>
-          </div>
-          <%if can? :destroy, recipe%>
-          <%= button_to 'Remove', recipe_catogory_recipe_path(recipe, id: recipe.id), method: :delete, class: 'delete'%>
-          <%end%>
-        </div>
-      <% end %>
-    <% end %>
-  </section>
+  <% end %>
   <div class="wrap">
   <%= image_tag url_for('diet.png'), :class => "svg", :style => "height: 300px" %>
   <%= image_tag url_for('diet2.png'), :class => "svg", :style => "height: 200px" %>

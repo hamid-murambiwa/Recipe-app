@@ -1,5 +1,4 @@
 <section id='devise-con'>
-<h1 class='r-app'>Recipe App</h1>
 <div class='edit'>
 <div class='edit-user'>
   <h2>Edit <%= resource_name.to_s.humanize %></h2>
@@ -18,37 +17,46 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
+  <hr>
+
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you do not want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
+    <i><% if @minimum_password_length %><?i>
       <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+      <i><%= @minimum_password_length %> characters minimum</i>
     <% end %>
   </div>
+
+  <hr>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  <hr>
+
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
+
+  <hr>
 
   <div class="actions">
     <%= f.submit "Update", class: 'add-button' %>
   </div>
   </section>
 <% end %>
-<hr>
-<div class='cancel'>
-<h3>Cancel my account</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'delete' %></p>
+  <div class='cancel'>
+    <h3>Cancel my account</h3>
 
-<%= link_to "Back", :back, class: 'back' %>
-</div>
+    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'delete' %></p>
+  </div>
+  <div class="back-btn">
+    <%= link_to "Back", :back, class: 'back' %>
+  </div>
 </div>
 </section>

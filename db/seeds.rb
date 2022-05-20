@@ -2,43 +2,43 @@ admin = User.create(name: 'Hamid', email: 'machipisajunior@gmail.com', password:
 
 category1 = RecipeCatogory.create(
     name: "Breakfast",
-    description: "Breakfast is the first meal of the day. It is usually eaten with other meals such as lunch or dinner.",
+    description: "Breakfast is the first meal of the day. It is usually eaten in the early part of the morning. Discover budget-friendly affordable breakfast recipes with storecupboard ingredients",
     image_url: "https://c4.wallpaperflare.com/wallpaper/668/319/828/food-breakfast-coffee-croissant-wallpaper-preview.jpg"
 )
 
 category2 = RecipeCatogory.create(
     name: "Lunch",
-    description: "Lunch is the second meal of the day. It is usually eaten with other meals such as breakfast or dinner.",
-    image_url: "https://images.unsplash.com/photo-1626200085261-42d788d8865d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bHVuY2glMjBtZW51fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+    description: "Lunch is the meal that you have in the middle of the day. Discover budget-friendly affordable lunch recipes with storecupboard ingredients",
+    image_url: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg"
 )
 
 category3 = RecipeCatogory.create(
     name: "Dinner",
-    description: "Dinner is the third meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    description: "Dinner is the main meal of the day, usually served in the early part of the evening. Discover budget-friendly affordable dinner recipes with storecupboard ingredients",
     image_url: "https://cdn.cnn.com/cnnnext/dam/assets/181116201733-01-thanksgiving-stock-dinner-full-169.jpg"
 )
 
 category4 = RecipeCatogory.create(
-    name: "Snack",
-    description: "Snack is the fourth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
-    image_url: "https://www.garnishandglaze.com/wp-content/uploads/2020/01/snack-board-2.jpg"
+    name: "Snacks",
+    description: "Snacks is are simple foods that are quick and easy to prepare and eat. Discover budget-friendly affordable snack recipes with storecupboard ingredients",
+    image_url: "https://wallpaperaccess.com/full/1891212.jpg"
 )
 
 category5 = RecipeCatogory.create(
-    name: "Dessert",
-    description: "Dessert is the fifth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    name: "Desserts",
+    description: "Dessert is something sweet, such as fruit or a pudding, that you eat at the end of a meal. Discover budget-friendly affordable dessert recipes with storecupboard ingredients",
     image_url: "https://static.onecms.io/wp-content/uploads/sites/24/2021/03/18/Brownie-Ice-Cream-Sandwiches.jpg"
 )
 
 category6 = RecipeCatogory.create(
-    name: "Drink",
-    description: "Drink is the sixth meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    name: "Drinks",
+    description: "From cocktails to punch for kids, find the perfect party drink.",
     image_url: "https://www.teahub.io/photos/full/171-1718856_food-cocktail-drinks-hd-wallpaper-soft-drinks-images.jpg"
 )
 
 category7 = RecipeCatogory.create(
     name: "Other",
-    description: "Other is the seventh meal of the day. It is usually eaten with other meals such as breakfast or lunch.",
+    description: "These are recipes for special or social occasions. Discover budget-friendly affordable special recipes with storecupboard ingredients",
     image_url: "https://www.caldea.com/blog/wp-content/uploads/2018/03/tailandia-ingredientes.png"
 )
 
@@ -491,7 +491,7 @@ recipe11 = Recipe.create(
         'For the beetroot topping, first pile the chickpeas on top, then toss the beetroot with the tomato, mint, cumin, a good pinch of cinnamon, the oil and vinegar. Toss well, add the orange, then 
         pile onto the remaining portions of bulghur, scatter with the pine nuts and sprinkle with extra cinnamon. Chill in the fridge until needed.',
     ],
-    img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/440-400-bulgur-quinoa-lunch-bowls-dea6596.jpg?quality=90&webp=true&resize=440,400'
+    img: 'https://www.cleaneatingmag.com/wp-content/uploads/2022/04/CleanEating_CE102Spring2022_MixandMatch_Bulgur-Bowl_web.jpg?crop=16:9&width=1600'
 )
 
 recipe_food015 = RecipeFood.create(quantity: 1, food_id: 15, recipe_id: 11);
@@ -558,7 +558,7 @@ recipe12 = Recipe.create(
         'Cover with foil, then bake for 1 hr, or until the loaf reaches 70C on a meat thermometer. Heat grill to medium, then grill the loaf for 5-10 mins until golden on top. Leave to rest in the tin 
         for 20 mins, then carefully tip the loaf onto a carving board or platter. Serve in slices with the usual trimmings, gravy and bread sauce.',
     ],
-    img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/last-minute-christmas-loaf-cake-46aaf37.jpg?quality=90&webp=true&resize=440,400'
+    img: 'https://c0.wallpaperflare.com/preview/287/612/879/stollen-christmas-food-bread.jpg'
 )
 
 recipe_food017 = RecipeFood.create(quantity: 3, food_id: 15, recipe_id: 12);
@@ -1018,10 +1018,10 @@ recipe22 = Recipe.create(
         'If eating Swedish Meatballs without noodles or a side dish, serve with a teaspoon of Lingonberry Jam or Cranberry Sauce on the side, optional.',
         'Enjoy!'
     ],
-    img: 'https://www.thecookierookie.com/wp-content/uploads/2018/06/large-photos.jpg'
+    img: 'https://www.livingchirpy.com/wp-content/uploads/2021/03/keto-swedish-meatballs-1.jpg'
 )
 
-food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00 ml', price: 10, user_id: admin.id);
+food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00g', price: 10, user_id: admin.id);
 recipe_food163 = RecipeFood.create(quantity: 5, food_id: 163, recipe_id: 22);
 
 food164 = Food.create(name: 'Heavy Cream', unit: '', price: 36, user_id: admin.id);
