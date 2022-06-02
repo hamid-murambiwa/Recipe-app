@@ -3,13 +3,9 @@
 # Recipe-App
 
 > The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
-<img width="1440" alt="Screenshot 2022-03-18 at 08 20 43" src="https://user-images.githubusercontent.com/71644515/158960722-fb6cfae1-9e75-431f-a386-3f8702bdc1b9.png">
-<img width="1440" alt="Screenshot 2022-03-18 at 08 20 14" src="https://user-images.githubusercontent.com/71644515/158960785-73a0f514-01fa-4e3d-a2d4-b1d9202b70da.png">
-<img width="1440" alt="Screenshot 2022-03-18 at 08 19 41" src="https://user-images.githubusercontent.com/71644515/158960904-b8e01921-0969-4b1a-b67b-64bd534c4e5b.png">
-
-## Live Demo
-
-[Live Demo Link](https://awe-recipe-app.herokuapp.com/)
+<img width="1440" alt="Screenshot 2022-05-20 at 17 37 26" src="https://user-images.githubusercontent.com/71644515/169563021-83753377-38a4-4d6f-aeac-3ca48b3a90f4.png">
+<img width="1440" alt="Screenshot 2022-05-20 at 17 38 47" src="https://user-images.githubusercontent.com/71644515/169563249-239f2c2b-89f4-402a-b849-2141fb768766.png">
+<img width="1438" alt="Screenshot 2022-05-20 at 17 39 27" src="https://user-images.githubusercontent.com/71644515/169563389-42e46ecd-e62c-4d0f-87a2-a1a7de14e505.png">
 
 ## Built With
 
