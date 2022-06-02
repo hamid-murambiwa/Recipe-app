@@ -14,6 +14,11 @@
  *= require_self
  */
 
+ body {
+  font-family: 'Macondo', cursive !important;
+  font-size: medium !important;
+}
+
 .r-app {
   color: rgb(155, 9, 9);
   border-bottom: 2px solid rgb(230, 174, 21);
@@ -28,7 +33,7 @@
 }
 
 .add-button {
-  background-color: #C56824;
+  background-color: #c56824;
   color: white;
   text-decoration: none;
   border: none;
@@ -41,7 +46,7 @@
 }
 
 .add-button:hover {
-  background-color: #A09F57;
+  background-color: #a09f57;
   text-decoration: none;
   color: white;
   border: none;
@@ -104,7 +109,7 @@ hr {
 
 .navbar {
   z-index: 3;
-  background-color: #05595B;
+  background-color: #05595b;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -150,7 +155,7 @@ hr {
 }
 
 .dropdown-menu {
-  background-color: #647C90 !important;
+  background-color: #647c90 !important;
 }
 
 .dropdown-item {
@@ -158,7 +163,7 @@ hr {
 }
 
 .dropdown-item:hover {
-  background-color: #D0C9C0 !important;
+  background-color: #d0c9c0 !important;
 }
 
 .account {
@@ -183,7 +188,7 @@ hr {
 }
 
 .delete {
-  background-color: #B22727;
+  background-color: #b22727;
   color: white;
   border-radius: 5px;
   border: none;
@@ -198,7 +203,7 @@ hr {
   justify-content: flex-start;
   padding: 20px;
   width: 100%;
-  background-color: #EADEB8;
+  background-color: #eadeb8;
   min-height: 100vh;
 }
 
@@ -229,7 +234,7 @@ hr {
   align-items: center;
   width: 100%;
   margin-top: 5vh;
-  border: 3px solid #B22727;
+  border: 3px solid #b22727;
   border-radius: 10px;
   padding: 1vw;
 }
@@ -289,14 +294,9 @@ hr {
 }
 
 #user_remember_me {
-  margin-bottom: 0 !important;
-  margin-right: 15px;
-  width: min-content;
-}
-
-#user_remember_me {
   margin-bottom: 8px;
   margin-right: 15px;
+  width: min-content;
 }
 
 .action-btns-td {

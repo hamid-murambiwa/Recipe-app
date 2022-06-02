@@ -50,7 +50,7 @@ recipe1 = Recipe.create(
     prep_time: '10 mins',
     cook_time: 10,
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Bring a deep saucepan of water to the boil (at least 2 litres) and add 3 tbsp white wine vinegar. Lower the heat down to a gentle simmer.',
@@ -68,22 +68,22 @@ recipe1 = Recipe.create(
     img: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/01/Healthy-Eggs-Benedict-4.jpg'
 )
 
-food1 = Food.create(name: 'White wine vinegar', unit: ' tbsp', price: 0.5, user_id: admin.id);
+food1 = Food.create(name: 'White wine vinegar', unit: ' tbsp', price: 0.5, user_id: 1);
 recipe_food1 = RecipeFood.create(quantity: 3, food_id: 1, recipe_id: 1);
 
-food2 = Food.create(name: 'Free-range eggs', unit: '', price: 1, user_id: admin.id);
+food2 = Food.create(name: 'Free-range eggs', unit: '', price: 1, user_id: 1);
 recipe_food2 = RecipeFood.create(quantity: 4, food_id: 2, recipe_id: 1);
 
-food3 = Food.create(name: 'Toasting muffins', unit: '', price: 10, user_id: admin.id);
+food3 = Food.create(name: 'Toasting muffins', unit: '', price: 10, user_id: 1);
 recipe_food3 = RecipeFood.create(quantity: 2, food_id: 3, recipe_id: 1);
 
-food4 = Food.create(name: 'Parma ham', unit: ' slice', price: 5, user_id: admin.id);
+food4 = Food.create(name: 'Parma ham', unit: ' slice', price: 5, user_id: 1);
 recipe_food4 = RecipeFood.create(quantity: 4, food_id: 4, recipe_id: 1);
 
-food5 = Food.create(name: 'Butter', unit: '25 g', price: 5, user_id: admin.id);
+food5 = Food.create(name: 'Butter', unit: '25 g', price: 5, user_id: 1);
 recipe_food5 = RecipeFood.create(quantity: 1, food_id: 5, recipe_id: 1);
 
-food6 = Food.create(name: 'Egg yolks', unit: '', price: 1, user_id: admin.id);
+food6 = Food.create(name: 'Egg yolks', unit: '', price: 1, user_id: 1);
 recipe_food6 = RecipeFood.create(quantity: 2, food_id: 6, recipe_id: 1);
 
 recipe2 = Recipe.create(
@@ -92,7 +92,7 @@ recipe2 = Recipe.create(
     prep_time: '25 mins',
     cook_time: '30 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Mix 200g self-raising flour, 1 ½ tsp baking powder, 1 tbsp golden caster sugar and a pinch of salt together in a large bowl.',
@@ -107,25 +107,25 @@ recipe2 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/american-style-pancakes-87119e3.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food7 = Food.create(name: 'Self-raising flour', unit: '00g', price: 4, user_id: admin.id);
+food7 = Food.create(name: 'Self-raising flour', unit: '00g', price: 4, user_id: 1);
 recipe_food7 = RecipeFood.create(quantity: 2, food_id: 7, recipe_id: 2);
 
-food8 = Food.create(name: 'Baking powder', unit: '½ tsp', price: 0.50, user_id: admin.id);
+food8 = Food.create(name: 'Baking powder', unit: '½ tsp', price: 0.50, user_id: 1);
 recipe_food8 = RecipeFood.create(quantity: 1, food_id: 8, recipe_id: 2);
 
-food9 = Food.create(name: 'Large eggs', unit: '', price: 1, user_id: admin.id);
+food9 = Food.create(name: 'Large eggs', unit: '', price: 1, user_id: 1);
 recipe_food9 = RecipeFood.create(quantity: 3, food_id: 9, recipe_id: 2);
 
-food10 = Food.create(name: 'Melted butter, plus extra for cooking', unit: '25 g', price: 20, user_id: admin.id);
+food10 = Food.create(name: 'Melted butter, plus extra for cooking', unit: '25 g', price: 20, user_id: 1);
 recipe_food10 = RecipeFood.create(quantity: 1, food_id: 10, recipe_id: 2);
 
-food11 = Food.create(name: 'Milk', unit: '00ml', price: 5, user_id: admin.id);
+food11 = Food.create(name: 'Milk', unit: '00ml', price: 5, user_id: 1);
 recipe_food11 = RecipeFood.create(quantity: 2, food_id: 11, recipe_id: 2);
 
-food12 = Food.create(name: 'Vegetable oil', unit: '50 ml', price: 7, user_id: admin.id);
+food12 = Food.create(name: 'Vegetable oil', unit: '50 ml', price: 7, user_id: 1);
 recipe_food12 = RecipeFood.create(quantity: 2, food_id: 12, recipe_id: 2);
 
-food13 = Food.create(name: 'Maple syrup', unit: '50 ml', price: 10, user_id: admin.id);
+food13 = Food.create(name: 'Maple syrup', unit: '50 ml', price: 10, user_id: 1);
 recipe_food13 = RecipeFood.create(quantity: 2, food_id: 13, recipe_id: 2);
 
 recipe3 = Recipe.create(
@@ -134,7 +134,7 @@ recipe3 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Heat the oil in a wide, shallow pan and cook the onion for 8-10 mins until softened. Add the pepper and cook for another 5 mins, stirring 
@@ -147,34 +147,34 @@ recipe3 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/smoky-beans-baked-eggs-4a53fb1.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food14 = Food.create(name: 'Oil', unit: ' tbsp', price: 0.25, user_id: admin.id);
+food14 = Food.create(name: 'Oil', unit: ' tbsp', price: 0.25, user_id: 1);
 recipe_food14 = RecipeFood.create(quantity: 2, food_id: 14, recipe_id: 3);
 
-food15 = Food.create(name: 'Onion', unit: '', price: 5, user_id: admin.id);
+food15 = Food.create(name: 'Onion', unit: '', price: 5, user_id: 1);
 recipe_food15 = RecipeFood.create(quantity: 1, food_id: 15, recipe_id: 3);
 
-food16 = Food.create(name: 'Red pepper , sliced', unit: '', price: 5, user_id: admin.id);
+food16 = Food.create(name: 'Red pepper , sliced', unit: '', price: 5, user_id: 1);
 recipe_food16 = RecipeFood.create(quantity: 1, food_id: 16, recipe_id: 3);
 
-food17 = Food.create(name: 'Garlic cloves , crushed', unit: '', price: 10, user_id: admin.id);
+food17 = Food.create(name: 'Garlic cloves , crushed', unit: '', price: 10, user_id: 1);
 recipe_food17 = RecipeFood.create(quantity: 3, food_id: 17, recipe_id: 3);
 
-food18 = Food.create(name: 'Smoked paprika', unit: 'tsp', price: 1, user_id: admin.id);
+food18 = Food.create(name: 'Smoked paprika', unit: 'tsp', price: 1, user_id: 1);
 recipe_food18 = RecipeFood.create(quantity: 2, food_id: 18, recipe_id: 3);
 
-food19 = Food.create(name: 'Ketchup', unit: 'tbsp', price: 1, user_id: admin.id);
+food19 = Food.create(name: 'Ketchup', unit: 'tbsp', price: 1, user_id: 1);
 recipe_food19 = RecipeFood.create(quantity: 1, food_id: 19, recipe_id: 3);
 
-food20 = Food.create(name: 'Can chopped tomatoes', unit: '00g', price: 7, user_id: admin.id);
+food20 = Food.create(name: 'Can chopped tomatoes', unit: '00g', price: 7, user_id: 1);
 recipe_food20 = RecipeFood.create(quantity: 4, food_id: 20, recipe_id: 3);
 
-food21 = Food.create(name: 'Can black or pinto beans', unit: ' x 400g', price: 25, user_id: admin.id);
+food21 = Food.create(name: 'Can black or pinto beans', unit: ' x 400g', price: 25, user_id: 1);
 recipe_food21 = RecipeFood.create(quantity: 2, food_id: 21, recipe_id: 3);
 
-food22 = Food.create(name: 'Large eggs', unit: '', price: 1, user_id: admin.id);
+food22 = Food.create(name: 'Large eggs', unit: '', price: 1, user_id: 1);
 recipe_food22 = RecipeFood.create(quantity: 4, food_id: 22, recipe_id: 3);
 
-food23 = Food.create(name: 'Handful of coriander ', unit: '', price: 10, user_id: admin.id);
+food23 = Food.create(name: 'Handful of coriander ', unit: '', price: 10, user_id: 1);
 recipe_food23 = RecipeFood.create(quantity: 1, food_id: 23, recipe_id: 3);
 
 recipe4 = Recipe.create(
@@ -183,7 +183,7 @@ recipe4 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '12 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Heat the grill. Beat the eggs and milk together in a wide dish. Submerge the crumpets in the egg mixture, turning them once, then set aside for a few minutes.',
@@ -195,22 +195,22 @@ recipe4 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/eggy-cheese-crumpets-b4b6d4c.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food24 = Food.create(name: 'Large eggs', unit: '', price: 1, user_id: admin.id);
+food24 = Food.create(name: 'Large eggs', unit: '', price: 1, user_id: 1);
 recipe_food24 = RecipeFood.create(quantity: 3, food_id: 24, recipe_id: 4);
 
-food25 = Food.create(name: 'Milk', unit: '00ml', price: 5, user_id: admin.id);
+food25 = Food.create(name: 'Milk', unit: '00ml', price: 5, user_id: 1);
 recipe_food25 = RecipeFood.create(quantity: 2, food_id: 25, recipe_id: 4);
 
-food26 = Food.create(name: 'Crumpets', unit: '', price: 3, user_id: admin.id);
+food26 = Food.create(name: 'Crumpets', unit: '', price: 3, user_id: 1);
 recipe_food26 = RecipeFood.create(quantity: 6, food_id: 26, recipe_id: 4);
 
-food27 = Food.create(name: 'Cherry tomatoes , halved', unit: '50g', price: 7, user_id: admin.id);
+food27 = Food.create(name: 'Cherry tomatoes , halved', unit: '50g', price: 7, user_id: 1);
 recipe_food27 = RecipeFood.create(quantity: 2, food_id: 27, recipe_id: 4);
 
-food28 = Food.create(name: 'Cheddar , grated', unit: '0g', price: 5, user_id: admin.id);
+food28 = Food.create(name: 'Cheddar , grated', unit: '0g', price: 5, user_id: 1);
 recipe_food28 = RecipeFood.create(quantity: 2, food_id: 28, recipe_id: 4);
 
-food29 = Food.create(name: 'Small ripe avocados , sliced', unit: '', price: 5, user_id: admin.id);
+food29 = Food.create(name: 'Small ripe avocados , sliced', unit: '', price: 5, user_id: 1);
 recipe_food29 = RecipeFood.create(quantity: 2, food_id: 29, recipe_id: 4);
 
 recipe5 = Recipe.create(
@@ -219,7 +219,7 @@ recipe5 = Recipe.create(
     prep_time: '40 mins',
     cook_time: '45 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'To make the beans, heat the oil in a pan and fry the onion for 5 mins until soft. Add both types of beans, the passata, chipotle paste, vinegar and sugar and simmer for 
@@ -234,61 +234,61 @@ recipe5 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-breakfast-burritos-4ffc062.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food30 = Food.create(name: 'Oil', unit: ' tbsp', price: 0.5, user_id: admin.id);
+food30 = Food.create(name: 'Oil', unit: ' tbsp', price: 0.5, user_id: 1);
 recipe_food30 = RecipeFood.create(quantity: 2, food_id: 30, recipe_id: 5);
 
-food31 = Food.create(name: 'Red pepper , finely sliced', unit: '', price: 3, user_id: admin.id);
+food31 = Food.create(name: 'Red pepper , finely sliced', unit: '', price: 3, user_id: 1);
 recipe_food31 = RecipeFood.create(quantity: 4, food_id: 31, recipe_id: 5);
 
-food32 = Food.create(name: 'Chestnut mushrooms , sliced', unit: '50g', price: 10, user_id: admin.id);
+food32 = Food.create(name: 'Chestnut mushrooms , sliced', unit: '50g', price: 10, user_id: 1);
 recipe_food32 = RecipeFood.create(quantity: 2, food_id: 32, recipe_id: 5);
 
-food33 = Food.create(name: 'Spicy or herby sausages', unit: '', price: 5, user_id: admin.id);
+food33 = Food.create(name: 'Spicy or herby sausages', unit: '', price: 5, user_id: 1);
 recipe_food33 = RecipeFood.create(quantity: 8, food_id: 33, recipe_id: 5);
 
-food34 = Food.create(name: 'Red onion , finely chopped', unit: '', price: 5, user_id: admin.id);
+food34 = Food.create(name: 'Red onion , finely chopped', unit: '', price: 5, user_id: 1);
 recipe_food34 = RecipeFood.create(quantity: 2, food_id: 34, recipe_id: 5);
 
-food35 = Food.create(name: 'Can pinto beans , drained and rinsed', unit: ' x 400g', price: 25, user_id: admin.id);
+food35 = Food.create(name: 'Can pinto beans , drained and rinsed', unit: ' x 400g', price: 25, user_id: 1);
 recipe_food35 = RecipeFood.create(quantity: 1, food_id: 35, recipe_id: 5);
 
-food36 = Food.create(name: 'Can cannellini beans , drained and rinsed', unit: ' x 400g', price: 25, user_id: admin.id);
+food36 = Food.create(name: 'Can cannellini beans , drained and rinsed', unit: ' x 400g', price: 25, user_id: 1);
 recipe_food36 = RecipeFood.create(quantity: 1, food_id: 36, recipe_id: 5);
 
-food37 = Food.create(name: 'Passata', unit: ' 00ml', price: 9, user_id: admin.id);
+food37 = Food.create(name: 'Passata', unit: ' 00ml', price: 9, user_id: 1);
 recipe_food37 = RecipeFood.create(quantity: 4, food_id: 37, recipe_id: 5);
 
-food38 = Food.create(name: 'Light brown soft sugar', unit: '-2 tbsp', price: 3, user_id: admin.id);
+food38 = Food.create(name: 'Light brown soft sugar', unit: '-2 tbsp', price: 3, user_id: 1);
 recipe_food38 = RecipeFood.create(quantity: 1, food_id: 38, recipe_id: 5);
 
-food39 = Food.create(name: 'Vine tomatoes , finely chopped', unit: '', price: 5, user_id: admin.id);
+food39 = Food.create(name: 'Vine tomatoes , finely chopped', unit: '', price: 5, user_id: 1);
 recipe_food39 = RecipeFood.create(quantity: 4, food_id: 39, recipe_id: 5);
 
-food40 = Food.create(name: 'Small bunch of coriander , finely chopped', unit: '', price: 10, user_id: admin.id);
+food40 = Food.create(name: 'Small bunch of coriander , finely chopped', unit: '', price: 10, user_id: 1);
 recipe_food40 = RecipeFood.create(quantity: 1, food_id: 40, recipe_id: 5);
 
-food41 = Food.create(name: 'Lime , juiced', unit: '', price: 10, user_id: admin.id);
+food41 = Food.create(name: 'Lime , juiced', unit: '', price: 10, user_id: 1);
 recipe_food41 = RecipeFood.create(quantity: 1, food_id: 41, recipe_id: 5);
 
-food42 = Food.create(name: 'Red chilli , deseeded and finely chopped', unit: '', price: 5, user_id: admin.id);
+food42 = Food.create(name: 'Red chilli , deseeded and finely chopped', unit: '', price: 5, user_id: 1);
 recipe_food42 = RecipeFood.create(quantity: 1, food_id: 42, recipe_id: 5);
 
-food43 = Food.create(name: 'Butter', unit: '0g', price: 2, user_id: admin.id);
+food43 = Food.create(name: 'Butter', unit: '0g', price: 2, user_id: 1);
 recipe_food43 = RecipeFood.create(quantity: 5, food_id: 43, recipe_id: 5);
 
-food44 = Food.create(name: 'Cumin seeds', unit: ' tsp', price: 5, user_id: admin.id);
+food44 = Food.create(name: 'Cumin seeds', unit: ' tsp', price: 5, user_id: 1);
 recipe_food44 = RecipeFood.create(quantity: 1, food_id: 44, recipe_id: 5);
 
-food45 = Food.create(name: 'Large eggs , beaten', unit: ' tsp', price: 2, user_id: admin.id);
+food45 = Food.create(name: 'Large eggs , beaten', unit: ' tsp', price: 2, user_id: 1);
 recipe_food45 = RecipeFood.create(quantity: 12, food_id: 45, recipe_id: 5);
 
-food46 = Food.create(name: 'Tortilla wraps', unit: ' large or 16 small', price: 4, user_id: admin.id);
+food46 = Food.create(name: 'Tortilla wraps', unit: ' large or 16 small', price: 4, user_id: 1);
 recipe_food46 = RecipeFood.create(quantity: 8, food_id: 46, recipe_id: 5);
 
-food47 = Food.create(name: 'Avocados , stoned, peeled and chopped', unit: ' Large', price: 10, user_id: admin.id);
+food47 = Food.create(name: 'Avocados , stoned, peeled and chopped', unit: ' Large', price: 10, user_id: 1);
 recipe_food47 = RecipeFood.create(quantity: 3, food_id: 47, recipe_id: 5);
 
-food48 = Food.create(name: 'Cheddar , grated', unit: '0g', price: 3, user_id: admin.id);
+food48 = Food.create(name: 'Cheddar , grated', unit: '0g', price: 3, user_id: 1);
 recipe_food48 = RecipeFood.create(quantity: 5, food_id: 48, recipe_id: 5);
 
 recipe6 = Recipe.create(
@@ -297,7 +297,7 @@ recipe6 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '10 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Heat a large frying pan over a medium heat. Butter both sides of each slice of bread, then cut a large heart (or circle) out of the centre of one slice using a knife or 
@@ -313,22 +313,22 @@ recipe6 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/toastie-0ae15f8.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food49 = Food.create(name: 'Knob of butter', unit: '', price: 5, user_id: admin.id);
+food49 = Food.create(name: 'Knob of butter', unit: '', price: 5, user_id: 1);
 recipe_food49 = RecipeFood.create(quantity: 1, food_id: 49, recipe_id: 6);
 
-food50 = Food.create(name: 'White bread', unit: ' slices', price: 1, user_id: admin.id);
+food50 = Food.create(name: 'White bread', unit: ' slices', price: 1, user_id: 1);
 recipe_food50 = RecipeFood.create(quantity: 2, food_id: 50, recipe_id: 6);
 
-food51 = Food.create(name: 'Ripe avocado', unit: '', price: 5, user_id: admin.id);
+food51 = Food.create(name: 'Ripe avocado', unit: '', price: 5, user_id: 1);
 recipe_food51 = RecipeFood.create(quantity: 1, food_id: 51, recipe_id: 6);
 
-food52 = Food.create(name: 'Lemon , plus a wedge to serve', unit: '', price: 7, user_id: admin.id);
+food52 = Food.create(name: 'Lemon , plus a wedge to serve', unit: '', price: 7, user_id: 1);
 recipe_food52 = RecipeFood.create(quantity: 1, food_id: 52, recipe_id: 6);
 
-food53 = Food.create(name: 'Large egg', unit: ' tsp', price: 2, user_id: admin.id);
+food53 = Food.create(name: 'Large egg', unit: ' tsp', price: 2, user_id: 1);
 recipe_food53 = RecipeFood.create(quantity: 1, food_id: 53, recipe_id: 6);
 
-food54 = Food.create(name: 'Smoked salmon', unit: '', price: 15, user_id: admin.id);
+food54 = Food.create(name: 'Smoked salmon', unit: '', price: 15, user_id: 1);
 recipe_food54 = RecipeFood.create(quantity: 2, food_id: 54, recipe_id: 6);
 
 
@@ -338,7 +338,7 @@ recipe7 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '25 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Heat the oven to 200C/180C fan/gas 4. Brush half the oil in an 8-hole muffin tin. Heat the remaining oil in a frying pan and add the broccoli, pepper and spring onions. Fry for 
@@ -349,22 +349,22 @@ recipe7 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/egg-muffins-5cf2ffe.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food55 = Food.create(name: 'Oil', unit: ' tbsp', price: 0.25, user_id: admin.id);
+food55 = Food.create(name: 'Oil', unit: ' tbsp', price: 0.25, user_id: 1);
 recipe_food55 = RecipeFood.create(quantity: 1, food_id: 55, recipe_id: 7);
 
-food56 = Food.create(name: 'Broccoli , finely chopped', unit: '50g', price: 10, user_id: admin.id);
+food56 = Food.create(name: 'Broccoli , finely chopped', unit: '50g', price: 10, user_id: 1);
 recipe_food56 = RecipeFood.create(quantity: 1, food_id: 56, recipe_id: 7);
 
-food57 = Food.create(name: 'Red pepper , finely chopped', unit: '', price: 5, user_id: admin.id);
+food57 = Food.create(name: 'Red pepper , finely chopped', unit: '', price: 5, user_id: 1);
 recipe_food57 = RecipeFood.create(quantity: 1, food_id: 57, recipe_id: 7);
 
-food58 = Food.create(name: 'Spring onions , sliced', unit: '', price: 5, user_id: admin.id);
+food58 = Food.create(name: 'Spring onions , sliced', unit: '', price: 5, user_id: 1);
 recipe_food58 = RecipeFood.create(quantity: 2, food_id: 58, recipe_id: 7);
 
-food59 = Food.create(name: 'Large egg', unit: '', price: 1, user_id: admin.id);
+food59 = Food.create(name: 'Large egg', unit: '', price: 1, user_id: 1);
 recipe_food59 = RecipeFood.create(quantity: 6, food_id: 59, recipe_id: 7);
 
-food60 = Food.create(name: 'Milk', unit: ' tbsp', price: 0.25, user_id: admin.id);
+food60 = Food.create(name: 'Milk', unit: ' tbsp', price: 0.25, user_id: 1);
 recipe_food60 = RecipeFood.create(quantity: 1, food_id: 60, recipe_id: 7);
 
 recipe_food000 = RecipeFood.create(quantity: 1, food_id: 18, recipe_id: 7);
@@ -376,7 +376,7 @@ recipe8 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '30 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Put the potatoes in a large pan of salted water and boil until tender. Drain well, tip back into the pan, shake for 1 min over a gentle heat to dry them off, then mash and leave to cool.',
@@ -389,25 +389,25 @@ recipe8 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/potato-spring-onion-breakfast-pancakes-6ad7292.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food61 = Food.create(name: 'Floury potatoes (weighed after peeling), cut into large chunks', unit: '40g', price: 20, user_id: admin.id);
+food61 = Food.create(name: 'Floury potatoes (weighed after peeling), cut into large chunks', unit: '40g', price: 20, user_id: 1);
 recipe_food61 = RecipeFood.create(quantity: 1, food_id: 61, recipe_id: 8);
 
-food62 = Food.create(name: 'Self-raising flour', unit: '0g', price: 3, user_id: admin.id);
+food62 = Food.create(name: 'Self-raising flour', unit: '0g', price: 3, user_id: 1);
 recipe_food62 = RecipeFood.create(quantity: 5, food_id: 62, recipe_id: 8);
 
-food63 = Food.create(name: 'Bicarbonate of soda', unit: ' tsp', price: 2, user_id: admin.id);
+food63 = Food.create(name: 'Bicarbonate of soda', unit: ' tsp', price: 2, user_id: 1);
 recipe_food63 = RecipeFood.create(quantity: 1, food_id: 63, recipe_id: 8);
 
 recipe_food003 = RecipeFood.create(quantity: 3, food_id: 59, recipe_id: 8);
 recipe_food004 = RecipeFood.create(quantity: 5, food_id: 60, recipe_id: 8);
 recipe_food005 = RecipeFood.create(quantity: 3, food_id: 58, recipe_id: 8);
 
-food64 = Food.create(name: 'Sunflower oil , plus extra if needed', unit: ' tsp', price: 0.25, user_id: admin.id);
+food64 = Food.create(name: 'Sunflower oil , plus extra if needed', unit: ' tsp', price: 0.25, user_id: 1);
 recipe_food64 = RecipeFood.create(quantity: 2, food_id: 64, recipe_id: 8);
 
 recipe_food006 = RecipeFood.create(quantity: 1, food_id: 49, recipe_id: 8);
 
-food65 = Food.create(name: 'Streaky bacon (smoked or unsmoked)', unit: ' rashers', price: 2, user_id: admin.id);
+food65 = Food.create(name: 'Streaky bacon (smoked or unsmoked)', unit: ' rashers', price: 2, user_id: 1);
 recipe_food65 = RecipeFood.create(quantity: 6, food_id: 65, recipe_id: 8);
 
 recipe9 = Recipe.create(
@@ -416,7 +416,7 @@ recipe9 = Recipe.create(
     prep_time: '25 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'In a large bowl, whisk together the eggs, cream, milk, maple syrup, vanilla and a pinch of salt. Tip about two-thirds of the blueberries into a baking dish (about 20cm x 30cm) that is quite 
@@ -432,29 +432,29 @@ recipe9 = Recipe.create(
 
 recipe_food007 = RecipeFood.create(quantity: 3, food_id: 60, recipe_id: 9);
 
-food66 = Food.create(name: 'Double cream', unit: '50ml', price: 30, user_id: admin.id);
+food66 = Food.create(name: 'Double cream', unit: '50ml', price: 30, user_id: 1);
 recipe_food66 = RecipeFood.create(quantity: 1, food_id: 66, recipe_id: 9);
 
 recipe_food008 = RecipeFood.create(quantity: 2, food_id: 25, recipe_id: 9);
 
-food67 = Food.create(name: 'Maple syrup , plus extra to serve', unit: ' tbsp', price: 2, user_id: admin.id);
+food67 = Food.create(name: 'Maple syrup , plus extra to serve', unit: ' tbsp', price: 2, user_id: 1);
 recipe_food67 = RecipeFood.create(quantity: 2, food_id: 67, recipe_id: 9);
 
-food68 = Food.create(name: 'Vanilla extract', unit: ' tbsp', price: 4, user_id: admin.id);
+food68 = Food.create(name: 'Vanilla extract', unit: ' tbsp', price: 4, user_id: 1);
 recipe_food68 = RecipeFood.create(quantity: 2, food_id: 68, recipe_id: 9);
 
-food69 = Food.create(name: 'Punnet blueberries', unit: '00g', price: 15, user_id: admin.id);
+food69 = Food.create(name: 'Punnet blueberries', unit: '00g', price: 15, user_id: 1);
 recipe_food69 = RecipeFood.create(quantity: 2, food_id: 69, recipe_id: 9);
 
-food70 = Food.create(name: 'Brioche rolls, each one split in half (if your dish is shallow, cut in half again the other way to make shorter pieces)', unit: '', price: 5, user_id: admin.id);
+food70 = Food.create(name: 'Brioche rolls, each one split in half (if your dish is shallow, cut in half again the other way to make shorter pieces)', unit: '', price: 5, user_id: 1);
 recipe_food70 = RecipeFood.create(quantity: 8, food_id: 70, recipe_id: 9);
 
-food71 = Food.create(name: 'Pecan halves', unit: '0g', price: 3, user_id: admin.id);
+food71 = Food.create(name: 'Pecan halves', unit: '0g', price: 3, user_id: 1);
 recipe_food71 = RecipeFood.create(quantity: 5, food_id: 71, recipe_id: 9);
 
 recipe_food009 = RecipeFood.create(quantity: 8, food_id: 65, recipe_id: 9);
 
-food72 = Food.create(name: 'Icing sugar , for dusting', unit: '', price: 5, user_id: admin.id);
+food72 = Food.create(name: 'Icing sugar , for dusting', unit: '', price: 5, user_id: 1);
 recipe_food72 = RecipeFood.create(quantity: 1, food_id: 72, recipe_id: 9);
 
 recipe10 = Recipe.create(
@@ -463,7 +463,7 @@ recipe10 = Recipe.create(
     prep_time: '2 mins',
     cook_time: '4 mins - 10 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         "Lay the bacon in a single layer in the base of an air fryer – be sure the layers aren't overlapping. The size of the air fryer basket will determine how many rashers you can cook at one time.",
@@ -482,7 +482,7 @@ recipe11 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '15 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Tip the onion and bulgur mix into a pan, pour over 600ml water and stir in the thyme and bouillon. Cook, covered, over a low heat for 15 mins, then leave to stand for 10 mins. All the liquid 
@@ -496,51 +496,51 @@ recipe11 = Recipe.create(
 
 recipe_food015 = RecipeFood.create(quantity: 1, food_id: 15, recipe_id: 11);
 
-food73 = Food.create(name: 'Bulgur and quinoa (this comes ready mixed)', unit: '50g', price: 30, user_id: admin.id);
+food73 = Food.create(name: 'Bulgur and quinoa (this comes ready mixed)', unit: '50g', price: 30, user_id: 1);
 recipe_food73 = RecipeFood.create(quantity: 1, food_id: 68, recipe_id: 11);
 
-food74 = Food.create(name: 'Thyme', unit: ' sprigs', price: 2, user_id: admin.id);
+food74 = Food.create(name: 'Thyme', unit: ' sprigs', price: 2, user_id: 1);
 recipe_food74 = RecipeFood.create(quantity: 2, food_id: 74, recipe_id: 11);
 
-food75 = Food.create(name: 'Vegetable bouillon powder', unit: ' tsp', price: 3, user_id: admin.id);
+food75 = Food.create(name: 'Vegetable bouillon powder', unit: ' tsp', price: 3, user_id: 1);
 recipe_food75 = RecipeFood.create(quantity: 2, food_id: 75, recipe_id: 11);
 
 recipe_food016 = RecipeFood.create(quantity: 1, food_id: 47, recipe_id: 11);
 
-food76 = Food.create(name: 'Tomatoes , cut into wedges', unit: ' tsp', price: 5, user_id: admin.id);
+food76 = Food.create(name: 'Tomatoes , cut into wedges', unit: ' tsp', price: 5, user_id: 1);
 recipe_food76 = RecipeFood.create(quantity: 2, food_id: 76, recipe_id: 11);
 
-food77 = Food.create(name: 'Chopped basil', unit: ' tbsp', price: 4, user_id: admin.id);
+food77 = Food.create(name: 'Chopped basil', unit: ' tbsp', price: 4, user_id: 1);
 recipe_food77 = RecipeFood.create(quantity: 4, food_id: 77, recipe_id: 11);
 
-food78 = Food.create(name: 'Kalamata olives , halved', unit: '', price: 1, user_id: admin.id);
+food78 = Food.create(name: 'Kalamata olives , halved', unit: '', price: 1, user_id: 1);
 recipe_food78 = RecipeFood.create(quantity: 6, food_id: 78, recipe_id: 11);
 
-food79 = Food.create(name: 'Extra virgin olive oil', unit: ' tsp', price: 1, user_id: admin.id);
+food79 = Food.create(name: 'Extra virgin olive oil', unit: ' tsp', price: 1, user_id: 1);
 recipe_food79 = RecipeFood.create(quantity: 4, food_id: 79, recipe_id: 11);
 
-food80 = Food.create(name: 'Cider vinegar', unit: ' tsp', price: 1, user_id: admin.id);
+food80 = Food.create(name: 'Cider vinegar', unit: ' tsp', price: 1, user_id: 1);
 recipe_food80 = RecipeFood.create(quantity: 4, food_id: 80, recipe_id: 11);
 
-food81 = Food.create(name: 'Big handfuls of rocket', unit: '', price: 1, user_id: admin.id);
+food81 = Food.create(name: 'Big handfuls of rocket', unit: '', price: 1, user_id: 1);
 recipe_food81 = RecipeFood.create(quantity: 2, food_id: 81, recipe_id: 11);
 
-food82 = Food.create(name: 'Can chickpeas , drained', unit: '10g', price: 8, user_id: admin.id);
+food82 = Food.create(name: 'Can chickpeas , drained', unit: '10g', price: 8, user_id: 1);
 recipe_food82 = RecipeFood.create(quantity: 2, food_id: 82, recipe_id: 11);
 
-food83 = Food.create(name: 'Cooked beetroot , diced', unit: '60g', price: 25, user_id: admin.id);
+food83 = Food.create(name: 'Cooked beetroot , diced', unit: '60g', price: 25, user_id: 1);
 recipe_food83 = RecipeFood.create(quantity: 1, food_id: 83, recipe_id: 11);
 
-food84 = Food.create(name: 'Chopped mint', unit: ' tbsp', price: 4, user_id: admin.id);
+food84 = Food.create(name: 'Chopped mint', unit: ' tbsp', price: 4, user_id: 1);
 recipe_food84 = RecipeFood.create(quantity: 2, food_id: 84, recipe_id: 11);
 
-food85 = Food.create(name: 'Cumin seeds', unit: ' tsp', price: 4, user_id: admin.id);
+food85 = Food.create(name: 'Cumin seeds', unit: ' tsp', price: 4, user_id: 1);
 recipe_food85 = RecipeFood.create(quantity: 1, food_id: 85, recipe_id: 11);
 
-food86 = Food.create(name: 'Orange , cut into segments', unit: '', price: 5, user_id: admin.id);
+food86 = Food.create(name: 'Orange , cut into segments', unit: '', price: 5, user_id: 1);
 recipe_food86 = RecipeFood.create(quantity: 1, food_id: 86, recipe_id: 11);
 
-food87 = Food.create(name: 'Toasted pine nuts', unit: ' tbsp', price: 3, user_id: admin.id);
+food87 = Food.create(name: 'Toasted pine nuts', unit: ' tbsp', price: 3, user_id: 1);
 recipe_food87 = RecipeFood.create(quantity: 2, food_id: 87, recipe_id: 11);
 
 recipe12 = Recipe.create(
@@ -549,7 +549,7 @@ recipe12 = Recipe.create(
     prep_time: '30 mins',
     cook_time: '1 hr and 40 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Fry the onions in the butter for 15-20 mins until golden and softened. Butter a 900g loaf tin and put in the fridge to chill.',
@@ -565,38 +565,38 @@ recipe_food017 = RecipeFood.create(quantity: 3, food_id: 15, recipe_id: 12);
 
 recipe_food018 = RecipeFood.create(quantity: 1, food_id: 5, recipe_id: 12);
 
-food88 = Food.create(name: 'Turkey mince', unit: '00g', price: 10, user_id: admin.id);
+food88 = Food.create(name: 'Turkey mince', unit: '00g', price: 10, user_id: 1);
 recipe_food88 = RecipeFood.create(quantity: 7, food_id: 88, recipe_id: 12);
 
-food89 = Food.create(name: 'Pork mince', unit: '00g', price: 10, user_id: admin.id);
+food89 = Food.create(name: 'Pork mince', unit: '00g', price: 10, user_id: 1);
 recipe_food89 = RecipeFood.create(quantity: 5, food_id: 89, recipe_id: 12);
 
-food90 = Food.create(name: 'Smoked streaky bacon , finely chopped', unit: '50g', price: 17, user_id: admin.id);
+food90 = Food.create(name: 'Smoked streaky bacon , finely chopped', unit: '50g', price: 17, user_id: 1);
 recipe_food90 = RecipeFood.create(quantity: 2, food_id: 90, recipe_id: 12);
 
-food91 = Food.create(name: 'Port', unit: '0ml', price: 1, user_id: admin.id);
+food91 = Food.create(name: 'Port', unit: '0ml', price: 1, user_id: 1);
 recipe_food91 = RecipeFood.create(quantity: 7, food_id: 91, recipe_id: 12);
 
-food92 = Food.create(name: 'Vacuum-packed chestnuts , roughly chopped', unit: '00g', price: 17, user_id: admin.id);
+food92 = Food.create(name: 'Vacuum-packed chestnuts , roughly chopped', unit: '00g', price: 17, user_id: 1);
 recipe_food92 = RecipeFood.create(quantity: 2, food_id: 92, recipe_id: 12);
 
-food93 = Food.create(name: 'Dried cranberries', unit: '00g', price: 20, user_id: admin.id);
+food93 = Food.create(name: 'Dried cranberries', unit: '00g', price: 20, user_id: 1);
 recipe_food93 = RecipeFood.create(quantity: 1, food_id: 93, recipe_id: 12);
 
-food94 = Food.create(name: 'orange , zested', unit: '', price: 10, user_id: admin.id);
+food94 = Food.create(name: 'orange , zested', unit: '', price: 10, user_id: 1);
 recipe_food94 = RecipeFood.create(quantity: 1, food_id: 94, recipe_id: 12);
 
 recipe_food019 = RecipeFood.create(quantity: 2, food_id: 68, recipe_id: 12);
 
-food95 = Food.create(name: 'Sage leaves , finely chopped', unit: '', price: 0.25, user_id: admin.id);
+food95 = Food.create(name: 'Sage leaves , finely chopped', unit: '', price: 0.25, user_id: 1);
 recipe_food95 = RecipeFood.create(quantity: 5, food_id: 95, recipe_id: 12);
 
 recipe_food020 = RecipeFood.create(quantity: 2, food_id: 17, recipe_id: 12);
 
-food96 = Food.create(name: 'Rye crackers (like Ryvita), whizzed to a crumb, or dried breadcrumbs', unit: '0g', price: 0.5, user_id: admin.id);
+food96 = Food.create(name: 'Rye crackers (like Ryvita), whizzed to a crumb, or dried breadcrumbs', unit: '0g', price: 0.5, user_id: 1);
 recipe_food96 = RecipeFood.create(quantity: 8, food_id: 96, recipe_id: 12);
 
-food97 = Food.create(name: 'Trimmings, gravy and bread sauce, to serve', unit: '', price: 40, user_id: admin.id);
+food97 = Food.create(name: 'Trimmings, gravy and bread sauce, to serve', unit: '', price: 40, user_id: 1);
 recipe_food97 = RecipeFood.create(quantity: 1, food_id: 97, recipe_id: 12);
 
 recipe13 = Recipe.create(
@@ -605,7 +605,7 @@ recipe13 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '15 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Tip the onion into a bowl and mix with the lemon juice. Put the turkey in a bowl and add half the oil, the lemon and clementine zest and the garlic then mix well.',
@@ -617,31 +617,31 @@ recipe13 = Recipe.create(
 
 recipe_food021 = RecipeFood.create(quantity: 1, food_id: 34, recipe_id: 13);
 
-food98 = Food.create(name: 'Lemon , zested and juiced', unit: '', price: 10, user_id: admin.id);
+food98 = Food.create(name: 'Lemon , zested and juiced', unit: '', price: 10, user_id: 1);
 recipe_food98 = RecipeFood.create(quantity: 1, food_id: 98, recipe_id: 13);
 
-food99 = Food.create(name: 'Diced turkey breast', unit: '00g', price: 15, user_id: admin.id);
+food99 = Food.create(name: 'Diced turkey breast', unit: '00g', price: 15, user_id: 1);
 recipe_food99 = RecipeFood.create(quantity: 3, food_id: 99, recipe_id: 13);
 
-food100 = Food.create(name: 'Rapeseed oil', unit: ' tbsp', price: 5, user_id: admin.id);
+food100 = Food.create(name: 'Rapeseed oil', unit: ' tbsp', price: 5, user_id: 1);
 recipe_food100 = RecipeFood.create(quantity: 2, food_id: 100, recipe_id: 13);
 
-food101 = Food.create(name: 'Clementine , 1 zested and the flesh chopped', unit: '', price: 3, user_id: admin.id);
+food101 = Food.create(name: 'Clementine , 1 zested and the flesh chopped', unit: '', price: 3, user_id: 1);
 recipe_food101 = RecipeFood.create(quantity: 2, food_id: 101, recipe_id: 13);
 
 recipe_food022 = RecipeFood.create(quantity: 2, food_id: 17, recipe_id: 13);
 
-food102 = Food.create(name: 'Can green lentils , drained', unit: '00g', price: 5, user_id: admin.id);
+food102 = Food.create(name: 'Can green lentils , drained', unit: '00g', price: 5, user_id: 1);
 recipe_food102 = RecipeFood.create(quantity: 4, food_id: 102, recipe_id: 13);
 
-food103 = Food.create(name: 'Balsamic vinegar', unit: ' tbsp', price: 4, user_id: admin.id);
+food103 = Food.create(name: 'Balsamic vinegar', unit: ' tbsp', price: 4, user_id: 1);
 recipe_food103 = RecipeFood.create(quantity: 1, food_id: 103, recipe_id: 13);
 
 recipe_food023 = RecipeFood.create(quantity: 1, food_id: 16, recipe_id: 13);
 
 recipe_food0024 = RecipeFood.create(quantity: 1, food_id: 84, recipe_id: 13);
 
-food104 = Food.create(name: 'Walnut halves , broken', unit: '', price: 3, user_id: admin.id);
+food104 = Food.create(name: 'Walnut halves , broken', unit: '', price: 3, user_id: 1);
 recipe_food104 = RecipeFood.create(quantity: 4, food_id: 104, recipe_id: 13);
 
 recipe14 = Recipe.create(
@@ -650,7 +650,7 @@ recipe14 = Recipe.create(
     prep_time: '15 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'First, make the dressing. Mix the soured cream and lemon juice together in a bowl, then add most of the dill, reserving a quarter for serving.',
@@ -660,25 +660,25 @@ recipe14 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/smoked-salmon-quinoa-dill-lunch-pot-0393a04.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food105 = Food.create(name: 'Half-fat soured cream', unit: ' tbsp', price: 1, user_id: admin.id);
+food105 = Food.create(name: 'Half-fat soured cream', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food105 = RecipeFood.create(quantity: 2, food_id: 105, recipe_id: 14);
 
-food106 = Food.create(name: 'Lemon juice', unit: ' tbsp', price: 1, user_id: admin.id);
+food106 = Food.create(name: 'Lemon juice', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food106 = RecipeFood.create(quantity: 2, food_id: 106, recipe_id: 14);
 
-food107 = Food.create(name: 'Pack dill , finely chopped', unit: ' tbsp', price: 1, user_id: admin.id);
+food107 = Food.create(name: 'Pack dill , finely chopped', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food107 = RecipeFood.create(quantity: 2, food_id: 107, recipe_id: 14);
 
-food108 = Food.create(name: 'Pouch ready-to-eat quinoa (we used Merchant Gourmet)', unit: '50g', price: 20, user_id: admin.id);
+food108 = Food.create(name: 'Pouch ready-to-eat quinoa (we used Merchant Gourmet)', unit: '50g', price: 20, user_id: 1);
 recipe_food108 = RecipeFood.create(quantity: 2, food_id: 108, recipe_id: 14);
 
-food109 = Food.create(name: 'Cucumber , halved and sliced', unit: '', price: 5, user_id: admin.id);
+food109 = Food.create(name: 'Cucumber , halved and sliced', unit: '', price: 5, user_id: 1);
 recipe_food109 = RecipeFood.create(quantity: 1, food_id: 109, recipe_id: 14);
 
-food110 = Food.create(name: 'Radishes , finely sliced', unit: '', price: 2, user_id: admin.id);
+food110 = Food.create(name: 'Radishes , finely sliced', unit: '', price: 2, user_id: 1);
 recipe_food110 = RecipeFood.create(quantity: 4, food_id: 110, recipe_id: 14);
 
-food111 = Food.create(name: 'Smoked salmon , torn into strips', unit: '00g', price: 30, user_id: admin.id);
+food111 = Food.create(name: 'Smoked salmon , torn into strips', unit: '00g', price: 30, user_id: 1);
 recipe_food111 = RecipeFood.create(quantity: 1, food_id: 111, recipe_id: 14);
 
 recipe15 = Recipe.create(
@@ -687,7 +687,7 @@ recipe15 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '40 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Heat 1 tbsp of the oil in a deep frying pan over a medium heat. Brown the chicken in batches, setting aside once golden. Fry the onion for 8 minutes until softened. Then add the garlic, chilli 
@@ -701,37 +701,37 @@ recipe15 = Recipe.create(
 
 recipe_food025 = RecipeFood.create(quantity: 1, food_id: 55, recipe_id: 15);
 
-food112 = Food.create(name: 'Skinless boneless chicken thighs, cut into chunks', unit: '', price: 7, user_id: admin.id);
+food112 = Food.create(name: 'Skinless boneless chicken thighs, cut into chunks', unit: '', price: 7, user_id: 1);
 recipe_food112 = RecipeFood.create(quantity: 8, food_id: 112, recipe_id: 15);
 
 recipe_food026 = RecipeFood.create(quantity: 1, food_id: 15, recipe_id: 15);
 
 recipe_food027 = RecipeFood.create(quantity: 3, food_id: 17, recipe_id: 15);
 
-food113 = Food.create(name: "Red chillies, finely sliced (deseeded if you don't like it too hot)", unit: '', price: 5, user_id: admin.id);
+food113 = Food.create(name: "Red chillies, finely sliced (deseeded if you don't like it too hot)", unit: '', price: 5, user_id: 1);
 recipe_food113 = RecipeFood.create(quantity: 2, food_id: 113, recipe_id: 15);
 
-food114 = Food.create(name: 'Fresh ginger, grated', unit: ' tsp', price: 1, user_id: admin.id);
+food114 = Food.create(name: 'Fresh ginger, grated', unit: ' tsp', price: 1, user_id: 1);
 recipe_food114 = RecipeFood.create(quantity: 2, food_id: 114, recipe_id: 15);
 
-food115 = Food.create(name: 'Garam masala', unit: ' tbsp', price: 1, user_id: admin.id);
+food115 = Food.create(name: 'Garam masala', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food115 = RecipeFood.create(quantity: 2, food_id: 115, recipe_id: 15);
 
-food116 = Food.create(name: 'Smooth peanut butter', unit: '00g', price: 30, user_id: admin.id);
+food116 = Food.create(name: 'Smooth peanut butter', unit: '00g', price: 30, user_id: 1);
 recipe_food116 = RecipeFood.create(quantity: 1, food_id: 116, recipe_id: 15);
 
-food117 = Food.create(name: 'Coconut milk', unit: '00ml', price: 5, user_id: admin.id);
+food117 = Food.create(name: 'Coconut milk', unit: '00ml', price: 5, user_id: 1);
 recipe_food117 = RecipeFood.create(quantity: 4, food_id: 117, recipe_id: 15);
 
 recipe_food028= RecipeFood.create(quantity: 4, food_id: 20, recipe_id: 15);
 
-food118 = Food.create(name: 'Coriander , ½ roughly chopped, ½ leaves picked', unit: '', price: 5, user_id: admin.id);
+food118 = Food.create(name: 'Coriander , ½ roughly chopped, ½ leaves picked', unit: '', price: 5, user_id: 1);
 recipe_food118 = RecipeFood.create(quantity: 1, food_id: 118, recipe_id: 15);
 
-food119 = Food.create(name: 'Roasted peanuts, to serve', unit: '', price: 25, user_id: admin.id);
+food119 = Food.create(name: 'Roasted peanuts, to serve', unit: '', price: 25, user_id: 1);
 recipe_food119 = RecipeFood.create(quantity: 1, food_id: 119, recipe_id: 15);
 
-food120 = Food.create(name: 'Cooked basmati rice, to serve', unit: '', price: 35, user_id: admin.id);
+food120 = Food.create(name: 'Cooked basmati rice, to serve', unit: '', price: 35, user_id: 1);
 recipe_food120 = RecipeFood.create(quantity: 1, food_id: 120, recipe_id: 15);
 
 recipe16 = Recipe.create(
@@ -741,7 +741,7 @@ recipe16 = Recipe.create(
     prep_time: '5 mins',
     cook_time: 'no cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Mash the chickpeas, mayonnaise, lemon juice, dill, capers, mustard, turmeric, 1/2 teaspoon salt and several grinds of pepper in a large bowl with a fork or potato masher, scraping down the sides of the bowl 
@@ -751,34 +751,34 @@ recipe16 = Recipe.create(
     img: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/07/13/FNK_CHICKPEA-SALAD-SANDWICHES_s4x3.jpg.rend.hgtvcom.826.620.suffix/1594676451474.jpeg'
 )
 
-food121 = Food.create(name: '15-ounce can chickpeas, drained and rinsed', unit: '', price: 20, user_id: admin.id);
+food121 = Food.create(name: '15-ounce can chickpeas, drained and rinsed', unit: '', price: 20, user_id: 1);
 recipe_food121 = RecipeFood.create(quantity: 1, food_id: 121, recipe_id: 16);
 
-food122 = Food.create(name: "Mayonnaise or vegan mayonnaise spread", unit: ' tbsp', price: 1, user_id: admin.id);
+food122 = Food.create(name: "Mayonnaise or vegan mayonnaise spread", unit: ' tbsp', price: 1, user_id: 1);
 recipe_food122 = RecipeFood.create(quantity: 3, food_id: 122, recipe_id: 16);
 
 recipe_food029 = RecipeFood.create(quantity: 1, food_id: 106, recipe_id: 16);
 
 recipe_food030 = RecipeFood.create(quantity: 1, food_id: 107, recipe_id: 16);
 
-food123 = Food.create(name: 'Capers', unit: ' tsp', price: 0.5, user_id: admin.id);
+food123 = Food.create(name: 'Capers', unit: ' tsp', price: 0.5, user_id: 1);
 recipe_food123 = RecipeFood.create(quantity: 2, food_id: 123, recipe_id: 16);
 
 recipe_food031 = RecipeFood.create(quantity: 2, food_id: 59, recipe_id: 16);
 
-food124 = Food.create(name: 'Ground turmeric', unit: ' tsp', price: 1, user_id: admin.id);
+food124 = Food.create(name: 'Ground turmeric', unit: ' tsp', price: 1, user_id: 1);
 recipe_food124 = RecipeFood.create(quantity: 1, food_id: 124, recipe_id: 16);
 
-food125 = Food.create(name: 'Kosher salt and freshly ground black pepper', unit: '', price: 1, user_id: admin.id);
+food125 = Food.create(name: 'Kosher salt and freshly ground black pepper', unit: '', price: 1, user_id: 1);
 recipe_food125 = RecipeFood.create(quantity: 1, food_id: 125, recipe_id: 16);
 
-food126 = Food.create(name: 'Roasted unsalted pepitas', unit: '', price: 35, user_id: admin.id);
+food126 = Food.create(name: 'Roasted unsalted pepitas', unit: '', price: 35, user_id: 1);
 recipe_food126 = RecipeFood.create(quantity: 1, food_id: 126, recipe_id: 16);
 
-food127 = Food.create(name: 'Lightly packed baby kale', unit: ' cup', price: 15, user_id: admin.id);
+food127 = Food.create(name: 'Lightly packed baby kale', unit: ' cup', price: 15, user_id: 1);
 recipe_food127 = RecipeFood.create(quantity: 1, food_id: 127, recipe_id: 16);
 
-food128 = Food.create(name: 'Whole wheat bread, toasted', unit: ' slices', price: 1, user_id: admin.id);
+food128 = Food.create(name: 'Whole wheat bread, toasted', unit: ' slices', price: 1, user_id: 1);
 recipe_food128 = RecipeFood.create(quantity: 4, food_id: 128, recipe_id: 16);
 
 recipe17 = Recipe.create(
@@ -788,7 +788,7 @@ recipe17 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '45 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Preheat oven to 350 degrees F. Lightly oil a mini muffin pan or coat with nonstick spray.',
@@ -804,44 +804,44 @@ recipe17 = Recipe.create(
     img: 'https://s23209.pcdn.co/wp-content/uploads/2021/10/211015_DAMN-DELICIOUS_Pumpkin-Donut-Holes_169-1024x1536.jpg'
 )
 
-food129 = Food.create(name: 'All-purpose flour', unit: ' cups', price: 5, user_id: admin.id);
+food129 = Food.create(name: 'All-purpose flour', unit: ' cups', price: 5, user_id: 1);
 recipe_food129 = RecipeFood.create(quantity: 2, food_id: 129, recipe_id: 17);
 
-food130 = Food.create(name: "Ground cinnamon", unit: ' tsp', price: 1, user_id: admin.id);
+food130 = Food.create(name: "Ground cinnamon", unit: ' tsp', price: 1, user_id: 1);
 recipe_food130 = RecipeFood.create(quantity: 3, food_id: 130, recipe_id: 17);
 
-food131 = Food.create(name: 'Ground nutmeg', unit: ' tsp', price: 1, user_id: admin.id);
+food131 = Food.create(name: 'Ground nutmeg', unit: ' tsp', price: 1, user_id: 1);
 recipe_food131 = RecipeFood.create(quantity: 1, food_id: 131, recipe_id: 17);
 
-food132 = Food.create(name: 'Ground allspice', unit: ' tsp', price: 0.5, user_id: admin.id);
+food132 = Food.create(name: 'Ground allspice', unit: ' tsp', price: 0.5, user_id: 1);
 recipe_food132 = RecipeFood.create(quantity: 1, food_id: 132, recipe_id: 17);
 
-food133 = Food.create(name: 'Ground cloves', unit: '/8 tsp', price: 0.15, user_id: admin.id);
+food133 = Food.create(name: 'Ground cloves', unit: '/8 tsp', price: 0.15, user_id: 1);
 recipe_food133 = RecipeFood.create(quantity: 1, food_id: 133, recipe_id: 17);
 
 recipe_food032 = RecipeFood.create(quantity: 2, food_id: 8, recipe_id: 17);
 
-food134 = Food.create(name: 'Salt', unit: ' tsp', price: 0.5, user_id: admin.id);
+food134 = Food.create(name: 'Salt', unit: ' tsp', price: 0.5, user_id: 1);
 recipe_food134 = RecipeFood.create(quantity: 1, food_id: 134, recipe_id: 17);
 
-food135 = Food.create(name: 'Pumpkin puree', unit: '/4 cup', price: 26, user_id: admin.id);
+food135 = Food.create(name: 'Pumpkin puree', unit: '/4 cup', price: 26, user_id: 1);
 recipe_food135 = RecipeFood.create(quantity: 3, food_id: 135, recipe_id: 17);
 
-food136 = Food.create(name: 'Milk', unit: ' cup', price: 10, user_id: admin.id);
+food136 = Food.create(name: 'Milk', unit: ' cup', price: 10, user_id: 1);
 recipe_food136 = RecipeFood.create(quantity: 1, food_id: 136, recipe_id: 17);
 
-food137 = Food.create(name: 'Brown sugar', unit: ' cup', price: 10, user_id: admin.id);
+food137 = Food.create(name: 'Brown sugar', unit: ' cup', price: 10, user_id: 1);
 recipe_food137 = RecipeFood.create(quantity: 1, food_id: 137, recipe_id: 17);
 
-food138 = Food.create(name: 'Canola oil', unit: ' cup', price: 10, user_id: admin.id);
+food138 = Food.create(name: 'Canola oil', unit: ' cup', price: 10, user_id: 1);
 recipe_food138 = RecipeFood.create(quantity: 1, food_id: 138, recipe_id: 17);
 
 recipe_food033 = RecipeFood.create(quantity: 1, food_id: 59, recipe_id: 17);
 
-food139 = Food.create(name: 'Vanilla extract', unit: ' tsp', price: 1, user_id: admin.id);
+food139 = Food.create(name: 'Vanilla extract', unit: ' tsp', price: 1, user_id: 1);
 recipe_food139 = RecipeFood.create(quantity: 1, food_id: 139, recipe_id: 17);
 
-food140 = Food.create(name: 'Unsalted butter, melted', unit: ' tsp', price: 1, user_id: admin.id);
+food140 = Food.create(name: 'Unsalted butter, melted', unit: ' tsp', price: 1, user_id: 1);
 recipe_food140 = RecipeFood.create(quantity: 4, food_id: 140, recipe_id: 17);
 
 recipe18 = Recipe.create(
@@ -850,7 +850,7 @@ recipe18 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '10 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'SAGE MIXTURE: In a small bowl, combine sage, thyme, fennel seeds, red pepper flakes, nutmeg, 1 1/2 teaspoons salt and 1 teaspoon pepper.',
@@ -861,28 +861,28 @@ recipe18 = Recipe.create(
     img: 'https://s23209.pcdn.co/wp-content/uploads/2021/01/Homemade-Breakfast-SausageIMG_1649.jpg'
 )
 
-food141 = Food.create(name: 'Chopped fresh sage leaves', unit: ' cups', price: 1, user_id: admin.id);
+food141 = Food.create(name: 'Chopped fresh sage leaves', unit: ' cups', price: 1, user_id: 1);
 recipe_food141 = RecipeFood.create(quantity: 1, food_id: 141, recipe_id: 18);
 
-food142 = Food.create(name: "Ground cinnamon", unit: ' tsp', price: 1, user_id: admin.id);
+food142 = Food.create(name: "Ground cinnamon", unit: ' tsp', price: 1, user_id: 1);
 recipe_food142 = RecipeFood.create(quantity: 2, food_id: 142, recipe_id: 18);
 
-food143 = Food.create(name: 'Fennel seeds, crushed', unit: ' tsp', price: 1, user_id: admin.id);
+food143 = Food.create(name: 'Fennel seeds, crushed', unit: ' tsp', price: 1, user_id: 1);
 recipe_food143 = RecipeFood.create(quantity: 1, food_id: 143, recipe_id: 18);
 
-food144 = Food.create(name: 'Crushed red pepper flakes, optional', unit: ' tsp', price: 0.5, user_id: admin.id);
+food144 = Food.create(name: 'Crushed red pepper flakes, optional', unit: ' tsp', price: 0.5, user_id: 1);
 recipe_food144 = RecipeFood.create(quantity: 1, food_id: 144, recipe_id: 18);
 
 recipe_food033 = RecipeFood.create(quantity: 1/8, food_id: 131, recipe_id: 18);
 
-food145 = Food.create(name: 'Ground pork', unit: '00g', price: 7, user_id: admin.id);
+food145 = Food.create(name: 'Ground pork', unit: '00g', price: 7, user_id: 1);
 recipe_food145 = RecipeFood.create(quantity: 7, food_id: 145, recipe_id: 18);
 
 recipe_food034 = RecipeFood.create(quantity: 3, food_id: 65, recipe_id: 18);
 
 recipe_food035 = RecipeFood.create(quantity: 2, food_id: 67, recipe_id: 18);
 
-food146 = Food.create(name: 'Canola oil', unit: ' tsp', price: 10, user_id: admin.id);
+food146 = Food.create(name: 'Canola oil', unit: ' tsp', price: 10, user_id: 1);
 recipe_food146 = RecipeFood.create(quantity: 1, food_id: 146, recipe_id: 18);
 
 recipe19 = Recipe.create(
@@ -891,7 +891,7 @@ recipe19 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '25 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Heat oil in a pan. Fry the carrots and onion for 5 mins until starting to soften. Add the stock and tomatoes, then simmer for 10 mins. Add the peas and beans with 5 mins to go.',
@@ -902,27 +902,27 @@ recipe19 = Recipe.create(
 
 recipe_food036 = RecipeFood.create(quantity: 1, food_id: 79, recipe_id: 19);
 
-food147 = Food.create(name: 'Carrots, chopped', unit: '', price: 5, user_id: admin.id);
+food147 = Food.create(name: 'Carrots, chopped', unit: '', price: 5, user_id: 1);
 recipe_food147 = RecipeFood.create(quantity: 2, food_id: 147, recipe_id: 19);
 
-food148 = Food.create(name: 'Large onion, finely chopped', unit: '', price: 5, user_id: admin.id);
+food148 = Food.create(name: 'Large onion, finely chopped', unit: '', price: 5, user_id: 1);
 recipe_food148 = RecipeFood.create(quantity: 1, food_id: 148, recipe_id: 19);
 
-food149 = Food.create(name: 'Vegetable stock', unit: '', price: 3, user_id: admin.id);
+food149 = Food.create(name: 'Vegetable stock', unit: '', price: 3, user_id: 1);
 recipe_food149 = RecipeFood.create(quantity: 1, food_id: 149, recipe_id: 19);
 
 recipe_food037 = RecipeFood.create(quantity: 4, food_id: 20, recipe_id: 19);
 
-food150 = Food.create(name: 'Frozen mixed peas and beans', unit: '00g', price: 15, user_id: admin.id);
+food150 = Food.create(name: 'Frozen mixed peas and beans', unit: '00g', price: 15, user_id: 1);
 recipe_food150 = RecipeFood.create(quantity: 2, food_id: 150, recipe_id: 19);
 
-food151 = Food.create(name: 'Pack fresh filled tortellini (we used spinach and ricotta)', unit: '50g', price: 10, user_id: admin.id);
+food151 = Food.create(name: 'Pack fresh filled tortellini (we used spinach and ricotta)', unit: '50g', price: 10, user_id: 1);
 recipe_food151 = RecipeFood.create(quantity: 2, food_id: 151, recipe_id: 19);
 
-food152 = Food.create(name: 'Handful of basil leaves (optional)', unit: '', price: 7, user_id: admin.id);
+food152 = Food.create(name: 'Handful of basil leaves (optional)', unit: '', price: 7, user_id: 1);
 recipe_food152 = RecipeFood.create(quantity: 1, food_id: 152, recipe_id: 19);
 
-food153 = Food.create(name: 'Grated parmesan (or vegetarian alternative), to serve', unit: '', price: 2, user_id: admin.id);
+food153 = Food.create(name: 'Grated parmesan (or vegetarian alternative), to serve', unit: '', price: 2, user_id: 1);
 recipe_food153 = RecipeFood.create(quantity: 1, food_id: 153, recipe_id: 19);
 
 recipe20 = Recipe.create(
@@ -931,7 +931,7 @@ recipe20 = Recipe.create(
     prep_time: '15 mins - 20 mins',
     cook_time: '50 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category2.id,
     instructions: [
         'Put a roasting tin in the oven (one big enough to take the potatoes in a single layer) and heat oven to 200C/fan 180C/gas 6.',
@@ -950,16 +950,16 @@ recipe20 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/roast-potatoes-main-7b0e23a.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food154 = Food.create(name: 'Potatoes', unit: 'kg', price: 2, user_id: admin.id);
+food154 = Food.create(name: 'Potatoes', unit: 'kg', price: 2, user_id: 1);
 recipe_food154 = RecipeFood.create(quantity: 1, food_id: 154, recipe_id: 20);
 
-food155 = Food.create(name: 'Olive oil', unit: '00ml', price: 10, user_id: admin.id);
+food155 = Food.create(name: 'Olive oil', unit: '00ml', price: 10, user_id: 1);
 recipe_food155 = RecipeFood.create(quantity: 1, food_id: 155, recipe_id: 20);
 
-food156 = Food.create(name: 'Flour', unit: ' tsp', price: 1, user_id: admin.id);
+food156 = Food.create(name: 'Flour', unit: ' tsp', price: 1, user_id: 1);
 recipe_food156 = RecipeFood.create(quantity: 2, food_id: 156, recipe_id: 20);
 
-food157 = Food.create(name: 'Maldon salt, to serve', unit: '', price: 10, user_id: admin.id);
+food157 = Food.create(name: 'Maldon salt, to serve', unit: '', price: 10, user_id: 1);
 recipe_food157 = RecipeFood.create(quantity: 1, food_id: 157, recipe_id: 20);
 
 recipe21 = Recipe.create(
@@ -968,7 +968,7 @@ recipe21 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '1 hour 5 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Cut chicken breasts into 4 portions.',
@@ -981,19 +981,19 @@ recipe21 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2014/06/baked-fried-chicken-recipe-2-of-6.jpg'
 )
 
-food158 = Food.create(name: 'Skinless, boneless chicken breasts', unit: '', price: 6, user_id: admin.id);
+food158 = Food.create(name: 'Skinless, boneless chicken breasts', unit: '', price: 6, user_id: 1);
 recipe_food158 = RecipeFood.create(quantity: 3, food_id: 158, recipe_id: 21);
 
-food159 = Food.create(name: 'Buttermilk', unit: '', price: 15, user_id: admin.id);
+food159 = Food.create(name: 'Buttermilk', unit: '', price: 15, user_id: 1);
 recipe_food159 = RecipeFood.create(quantity: 1, food_id: 159, recipe_id: 21);
 
-food160 = Food.create(name: 'All-purpose flour ', unit: '', price: 10, user_id: admin.id);
+food160 = Food.create(name: 'All-purpose flour ', unit: '', price: 10, user_id: 1);
 recipe_food160 = RecipeFood.create(quantity: 1, food_id: 160, recipe_id: 21);
 
-food161 = Food.create(name: 'Paprika, all-purpose seasoning, and salt and pepper', unit: '', price: 20, user_id: admin.id);
+food161 = Food.create(name: 'Paprika, all-purpose seasoning, and salt and pepper', unit: '', price: 20, user_id: 1);
 recipe_food161 = RecipeFood.create(quantity: 1, food_id: 161, recipe_id: 21);
 
-food162 = Food.create(name: 'Butter', unit: '0g', price: 10, user_id: admin.id);
+food162 = Food.create(name: 'Butter', unit: '0g', price: 10, user_id: 1);
 recipe_food162 = RecipeFood.create(quantity: 1, food_id: 162, recipe_id: 21);
 
 recipe22 = Recipe.create(
@@ -1002,7 +1002,7 @@ recipe22 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '40 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Cover 2 large cooking sheets with foil and spray the foil with cooking spray. Preheat oven to 400F.',
@@ -1021,39 +1021,39 @@ recipe22 = Recipe.create(
     img: 'https://www.livingchirpy.com/wp-content/uploads/2021/03/keto-swedish-meatballs-1.jpg'
 )
 
-food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00g', price: 10, user_id: admin.id);
+food163 = Food.create(name: 'Beef and Chicken Broth', unit: '00g', price: 10, user_id: 1);
 recipe_food163 = RecipeFood.create(quantity: 5, food_id: 163, recipe_id: 22);
 
-food164 = Food.create(name: 'Heavy Cream', unit: '', price: 36, user_id: admin.id);
+food164 = Food.create(name: 'Heavy Cream', unit: '', price: 36, user_id: 1);
 recipe_food164 = RecipeFood.create(quantity: 1, food_id: 164, recipe_id: 22);
 
-food165 = Food.create(name: 'Sour Cream', unit: '', price: 16, user_id: admin.id);
+food165 = Food.create(name: 'Sour Cream', unit: '', price: 16, user_id: 1);
 recipe_food165 = RecipeFood.create(quantity: 1, food_id: 165, recipe_id: 22);
 
-food166 = Food.create(name: 'Beef Bouillon Granules', unit: '', price: 46, user_id: admin.id);
+food166 = Food.create(name: 'Beef Bouillon Granules', unit: '', price: 46, user_id: 1);
 recipe_food166 = RecipeFood.create(quantity: 1, food_id: 166, recipe_id: 22);
 
-food167 = Food.create(name: 'Soy Sauce', unit: '', price: 36, user_id: admin.id);
+food167 = Food.create(name: 'Soy Sauce', unit: '', price: 36, user_id: 1);
 recipe_food167 = RecipeFood.create(quantity: 1, food_id: 167, recipe_id: 22);
 
 recipe_food038 = RecipeFood.create(quantity: 1, food_id: 160, recipe_id: 22);
 
-food168 = Food.create(name: 'Dijon Mustard', unit: '', price: 26, user_id: admin.id);
+food168 = Food.create(name: 'Dijon Mustard', unit: '', price: 26, user_id: 1);
 recipe_food168 = RecipeFood.create(quantity: 1, food_id: 168, recipe_id: 22);
 
-food169 = Food.create(name: 'Worcestershire Sauce', unit: '', price: 26, user_id: admin.id);
+food169 = Food.create(name: 'Worcestershire Sauce', unit: '', price: 26, user_id: 1);
 recipe_food169 = RecipeFood.create(quantity: 1, food_id: 169, recipe_id: 22);
 
-food170 = Food.create(name: 'Cider Vinegar', unit: '', price: 36, user_id: admin.id);
+food170 = Food.create(name: 'Cider Vinegar', unit: '', price: 36, user_id: 1);
 recipe_food170 = RecipeFood.create(quantity: 1, food_id: 170, recipe_id: 22);
 
-food171 = Food.create(name: 'Granulated Sugar', unit: '', price: 18, user_id: admin.id);
+food171 = Food.create(name: 'Granulated Sugar', unit: '', price: 18, user_id: 1);
 recipe_food171 = RecipeFood.create(quantity: 1, food_id: 171, recipe_id: 22);
 
-food172 = Food.create(name: 'Salt (to taste, if needed) and Pepper', unit: '', price: 10, user_id: admin.id);
+food172 = Food.create(name: 'Salt (to taste, if needed) and Pepper', unit: '', price: 10, user_id: 1);
 recipe_food172 = RecipeFood.create(quantity: 1, food_id: 172, recipe_id: 22);
 
-food173 = Food.create(name: 'Parsley', unit: '', price: 8, user_id: admin.id);
+food173 = Food.create(name: 'Parsley', unit: '', price: 8, user_id: 1);
 recipe_food173 = RecipeFood.create(quantity: 1, food_id: 173, recipe_id: 22);
 
 recipe23 = Recipe.create(
@@ -1062,7 +1062,7 @@ recipe23 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '50 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         "Heat the oven to 180C/160C fan/gas 4. Bring a large pan of water to the boil and cook the potatoes for 5 mins. Drain, reserving the water.",
@@ -1075,35 +1075,35 @@ recipe23 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2021/09/Healthy-roast-dinner-8757ce1.jpg?quality=90&webp=true&resize=900,817'
 )
 
-food174 = Food.create(name: 'Medium potatoes, thickly sliced', unit: '85g', price: 14, user_id: admin.id);
+food174 = Food.create(name: 'Medium potatoes, thickly sliced', unit: '85g', price: 14, user_id: 1);
 recipe_food174 = RecipeFood.create(quantity: 2, food_id: 174, recipe_id: 23);
 
-food175 = Food.create(name: 'Small carrots (160g), halved lengthways', unit: '', price: 5, user_id: admin.id);
+food175 = Food.create(name: 'Small carrots (160g), halved lengthways', unit: '', price: 5, user_id: 1);
 recipe_food175 = RecipeFood.create(quantity: 4, food_id: 175, recipe_id: 23);
 
-food176 = Food.create(name: 'Red onions, cut into quarters', unit: 'x 80g', price: 10, user_id: admin.id);
+food176 = Food.create(name: 'Red onions, cut into quarters', unit: 'x 80g', price: 10, user_id: 1);
 recipe_food176 = RecipeFood.create(quantity: 2, food_id: 176, recipe_id: 23);
 
-food177 = Food.create(name: 'Large Brussels sprouts (about 8-10), trimmed', unit: '70g', price: 20, user_id: admin.id);
+food177 = Food.create(name: 'Large Brussels sprouts (about 8-10), trimmed', unit: '70g', price: 20, user_id: 1);
 recipe_food177 = RecipeFood.create(quantity: 1, food_id: 177, recipe_id: 23);
 
-food178 = Food.create(name: 'Rapeseed oil', unit: ' tsp', price: 2, user_id: admin.id);
+food178 = Food.create(name: 'Rapeseed oil', unit: ' tsp', price: 2, user_id: 1);
 recipe_food178 = RecipeFood.create(quantity: 3, food_id: 178, recipe_id: 23);
 
 recipe_food79 = RecipeFood.create(quantity: 2, food_id: 75, recipe_id: 23);
 
-food179 = Food.create(name: 'Balsamic vinegar', unit: ' tsp', price: 1, user_id: admin.id);
+food179 = Food.create(name: 'Balsamic vinegar', unit: ' tsp', price: 1, user_id: 1);
 recipe_food179 = RecipeFood.create(quantity: 2, food_id: 179, recipe_id: 23);
 
 recipe_food039 = RecipeFood.create(quantity: 3, food_id: 17, recipe_id: 23);
 
-food180 = Food.create(name: 'English mustard powder', unit: ' pinches', price: 1, user_id: admin.id);
+food180 = Food.create(name: 'English mustard powder', unit: ' pinches', price: 1, user_id: 1);
 recipe_food180 = RecipeFood.create(quantity: 2, food_id: 180, recipe_id: 23);
 
-food181 = Food.create(name: 'Thick, lean fillet steak', unit: '70g', price: 40, user_id: admin.id);
+food181 = Food.create(name: 'Thick, lean fillet steak', unit: '70g', price: 40, user_id: 1);
 recipe_food181 = RecipeFood.create(quantity: 1, food_id: 181, recipe_id: 23);
 
-food182 = Food.create(name: 'Vegetable bouillon powder', unit: ' tsp', price: 1, user_id: admin.id);
+food182 = Food.create(name: 'Vegetable bouillon powder', unit: ' tsp', price: 1, user_id: 1);
 recipe_food182 = RecipeFood.create(quantity: 1, food_id: 182, recipe_id: 23);
 
 recipe24 = Recipe.create(
@@ -1112,7 +1112,7 @@ recipe24 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '25 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Preheat oven to 400°F. Spray a 9×13 baking dish with nonstick spray.',
@@ -1133,10 +1133,10 @@ recipe_food040 = RecipeFood.create(quantity: 1, food_id: 155, recipe_id: 24);
 
 recipe_food041 = RecipeFood.create(quantity: 1, food_id: 153, recipe_id: 24);
 
-food183 = Food.create(name: 'Chicken', unit: '', price: 50, user_id: admin.id);
+food183 = Food.create(name: 'Chicken', unit: '', price: 50, user_id: 1);
 recipe_food183 = RecipeFood.create(quantity: 1, food_id: 183, recipe_id: 24);
 
-food184 = Food.create(name: 'Taco shells', unit: '', price: 30, user_id: admin.id);
+food184 = Food.create(name: 'Taco shells', unit: '', price: 30, user_id: 1);
 recipe_food184 = RecipeFood.create(quantity: 1, food_id: 184, recipe_id: 24);
 
 recipe_food42 = RecipeFood.create(quantity: 2, food_id: 21, recipe_id: 24);
@@ -1145,7 +1145,7 @@ recipe_food043 = RecipeFood.create(quantity: 2, food_id: 28, recipe_id: 24);
 
 recipe_food044 = RecipeFood.create(quantity: 1, food_id: 164, recipe_id: 24);
 
-food185 = Food.create(name: 'Salsa', unit: '', price: 30, user_id: admin.id);
+food185 = Food.create(name: 'Salsa', unit: '', price: 30, user_id: 1);
 recipe_food185 = RecipeFood.create(quantity: 1, food_id: 185, recipe_id: 24);
 
 recipe25 = Recipe.create(
@@ -1155,7 +1155,7 @@ recipe25 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '1 hour 20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Cook the jumbo pasta shells to al dente.',
@@ -1166,16 +1166,16 @@ recipe25 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2019/05/italian-stuffed-shells-recipe-1-of-8.jpg'
 )
 
-food186 = Food.create(name: 'Jumbo Pasta Shells', unit: '', price: 25, user_id: admin.id);
+food186 = Food.create(name: 'Jumbo Pasta Shells', unit: '', price: 25, user_id: 1);
 recipe_food186 = RecipeFood.create(quantity: 1, food_id: 186, recipe_id: 25);
 
-food187 = Food.create(name: 'Olive oil, ground beef, onion, garlic, and marinara', unit: '', price: 30, user_id: admin.id);
+food187 = Food.create(name: 'Olive oil, ground beef, onion, garlic, and marinara', unit: '', price: 30, user_id: 1);
 recipe_food187 = RecipeFood.create(quantity: 1, food_id: 187, recipe_id: 25);
 
-food188 = Food.create(name: 'Egg, cottage cheese, mozzarella, and parmesan', unit: '', price: 60, user_id: admin.id);
+food188 = Food.create(name: 'Egg, cottage cheese, mozzarella, and parmesan', unit: '', price: 60, user_id: 1);
 recipe_food188 = RecipeFood.create(quantity: 1, food_id: 188, recipe_id: 25);
 
-food189 = Food.create(name: 'More mozzarella and parmesan, and fresh basil for garnish', unit: '', price: 40, user_id: admin.id);
+food189 = Food.create(name: 'More mozzarella and parmesan, and fresh basil for garnish', unit: '', price: 40, user_id: 1);
 recipe_food189 = RecipeFood.create(quantity: 1, food_id: 189, recipe_id: 25);
 
 recipe26 = Recipe.create(
@@ -1185,7 +1185,7 @@ recipe26 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '30 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Heat oven to 375°F and spray an 8 x 11-inch baking dish with cooking spray.',
@@ -1204,22 +1204,22 @@ recipe26 = Recipe.create(
 
 recipe_food045 = RecipeFood.create(quantity: 4, food_id: 158, recipe_id: 26);
 
-food190 = Food.create(name: 'Ranch dressing', unit: ' ½ cups', price: 10, user_id: admin.id);
+food190 = Food.create(name: 'Ranch dressing', unit: ' ½ cups', price: 10, user_id: 1);
 recipe_food190 = RecipeFood.create(quantity: 1, food_id: 190, recipe_id: 26);
 
-food191 = Food.create(name: 'Sour cream', unit: ' ½ cups', price: 10, user_id: admin.id);
+food191 = Food.create(name: 'Sour cream', unit: ' ½ cups', price: 10, user_id: 1);
 recipe_food191 = RecipeFood.create(quantity: 1, food_id: 191, recipe_id: 26);
 
-food192 = Food.create(name: 'Grated Parmesan cheese divided', unit: ' - 1 ½ cups', price: 20, user_id: admin.id);
+food192 = Food.create(name: 'Grated Parmesan cheese divided', unit: ' - 1 ½ cups', price: 20, user_id: 1);
 recipe_food192 = RecipeFood.create(quantity: 1, food_id: 192, recipe_id: 26);
 
-food193 = Food.create(name: 'Kosher salt', unit: '', price: 10, user_id: admin.id);
+food193 = Food.create(name: 'Kosher salt', unit: '', price: 10, user_id: 1);
 recipe_food193 = RecipeFood.create(quantity: 1, food_id: 193, recipe_id: 26);
 
-food194 = Food.create(name: 'Freshly grated black pepper', unit: '', price: 10, user_id: admin.id);
+food194 = Food.create(name: 'Freshly grated black pepper', unit: '', price: 10, user_id: 1);
 recipe_food194 = RecipeFood.create(quantity: 1, food_id: 194, recipe_id: 26);
 
-food195 = Food.create(name: 'Cooked bacon crumbles', unit: ' cup', price: 8, user_id: admin.id);
+food195 = Food.create(name: 'Cooked bacon crumbles', unit: ' cup', price: 8, user_id: 1);
 recipe_food195 = RecipeFood.create(quantity: 1, food_id: 195, recipe_id: 26);
 
 recipe_food046 = RecipeFood.create(quantity: 1, food_id: 173, recipe_id: 26);
@@ -1230,7 +1230,7 @@ recipe27 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '30 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Heat the oven to 200C/180C fan/ gas 6. Line a large baking tray with baking parchment. Unroll the pastry and cut in half lengthways. Spread the cranberry sauce down the middle of each half, leaving a 1-2cm border at each side.',
@@ -1242,27 +1242,27 @@ recipe27 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/10/Christmas-dinner-sausage-rolls-89ed0fa.jpg?quality=90&webp=true&resize=900,817'
 )
 
-food196 = Food.create(name: 'Ready-rolled puff pastry', unit: '75g', price: 10, user_id: admin.id);
+food196 = Food.create(name: 'Ready-rolled puff pastry', unit: '75g', price: 10, user_id: 1);
 recipe_food196 = RecipeFood.create(quantity: 3, food_id: 196, recipe_id: 27);
 
-food197 = Food.create(name: 'Cranberry sauce', unit: ' heaped tbsp', price: 3, user_id: admin.id);
+food197 = Food.create(name: 'Cranberry sauce', unit: ' heaped tbsp', price: 3, user_id: 1);
 recipe_food197 = RecipeFood.create(quantity: 2, food_id: 197, recipe_id: 27);
 
-food198 = Food.create(name: 'Turkey thigh mince', unit: '00g', price: 20, user_id: admin.id);
+food198 = Food.create(name: 'Turkey thigh mince', unit: '00g', price: 20, user_id: 1);
 recipe_food198 = RecipeFood.create(quantity: 2, food_id: 198, recipe_id: 27);
 
-food199 = Food.create(name: 'Dried stuffing mix', unit: '0g', price: 2, user_id: admin.id);
+food199 = Food.create(name: 'Dried stuffing mix', unit: '0g', price: 2, user_id: 1);
 recipe_food199 = RecipeFood.create(quantity: 5, food_id: 199, recipe_id: 27);
 
-food200 = Food.create(name: 'Chipolatas', unit: '', price: 4, user_id: admin.id);
+food200 = Food.create(name: 'Chipolatas', unit: '', price: 4, user_id: 1);
 recipe_food200 = RecipeFood.create(quantity: 6, food_id: 200, recipe_id: 27);
 
-food201 = Food.create(name: 'Egg, beaten', unit: '', price: 1, user_id: admin.id);
+food201 = Food.create(name: 'Egg, beaten', unit: '', price: 1, user_id: 1);
 recipe_food201 = RecipeFood.create(quantity: 1, food_id: 201, recipe_id: 27);
 
 recipe_food047 = RecipeFood.create(quantity: 16, food_id: 95, recipe_id: 27);
 
-food202 = Food.create(name: 'Gravy, to serve', unit: '', price: 15, user_id: admin.id);
+food202 = Food.create(name: 'Gravy, to serve', unit: '', price: 15, user_id: 1);
 recipe_food202 = RecipeFood.create(quantity: 1, food_id: 202, recipe_id: 27);
 
 recipe28 = Recipe.create(
@@ -1271,7 +1271,7 @@ recipe28 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '1 hr and 20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         "Heat oven to 220C/200C fan/gas 7. Snip the string or elastic off the chicken if it’s tied up, then place in a big roasting tin. Shove the lemon halves into the cavity. Rub the butter, herbs and seasoning all over the chicken. Put the 
@@ -1283,30 +1283,30 @@ recipe28 = Recipe.create(
 
 recipe_food048 = RecipeFood.create(quantity: 1, food_id: 185, recipe_id: 28);
 
-food203 = Food.create(name: 'lemon, halved', unit: '', price: 5, user_id: admin.id);
+food203 = Food.create(name: 'lemon, halved', unit: '', price: 5, user_id: 1);
 recipe_food203 = RecipeFood.create(quantity: 1, food_id: 203, recipe_id: 28);
 
 recipe_food43 = RecipeFood.create(quantity: 5, food_id: 43, recipe_id: 28);
 
-food204 = Food.create(name: 'Dried mixed herbs', unit: '', price: 0.25, user_id: admin.id);
+food204 = Food.create(name: 'Dried mixed herbs', unit: '', price: 0.25, user_id: 1);
 recipe_food204 = RecipeFood.create(quantity: 2, food_id: 204, recipe_id: 28);
 
-food205 = Food.create(name: 'Potatoes, chopped into roastie size', unit: '', price: 5, user_id: admin.id);
+food205 = Food.create(name: 'Potatoes, chopped into roastie size', unit: '', price: 5, user_id: 1);
 recipe_food205 = RecipeFood.create(quantity: 7, food_id: 205, recipe_id: 28);
 
-food206 = Food.create(name: 'Carrots, roughly 500g, each chopped into 2-3 chunks', unit: '', price: 5, user_id: admin.id);
+food206 = Food.create(name: 'Carrots, roughly 500g, each chopped into 2-3 chunks', unit: '', price: 5, user_id: 1);
 recipe_food206 = RecipeFood.create(quantity: 7, food_id: 206, recipe_id: 28);
 
-food207 = Food.create(name: 'Olive oil', unit: ' tbsp', price: 1, user_id: admin.id);
+food207 = Food.create(name: 'Olive oil', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food207 = RecipeFood.create(quantity: 2, food_id: 207, recipe_id: 28);
 
-food208 = Food.create(name: 'Frozen peas', unit: '00g', price: 15, user_id: admin.id);
+food208 = Food.create(name: 'Frozen peas', unit: '00g', price: 15, user_id: 1);
 recipe_food208 = RecipeFood.create(quantity: 1, food_id: 208, recipe_id: 28);
 
-food209 = Food.create(name: 'Chicken stock', unit: '00ml', price: 3, user_id: admin.id);
+food209 = Food.create(name: 'Chicken stock', unit: '00ml', price: 3, user_id: 1);
 recipe_food209 = RecipeFood.create(quantity: 3, food_id: 209, recipe_id: 28);
 
-food210 = Food.create(name: 'Marmite', unit: ' tsp', price: 3, user_id: admin.id);
+food210 = Food.create(name: 'Marmite', unit: ' tsp', price: 3, user_id: 1);
 recipe_food210 = RecipeFood.create(quantity: 1, food_id: 210, recipe_id: 28);
 
 recipe29 = Recipe.create(
@@ -1315,7 +1315,7 @@ recipe29 = Recipe.create(
     prep_time: '30 mins',
     cook_time: '1 hour 15 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         'Heat the oil in a pan. Add the onion and cook for 8-10 mins until soft. Tip into a bowl and leave to cool.',
@@ -1344,25 +1344,25 @@ recipe_food045 = RecipeFood.create(quantity: 1, food_id: 148, recipe_id: 29);
 
 recipe_food046 = RecipeFood.create(quantity: 6, food_id: 158, recipe_id: 29);
 
-food211 = Food.create(name: 'Sausagemeat', unit: '00g', price: 10, user_id: admin.id);
+food211 = Food.create(name: 'Sausagemeat', unit: '00g', price: 10, user_id: 1);
 recipe_food211 = RecipeFood.create(quantity: 4, food_id: 211, recipe_id: 29);
 
-food212 = Food.create(name: 'Small bunch winter herbs (we used rosemary, thyme and sage), chopped', unit: '', price: 10, user_id: admin.id);
+food212 = Food.create(name: 'Small bunch winter herbs (we used rosemary, thyme and sage), chopped', unit: '', price: 10, user_id: 1);
 recipe_food212 = RecipeFood.create(quantity: 1, food_id: 212, recipe_id: 29);
 
-food213 = Food.create(name: 'Fresh breadcumbs', unit: '00g', price: 10, user_id: admin.id);
+food213 = Food.create(name: 'Fresh breadcumbs', unit: '00g', price: 10, user_id: 1);
 recipe_food213 = RecipeFood.create(quantity: 1, food_id: 213, recipe_id: 29);
 
-food214 = Food.create(name: 'Prosciutto or parma ham', unit: ' slices', price: 1, user_id: admin.id);
+food214 = Food.create(name: 'Prosciutto or parma ham', unit: ' slices', price: 1, user_id: 1);
 recipe_food214 = RecipeFood.create(quantity: 10, food_id: 214, recipe_id: 29);
 
-food215 = Food.create(name: 'Cranberry sauce', unit: '50g jar', price: 15, user_id: admin.id);
+food215 = Food.create(name: 'Cranberry sauce', unit: '50g jar', price: 15, user_id: 1);
 recipe_food215 = RecipeFood.create(quantity: 2, food_id: 215, recipe_id: 29);
 
-food216 = Food.create(name: 'Blocks all-butter puff pastry', unit: ' x 500g', price: 15, user_id: admin.id);
+food216 = Food.create(name: 'Blocks all-butter puff pastry', unit: ' x 500g', price: 15, user_id: 1);
 recipe_food216 = RecipeFood.create(quantity: 2, food_id: 216, recipe_id: 29);
 
-food217 = Food.create(name: 'Plain flour, for rolling', unit: '', price: 15, user_id: admin.id);
+food217 = Food.create(name: 'Plain flour, for rolling', unit: '', price: 15, user_id: 1);
 recipe_food217 = RecipeFood.create(quantity: 1, food_id: 217, recipe_id: 29);
 
 recipe_food047 = RecipeFood.create(quantity: 1, food_id: 24, recipe_id: 29);
@@ -1373,7 +1373,7 @@ recipe30 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '50 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category3.id,
     instructions: [
         "Heat the olive oil in a large pan and cook the chopped onion, garlic and chopped celery for 3-4 minutes over a medium heat until the onion has softened slightly. Tip in the lean minced beef and cook, stirring occasionally, for 3-4 minutes until 
@@ -1391,26 +1391,26 @@ recipe_food049 = RecipeFood.create(quantity: 1, food_id: 153, recipe_id: 30);
 
 recipe_food050 = RecipeFood.create(quantity: 2, food_id: 17, recipe_id: 30);
 
-food218 = Food.create(name: 'Finely chopped celery', unit: '', price: 15, user_id: admin.id);
+food218 = Food.create(name: 'Finely chopped celery', unit: '', price: 15, user_id: 1);
 recipe_food218 = RecipeFood.create(quantity: 1, food_id: 218, recipe_id: 30);
 
-food219 = Food.create(name: 'Minced beef', unit: '50g', price: 10, user_id: admin.id);
+food219 = Food.create(name: 'Minced beef', unit: '50g', price: 10, user_id: 1);
 recipe_food219 = RecipeFood.create(quantity: 4, food_id: 219, recipe_id: 30);
 
-food220 = Food.create(name: 'Sun-dried tomato paste', unit: ' tbsp', price: 1, user_id: admin.id);
+food220 = Food.create(name: 'Sun-dried tomato paste', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food220 = RecipeFood.create(quantity: 2, food_id: 220, recipe_id: 30);
 
 recipe_food51 = RecipeFood.create(quantity: 4, food_id: 20, recipe_id: 30);
 
-food221 = Food.create(name: 'Beef stock', unit: '50ml', price: 8, user_id: admin.id);
+food221 = Food.create(name: 'Beef stock', unit: '50ml', price: 8, user_id: 1);
 recipe_food221 = RecipeFood.create(quantity: 1, food_id: 221, recipe_id: 30);
 
-food222 = Food.create(name: 'Chopped olive', unit: '0g', price: 0.5, user_id: admin.id);
+food222 = Food.create(name: 'Chopped olive', unit: '0g', price: 0.5, user_id: 1);
 recipe_food222 = RecipeFood.create(quantity: 5, food_id: 222, recipe_id: 30);
 
 recipe_food052 = RecipeFood.create(quantity: 1, food_id: 157, recipe_id: 30);
 
-food223 = Food.create(name: 'Spaghetti , to serve', unit: '', price: 25, user_id: admin.id);
+food223 = Food.create(name: 'Spaghetti , to serve', unit: '', price: 25, user_id: 1);
 recipe_food223 = RecipeFood.create(quantity: 1, food_id: 223, recipe_id: 30);
 
 recipe31 = Recipe.create(
@@ -1419,7 +1419,7 @@ recipe31 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '25 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Heat the oven to 190C/170C Fan/gas 5. Line a 12-hole muffin tin with paper cases. Sift together the flour, baking powder, bicarbonate of soda and caster sugar with a big pinch of salt. In a separate bowl mix the melted butter, vanilla extract, 
@@ -1432,25 +1432,25 @@ recipe31 = Recipe.create(
 
 recipe_food053 = RecipeFood.create(quantity: 2, food_id: 7, recipe_id: 31);
 
-food224 = Food.create(name: 'Baking powder', unit: ' tsp', price: 0.25, user_id: admin.id);
+food224 = Food.create(name: 'Baking powder', unit: ' tsp', price: 0.25, user_id: 1);
 recipe_food224 = RecipeFood.create(quantity: 1, food_id: 224, recipe_id: 31);
 
 recipe_food054 = RecipeFood.create(quantity: 1, food_id: 63, recipe_id: 31);
 
-food225 = Food.create(name: 'Caster sugar', unit: '10g', price: 17, user_id: admin.id);
+food225 = Food.create(name: 'Caster sugar', unit: '10g', price: 17, user_id: 1);
 recipe_food225 = RecipeFood.create(quantity: 1, food_id: 225, recipe_id: 31);
 
-food226 = Food.create(name: 'Butter, melted', unit: '5g', price: 3, user_id: admin.id);
+food226 = Food.create(name: 'Butter, melted', unit: '5g', price: 3, user_id: 1);
 recipe_food226 = RecipeFood.create(quantity: 7, food_id: 226, recipe_id: 31);
 
 recipe_food055 = RecipeFood.create(quantity: 1, food_id: 139, recipe_id: 31);
 
 recipe_food056 = RecipeFood.create(quantity: 2, food_id: 45, recipe_id: 31);
 
-food227 = Food.create(name: 'Large ripe bananas, mashed', unit: '', price: 5, user_id: admin.id);
+food227 = Food.create(name: 'Large ripe bananas, mashed', unit: '', price: 5, user_id: 1);
 recipe_food227 = RecipeFood.create(quantity: 2, food_id: 227, recipe_id: 31);
 
-food228 = Food.create(name: 'Buttermilk (or add 1 tsp of lemon juice to milk and leave for 20 mins)', unit: '25ml', price: 5, user_id: admin.id);
+food228 = Food.create(name: 'Buttermilk (or add 1 tsp of lemon juice to milk and leave for 20 mins)', unit: '25ml', price: 5, user_id: 1);
 recipe_food228 = RecipeFood.create(quantity: 1, food_id: 228, recipe_id: 31);
 
 recipe32 = Recipe.create(
@@ -1459,7 +1459,7 @@ recipe32 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Preheat oven to 300°F. Since this recipe requires two baking sheets, set one oven rack to upper middle and one to lower middle.",
@@ -1476,37 +1476,37 @@ recipe32 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/01/homemade-gardettos-3-of-5.jpg'
 )
 
-food229 = Food.create(name: 'Chex cereal rice and corn work wel', unit: ' cups', price: 2, user_id: admin.id);
+food229 = Food.create(name: 'Chex cereal rice and corn work wel', unit: ' cups', price: 2, user_id: 1);
 recipe_food229 = RecipeFood.create(quantity: 6, food_id: 229, recipe_id: 32);
 
-food230 = Food.create(name: 'Grissini Torinesi Thin Breadsticks broken into 2" pieces', unit: ' ounce pkg', price: 3, user_id: admin.id);
+food230 = Food.create(name: 'Grissini Torinesi Thin Breadsticks broken into 2" pieces', unit: ' ounce pkg', price: 3, user_id: 1);
 recipe_food230 = RecipeFood.create(quantity: 3, food_id: 230, recipe_id: 32);
 
-food231 = Food.create(name: 'Itty Bitty Minis Pretzels', unit: ' cups', price: 5, user_id: admin.id);
+food231 = Food.create(name: 'Itty Bitty Minis Pretzels', unit: ' cups', price: 5, user_id: 1);
 recipe_food231 = RecipeFood.create(quantity: 2, food_id: 231, recipe_id: 32);
 
-food232 = Food.create(name: 'Butter 0.5 stick', unit: ' cups', price: 10, user_id: admin.id);
+food232 = Food.create(name: 'Butter 0.5 stick', unit: ' cups', price: 10, user_id: 1);
 recipe_food232 = RecipeFood.create(quantity: 1, food_id: 232, recipe_id: 32);
 
-food233 = Food.create(name: 'Ranch seasoning dry', unit: ' ounce', price: 1, user_id: admin.id);
+food233 = Food.create(name: 'Ranch seasoning dry', unit: ' ounce', price: 1, user_id: 1);
 recipe_food233 = RecipeFood.create(quantity: 1, food_id: 233, recipe_id: 32);
 
-food234 = Food.create(name: 'Worcestershire sauce', unit: ' cup', price: 10, user_id: admin.id);
+food234 = Food.create(name: 'Worcestershire sauce', unit: ' cup', price: 10, user_id: 1);
 recipe_food234 = RecipeFood.create(quantity: 1, food_id: 234, recipe_id: 32);
 
-food235 = Food.create(name: 'Hot sauce', unit: ' tbsp', price: 10, user_id: admin.id);
+food235 = Food.create(name: 'Hot sauce', unit: ' tbsp', price: 10, user_id: 1);
 recipe_food235 = RecipeFood.create(quantity: 1, food_id: 235, recipe_id: 32);
 
-food236 = Food.create(name: 'Seasoning Salt', unit: ' tsp', price: 10, user_id: admin.id);
+food236 = Food.create(name: 'Seasoning Salt', unit: ' tsp', price: 10, user_id: 1);
 recipe_food236 = RecipeFood.create(quantity: 1, food_id: 236, recipe_id: 32);
 
-food237 = Food.create(name: 'Garlic powder', unit: ' ½ tbsp', price: 1, user_id: admin.id);
+food237 = Food.create(name: 'Garlic powder', unit: ' ½ tbsp', price: 1, user_id: 1);
 recipe_food237 = RecipeFood.create(quantity: 1, food_id: 237, recipe_id: 32);
 
-food238 = Food.create(name: 'Black pepper', unit: ' tsp', price: 0.25, user_id: admin.id);
+food238 = Food.create(name: 'Black pepper', unit: ' tsp', price: 0.25, user_id: 1);
 recipe_food238 = RecipeFood.create(quantity: 1, food_id: 238, recipe_id: 32);
 
-food239 = Food.create(name: 'Gardetto Special Request Garlic Rye Chips', unit: ' cups', price: 5, user_id: admin.id);
+food239 = Food.create(name: 'Gardetto Special Request Garlic Rye Chips', unit: ' cups', price: 5, user_id: 1);
 recipe_food239 = RecipeFood.create(quantity: 2, food_id: 239, recipe_id: 32);
 
 recipe33 = Recipe.create(
@@ -1515,7 +1515,7 @@ recipe33 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '45 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Mix together the cereal in a large bowl.",
@@ -1532,7 +1532,7 @@ recipe34 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Melt butter in a skillet over medium heat.",
@@ -1545,19 +1545,19 @@ recipe34 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/12/spicy-hot-buttered-cheerios-5-of-7.jpg'
 )
 
-food240 = Food.create(name: 'Granulated Sugar', unit: '', price: 15, user_id: admin.id);
+food240 = Food.create(name: 'Granulated Sugar', unit: '', price: 15, user_id: 1);
 recipe_food240 = RecipeFood.create(quantity: 1, food_id: 240, recipe_id: 34);
 
-food241 = Food.create(name: 'Butter', unit: '', price: 15, user_id: admin.id);
+food241 = Food.create(name: 'Butter', unit: '', price: 15, user_id: 1);
 recipe_food241 = RecipeFood.create(quantity: 1, food_id: 241, recipe_id: 34);
 
-food242 = Food.create(name: 'Seasoned Salt', unit: '', price: 15, user_id: admin.id);
+food242 = Food.create(name: 'Seasoned Salt', unit: '', price: 15, user_id: 1);
 recipe_food242 = RecipeFood.create(quantity: 1, food_id: 242, recipe_id: 34);
 
-food243 = Food.create(name: 'Worcestershire Sauce', unit: '', price: 28, user_id: admin.id);
+food243 = Food.create(name: 'Worcestershire Sauce', unit: '', price: 28, user_id: 1);
 recipe_food243 = RecipeFood.create(quantity: 1, food_id: 243, recipe_id: 34);
 
-food244 = Food.create(name: 'Plain Cheerios & Honey Nut Cheerios', unit: '', price: 38, user_id: admin.id);
+food244 = Food.create(name: 'Plain Cheerios & Honey Nut Cheerios', unit: '', price: 38, user_id: 1);
 recipe_food244 = RecipeFood.create(quantity: 1, food_id: 244, recipe_id: 34);
 
 recipe35 = Recipe.create(
@@ -1566,7 +1566,7 @@ recipe35 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Line 3 large, rimmed baking sheets with parchment or waxed paper; set aside.",
@@ -1579,13 +1579,13 @@ recipe35 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2019/12/candied-corn-puffs-snack-mix-2-of-5.jpg'
 )
 
-food245 = Food.create(name: 'Package vanilla flavored almond bark', unit: ' 20 ounce', price: 13, user_id: admin.id);
+food245 = Food.create(name: 'Package vanilla flavored almond bark', unit: ' 20 ounce', price: 13, user_id: 1);
 recipe_food245 = RecipeFood.create(quantity: 1, food_id: 245, recipe_id: 35);
 
-food246 = Food.create(name: 'Package plain corn puffs (NOT popcorn)', unit: ' 8 ounce', price: 13, user_id: admin.id);
+food246 = Food.create(name: 'Package plain corn puffs (NOT popcorn)', unit: ' 8 ounce', price: 13, user_id: 1);
 recipe_food246 = RecipeFood.create(quantity: 1, food_id: 246, recipe_id: 35);
 
-food247 = Food.create(name: 'Coarse sea salt for sprinkling', unit: '', price: 10, user_id: admin.id);
+food247 = Food.create(name: 'Coarse sea salt for sprinkling', unit: '', price: 10, user_id: 1);
 recipe_food247 = RecipeFood.create(quantity: 1, food_id: 247, recipe_id: 35);
 
 
@@ -1595,7 +1595,7 @@ recipe36 = Recipe.create(
     prep_time: '30 mins',
     cook_time: '20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Soak the onion in cold water while you make the base mix. Sift the flour and baking powder into a bowl, then add the chilli powder, turmeric, chopped chilli and a good sprinkling of salt. Mix in about 100ml of cold water to make a thick batter – 
@@ -1610,30 +1610,30 @@ recipe36 = Recipe.create(
 )
 
 
-food248 = Food.create(name: 'Onions, finely sliced', unit: '', price: 5, user_id: admin.id);
+food248 = Food.create(name: 'Onions, finely sliced', unit: '', price: 5, user_id: 1);
 recipe_food248 = RecipeFood.create(quantity: 2, food_id: 248, recipe_id: 36);
 
-food249 = Food.create(name: 'Flour', unit: '00g', price: 15, user_id: admin.id);
+food249 = Food.create(name: 'Flour', unit: '00g', price: 15, user_id: 1);
 recipe_food249 = RecipeFood.create(quantity: 1, food_id: 249, recipe_id: 36);
 
-food250 = Food.create(name: 'Gluten-free baking powder', unit: '', price: 1, user_id: admin.id);
+food250 = Food.create(name: 'Gluten-free baking powder', unit: '', price: 1, user_id: 1);
 recipe_food250 = RecipeFood.create(quantity: 1, food_id: 250, recipe_id: 36);
 
-food251 = Food.create(name: 'Chilli powder', unit: ' tsp', price: 1, user_id: admin.id);
+food251 = Food.create(name: 'Chilli powder', unit: ' tsp', price: 1, user_id: 1);
 recipe_food251 = RecipeFood.create(quantity: 1, food_id: 251, recipe_id: 36);
 
 recipe_food057 = RecipeFood.create(quantity: 1, food_id: 125, recipe_id: 36);
 
-food252 = Food.create(name: 'Green chilli, deseeded and very finely chopped', unit: ' tsp', price: 1, user_id: admin.id);
+food252 = Food.create(name: 'Green chilli, deseeded and very finely chopped', unit: ' tsp', price: 1, user_id: 1);
 recipe_food252 = RecipeFood.create(quantity: 1, food_id: 252, recipe_id: 36);
 
-food253 = Food.create(name: 'Vegetable oil for frying', unit: '', price: 15, user_id: admin.id);
+food253 = Food.create(name: 'Vegetable oil for frying', unit: '', price: 15, user_id: 1);
 recipe_food253 = RecipeFood.create(quantity: 1, food_id: 253, recipe_id: 36);
 
-food254 = Food.create(name: 'Cucumber', unit: '', price: 5, user_id: admin.id);
+food254 = Food.create(name: 'Cucumber', unit: '', price: 5, user_id: 1);
 recipe_food254 = RecipeFood.create(quantity: 1, food_id: 254, recipe_id: 36);
 
-food255 = Food.create(name: 'Greek-style yogurt', unit: '50g tub', price: 25, user_id: admin.id);
+food255 = Food.create(name: 'Greek-style yogurt', unit: '50g tub', price: 25, user_id: 1);
 recipe_food255 = RecipeFood.create(quantity: 1, food_id: 255, recipe_id: 36);
 
 recipe_food058 = RecipeFood.create(quantity: 2, food_id: 85, recipe_id: 36);
@@ -1644,7 +1644,7 @@ recipe37 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '40 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Mix the yeast with 300ml warm water in a large bowl. Leave to sit for 5 mins until the yeast is super bubbly then tip in the flour, salt and olive oil. Bring the mixture together into a soft dough. Don’t worry if it looks a little rough round the edges.",
@@ -1658,13 +1658,13 @@ recipe37 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/pitta-bread-74a1b32.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food256 = Food.create(name: 'Fast-action dried yeast', unit: ' tsp', price: 1, user_id: admin.id);
+food256 = Food.create(name: 'Fast-action dried yeast', unit: ' tsp', price: 1, user_id: 1);
 recipe_food256 = RecipeFood.create(quantity: 2, food_id: 256, recipe_id: 37);
 
-food257 = Food.create(name: 'Strong white bread flour, plus extra for dusting', unit: '00g', price: 0.25, user_id: admin.id);
+food257 = Food.create(name: 'Strong white bread flour, plus extra for dusting', unit: '00g', price: 0.25, user_id: 1);
 recipe_food257 = RecipeFood.create(quantity: 5, food_id: 257, recipe_id: 37);
 
-food258 = Food.create(name: 'Salt', unit: ' tsp', price: 1, user_id: admin.id);
+food258 = Food.create(name: 'Salt', unit: ' tsp', price: 1, user_id: 1);
 recipe_food258 = RecipeFood.create(quantity: 2, food_id: 258, recipe_id: 37);
 
 recipe_food059 = RecipeFood.create(quantity: 1, food_id: 208, recipe_id: 37);
@@ -1675,7 +1675,7 @@ recipe38 = Recipe.create(
     prep_time: '25 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Roll out the pastry to a 35 x 30cm rectangle on a surface lightly dusted with flour. Trim the edges neatly, then cut in half lengthways to form two long strips. Spread with a thin layer of the apple sauce, pickle or chutney, leaving a border along the edges.",
@@ -1688,21 +1688,21 @@ recipe38 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/sausage-rolls-aa4a59d.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food259 = Food.create(name: 'All-butter puff pastry', unit: '75g', price: 10, user_id: admin.id);
+food259 = Food.create(name: 'All-butter puff pastry', unit: '75g', price: 10, user_id: 1);
 recipe_food259 = RecipeFood.create(quantity: 3, food_id: 259, recipe_id: 38);
 
-food260 = Food.create(name: 'Flour, for dusting', unit: '', price: 10, user_id: admin.id);
+food260 = Food.create(name: 'Flour, for dusting', unit: '', price: 10, user_id: 1);
 recipe_food260 = RecipeFood.create(quantity: 1, food_id: 260, recipe_id: 38);
 
-food261 = Food.create(name: 'Apple sauce, pickle or chutney', unit: ' tbsp', price: 1, user_id: admin.id);
+food261 = Food.create(name: 'Apple sauce, pickle or chutney', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food261 = RecipeFood.create(quantity: 2, food_id: 261, recipe_id: 38);
 
-food262 = Food.create(name: 'Sausagemeat or sausages, skins removed', unit: '00g', price: 10, user_id: admin.id);
+food262 = Food.create(name: 'Sausagemeat or sausages, skins removed', unit: '00g', price: 10, user_id: 1);
 recipe_food262 = RecipeFood.create(quantity: 4, food_id: 262, recipe_id: 38);
 
 recipe_food060 = RecipeFood.create(quantity: 1, food_id: 202, recipe_id: 38);
 
-food263 = Food.create(name: 'Sesame seeds or nigella seeds (optional)', unit: ' tsp', price: 5, user_id: admin.id);
+food263 = Food.create(name: 'Sesame seeds or nigella seeds (optional)', unit: ' tsp', price: 5, user_id: 1);
 recipe_food263 = RecipeFood.create(quantity: 2, food_id: 263, recipe_id: 38);
 
 recipe39 = Recipe.create(
@@ -1711,7 +1711,7 @@ recipe39 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Heat the oven to 200C/180C fan/gas 6. Bring a large pan of lightly salted water to the boil. Cut the potatoes into chunky wedges, then boil in the water for 7 mins. Drain and leave to steam dry for 5 mins.",
@@ -1720,7 +1720,7 @@ recipe39 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/potato-wedges-388c229.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food264 = Food.create(name: 'Large baking potatoes (around 1kg)', unit: ' tsp', price: 8, user_id: admin.id);
+food264 = Food.create(name: 'Large baking potatoes (around 1kg)', unit: ' tsp', price: 8, user_id: 1);
 recipe_food264 = RecipeFood.create(quantity: 3, food_id: 264, recipe_id: 39);
 
 recipe_food061 = RecipeFood.create(quantity: 1, food_id: 208, recipe_id: 39);
@@ -1731,7 +1731,7 @@ recipe40 = Recipe.create(
     prep_time: '2 mins',
     cook_time: '15 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category4.id,
     instructions: [
         "Put the oil in a large saucepan with a tight-fitting lid over a medium heat. Toss the popcorn kernels in the oil to coat. Put the lid on, and keep over a medium heat until you hear the first popcorn pop, then turn the heat to medium-low. When you begin to hear lots 
@@ -1746,12 +1746,12 @@ recipe40 = Recipe.create(
 
 recipe_food062 = RecipeFood.create(quantity: 1, food_id: 208, recipe_id: 40);
 
-food265 = Food.create(name: 'Popcorn kernels', unit: '00g', price: 10, user_id: admin.id);
+food265 = Food.create(name: 'Popcorn kernels', unit: '00g', price: 10, user_id: 1);
 recipe_food265 = RecipeFood.create(quantity: 1, food_id: 265, recipe_id: 40);
 
 recipe_food063 = RecipeFood.create(quantity: 2, food_id: 226, recipe_id: 40);
 
-food266 = Food.create(name: 'Salted butter , cubed', unit: '0g', price: 2, user_id: admin.id);
+food266 = Food.create(name: 'Salted butter , cubed', unit: '0g', price: 2, user_id: 1);
 recipe_food266 = RecipeFood.create(quantity: 5, food_id: 266, recipe_id: 40);
 
 recipe41 = Recipe.create(
@@ -1760,7 +1760,7 @@ recipe41 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         "Place a heat safe bowl over a saucepan of simmering water. Add the butter and the chopped chocolate. Stir until smooth (5-10 minutes)",
@@ -1777,14 +1777,14 @@ recipe41 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2019/12/brownie-cookies-recipe-7-of-12.jpg'
 )
 
-food267 = Food.create(name: 'Semisweet chocolate chopped', unit: '50g', price: 30, user_id: admin.id);
+food267 = Food.create(name: 'Semisweet chocolate chopped', unit: '50g', price: 30, user_id: 1);
 recipe_food267 = RecipeFood.create(quantity: 1, food_id: 267, recipe_id: 41);
 
 recipe_food064 = RecipeFood.create(quantity: 4, food_id: 266, recipe_id: 41);
 
 recipe_food065 = RecipeFood.create(quantity: 4, food_id: 9, recipe_id: 41);
 
-food268 = Food.create(name: 'Sugar', unit: ' 0.5 cups', price: 5, user_id: admin.id);
+food268 = Food.create(name: 'Sugar', unit: ' 0.5 cups', price: 5, user_id: 1);
 recipe_food268 = RecipeFood.create(quantity: 1, food_id: 268, recipe_id: 41);
 
 recipe_food066 = RecipeFood.create(quantity: 1, food_id: 139, recipe_id: 41);
@@ -1793,10 +1793,10 @@ recipe_food067 = RecipeFood.create(quantity: 1, food_id: 129, recipe_id: 41);
 
 recipe_food068 = RecipeFood.create(quantity: 1, food_id: 225, recipe_id: 41);
 
-food269 = Food.create(name: 'Milk chocolate chips', unit: '2 ounse', price: 30, user_id: admin.id);
+food269 = Food.create(name: 'Milk chocolate chips', unit: '2 ounse', price: 30, user_id: 1);
 recipe_food269 = RecipeFood.create(quantity: 1, food_id: 269, recipe_id: 41);
 
-food270 = Food.create(name: 'Crushed peppermint optional', unit: '', price: 41, user_id: admin.id);
+food270 = Food.create(name: 'Crushed peppermint optional', unit: '', price: 41, user_id: 1);
 recipe_food270 = RecipeFood.create(quantity: 1, food_id: 270, recipe_id: 41);
 
 recipe42 = Recipe.create(
@@ -1805,7 +1805,7 @@ recipe42 = Recipe.create(
     prep_time: '4 hrs',
     cook_time: '25 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         "Make first layer by combining Oreos and melted butter in a food processor. Grind until Oreos have been fully pulverized, and no large chunks of Oreo remain.",
@@ -1821,27 +1821,27 @@ recipe42 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2020/06/chocolate-lasagna-recipe-2-of-7.jpg'
 )
 
-food271 = Food.create(name: 'Regular Oreos not double stuffed, with filling', unit: '', price: 1, user_id: admin.id);
+food271 = Food.create(name: 'Regular Oreos not double stuffed, with filling', unit: '', price: 1, user_id: 1);
 recipe_food271 = RecipeFood.create(quantity: 36, food_id: 271, recipe_id: 42);
 
-food272 = Food.create(name: 'Salted butter melted', unit: '', price: 0.25, user_id: admin.id);
+food272 = Food.create(name: 'Salted butter melted', unit: '', price: 0.25, user_id: 1);
 recipe_food272 = RecipeFood.create(quantity: 5, food_id: 272, recipe_id: 42);
 
-food273 = Food.create(name: 'Cream cheese, softened', unit: '½ 8 ounce packages', price: 23, user_id: admin.id);
+food273 = Food.create(name: 'Cream cheese, softened', unit: '½ 8 ounce packages', price: 23, user_id: 1);
 recipe_food273 = RecipeFood.create(quantity: 1, food_id: 273, recipe_id: 42);
 
-food274 = Food.create(name: 'Granulated sugar', unit: ' cup', price: 1.25, user_id: admin.id);
+food274 = Food.create(name: 'Granulated sugar', unit: ' cup', price: 1.25, user_id: 1);
 recipe_food274 = RecipeFood.create(quantity: 1, food_id: 274, recipe_id: 42);
 
-food275 = Food.create(name: 'Milk', unit: ' cups', price: 3, user_id: admin.id);
+food275 = Food.create(name: 'Milk', unit: ' cups', price: 3, user_id: 1);
 recipe_food275 = RecipeFood.create(quantity: 4, food_id: 275, recipe_id: 42);
 
 recipe_food069 = RecipeFood.create(quantity: 2, food_id: 139, recipe_id: 42);
 
-food276 = Food.create(name: 'Whipped topping 16 oz total, divided in half', unit: ' oz', price: 1, user_id: admin.id);
+food276 = Food.create(name: 'Whipped topping 16 oz total, divided in half', unit: ' oz', price: 1, user_id: 1);
 recipe_food276 = RecipeFood.create(quantity: 1, food_id: 276, recipe_id: 42);
 
-food277 = Food.create(name: 'Packages instant chocolate pudding mix', unit: ' ounce', price: 10, user_id: admin.id);
+food277 = Food.create(name: 'Packages instant chocolate pudding mix', unit: ' ounce', price: 10, user_id: 1);
 recipe_food277 = RecipeFood.create(quantity: 1, food_id: 277, recipe_id: 42);
 
 recipe43 = Recipe.create(
@@ -1850,7 +1850,7 @@ recipe43 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '45 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         "Preheat the oven, and let butter melt in the baking dish.",
@@ -1863,19 +1863,19 @@ recipe43 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/03/peach-cobbler-recipe-easy-peach-cobbler-7-of-8.jpg'
 )
 
-food278 = Food.create(name: '1 stick salted butter', unit: ' ounce', price: 10, user_id: admin.id);
+food278 = Food.create(name: '1 stick salted butter', unit: ' ounce', price: 10, user_id: 1);
 recipe_food278 = RecipeFood.create(quantity: 1, food_id: 278, recipe_id: 43);
 
-food279 = Food.create(name: 'Cans or jars sliced peaches in syrup', unit: ' 23 ounce', price: 15, user_id: admin.id);
+food279 = Food.create(name: 'Cans or jars sliced peaches in syrup', unit: ' 23 ounce', price: 15, user_id: 1);
 recipe_food279 = RecipeFood.create(quantity: 2, food_id: 279, recipe_id: 43);
 
-food280 = Food.create(name: 'Self-raising flour', unit: ' cup', price: 4, user_id: admin.id);
+food280 = Food.create(name: 'Self-raising flour', unit: ' cup', price: 4, user_id: 1);
 recipe_food280 = RecipeFood.create(quantity: 1, food_id: 280, recipe_id: 43);
 
-food281 = Food.create(name: 'Sugar', unit: ' cup', price: 4, user_id: admin.id);
+food281 = Food.create(name: 'Sugar', unit: ' cup', price: 4, user_id: 1);
 recipe_food281 = RecipeFood.create(quantity: 1, food_id: 281, recipe_id: 43);
 
-food282 = Food.create(name: 'Sea salt', unit: '/8 tsp', price: 0.20, user_id: admin.id);
+food282 = Food.create(name: 'Sea salt', unit: '/8 tsp', price: 0.20, user_id: 1);
 recipe_food282 = RecipeFood.create(quantity: 1, food_id: 282, recipe_id: 43);
 
 recipe_food070 = RecipeFood.create(quantity: 1, food_id: 39, recipe_id: 43);
@@ -1886,7 +1886,7 @@ recipe44 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         "Preheat your oven to whatever instructions are on the brownie mix box. 350F works well.",
@@ -1900,22 +1900,22 @@ recipe44 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2012/10/pumpkin-brownies-2-of-9.jpg'
 )
 
-food283 = Food.create(name: 'Brownie mix of your choice', unit: ' tsp', price: 34, user_id: admin.id);
+food283 = Food.create(name: 'Brownie mix of your choice', unit: ' tsp', price: 34, user_id: 1);
 recipe_food283 = RecipeFood.create(quantity: 1, food_id: 283, recipe_id: 44);
 
-food284 = Food.create(name: 'Can pumpkin NOT pumpkin pie filling', unit: ' tsp', price: 25, user_id: admin.id);
+food284 = Food.create(name: 'Can pumpkin NOT pumpkin pie filling', unit: ' tsp', price: 25, user_id: 1);
 recipe_food284 = RecipeFood.create(quantity: 1, food_id: 284, recipe_id: 44);
 
-food285 = Food.create(name: 'Cream cheese', unit: ' oz', price: 5, user_id: admin.id);
+food285 = Food.create(name: 'Cream cheese', unit: ' oz', price: 5, user_id: 1);
 recipe_food285 = RecipeFood.create(quantity: 6, food_id: 285, recipe_id: 44);
 
-food286 = Food.create(name: 'Sugar', unit: ' tsp', price: 5, user_id: admin.id);
+food286 = Food.create(name: 'Sugar', unit: ' tsp', price: 5, user_id: 1);
 recipe_food286 = RecipeFood.create(quantity: 3, food_id: 286, recipe_id: 44);
 
-food287 = Food.create(name: 'Pumpkin pie spice', unit: ' tsp', price: 0.25, user_id: admin.id);
+food287 = Food.create(name: 'Pumpkin pie spice', unit: ' tsp', price: 0.25, user_id: 1);
 recipe_food287 = RecipeFood.create(quantity: 1, food_id: 287, recipe_id: 44);
 
-food288 = Food.create(name: 'Milk chocolate chips', unit: ' cup', price: 10, user_id: admin.id);
+food288 = Food.create(name: 'Milk chocolate chips', unit: ' cup', price: 10, user_id: 1);
 recipe_food288 = RecipeFood.create(quantity: 1, food_id: 288, recipe_id: 44);
 
 recipe45 = Recipe.create(
@@ -1925,7 +1925,7 @@ recipe45 = Recipe.create(
     prep_time: '5 mins',
     cook_time: 'no cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         'Cut a thick (1 1/2 inch) round slice of watermelon for your “pizza” base.',
@@ -1938,28 +1938,28 @@ recipe45 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2014/10/watermelon-pizza-6-of-8.jpg'
 )
 
-food289 = Food.create(name: 'Watermelon (cut all the way across so a circle or "pizza" forms) about 1 1/2 inch thick', unit: ' slice', price: 10, user_id: admin.id);
+food289 = Food.create(name: 'Watermelon (cut all the way across so a circle or "pizza" forms) about 1 1/2 inch thick', unit: ' slice', price: 10, user_id: 1);
 recipe_food289 = RecipeFood.create(quantity: 1, food_id: 289, recipe_id: 45);
 
-food290 = Food.create(name: 'Vanilla greek yogurt', unit: ' ounces', price: 4, user_id: admin.id);
+food290 = Food.create(name: 'Vanilla greek yogurt', unit: ' ounces', price: 4, user_id: 1);
 recipe_food290 = RecipeFood.create(quantity: 4, food_id: 290, recipe_id: 45);
 
-food291 = Food.create(name: 'Low fat cream cheese', unit: ' ounces', price: 4, user_id: admin.id);
+food291 = Food.create(name: 'Low fat cream cheese', unit: ' ounces', price: 4, user_id: 1);
 recipe_food291 = RecipeFood.create(quantity: 4, food_id: 291, recipe_id: 45);
 
-food292 = Food.create(name: 'Powdered sugar optional', unit: ' cup', price: 4, user_id: admin.id);
+food292 = Food.create(name: 'Powdered sugar optional', unit: ' cup', price: 4, user_id: 1);
 recipe_food292 = RecipeFood.create(quantity: 0.25, food_id: 292, recipe_id: 45);
 
-food293 = Food.create(name: 'Strawberries sliced', unit: '-5', price: 4, user_id: admin.id);
+food293 = Food.create(name: 'Strawberries sliced', unit: '-5', price: 4, user_id: 1);
 recipe_food293 = RecipeFood.create(quantity: 4, food_id: 293, recipe_id: 45);
 
-food294 = Food.create(name: 'Banana sliced', unit: '', price: 5, user_id: admin.id);
+food294 = Food.create(name: 'Banana sliced', unit: '', price: 5, user_id: 1);
 recipe_food294 = RecipeFood.create(quantity: 1, food_id: 294, recipe_id: 45);
 
-food295 = Food.create(name: 'White chocolate chips', unit: ' cup', price: 25, user_id: admin.id);
+food295 = Food.create(name: 'White chocolate chips', unit: ' cup', price: 25, user_id: 1);
 recipe_food295 = RecipeFood.create(quantity: 0.25, food_id: 295, recipe_id: 45);
 
-food296 = Food.create(name: 'Chopped pecans', unit: ' cup', price: 30, user_id: admin.id);
+food296 = Food.create(name: 'Chopped pecans', unit: ' cup', price: 30, user_id: 1);
 recipe_food296 = RecipeFood.create(quantity: 0.25, food_id: 296, recipe_id: 45);
 
 recipe46 = Recipe.create(
@@ -1969,7 +1969,7 @@ recipe46 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         'Make the dessert pizza dough by combining graham cracker crumbs, flour, & baking soda; mixing the butter & sugar in a mixer then adding in the eggs; and then combining wet & dry ingredients.',
@@ -1982,31 +1982,31 @@ recipe46 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/07/smores-dessert-pizza-recipe-4-of-10.jpg'
 )
 
-food297 = Food.create(name: 'Graham cracker crumbs divided', unit: ' cup', price: 38, user_id: admin.id);
+food297 = Food.create(name: 'Graham cracker crumbs divided', unit: ' cup', price: 38, user_id: 1);
 recipe_food297 = RecipeFood.create(quantity: 1, food_id: 297, recipe_id: 46);
 
 recipe_food071 = RecipeFood.create(quantity: 1, food_id: 268, recipe_id: 46);
 
-food298 = Food.create(name: 'Salted butter at room temperature', unit: ' cup', price: 10, user_id: admin.id);
+food298 = Food.create(name: 'Salted butter at room temperature', unit: ' cup', price: 10, user_id: 1);
 recipe_food298 = RecipeFood.create(quantity: 1, food_id: 298, recipe_id: 46);
 
-food299 = Food.create(name: 'Brown sugar', unit: ' cup', price: 6, user_id: admin.id);
+food299 = Food.create(name: 'Brown sugar', unit: ' cup', price: 6, user_id: 1);
 recipe_food299 = RecipeFood.create(quantity: 0.25, food_id: 299, recipe_id: 46);
 
-food300 = Food.create(name: 'Sugar', unit: ' cup', price: 6, user_id: admin.id);
+food300 = Food.create(name: 'Sugar', unit: ' cup', price: 6, user_id: 1);
 recipe_food300 = RecipeFood.create(quantity: 1, food_id: 300, recipe_id: 46);
 
-food301 = Food.create(name: 'Kosher salt', unit: ' tsp', price: 0.5, user_id: admin.id);
+food301 = Food.create(name: 'Kosher salt', unit: ' tsp', price: 0.5, user_id: 1);
 recipe_food301 = RecipeFood.create(quantity: 1, food_id: 301, recipe_id: 46);
 
 recipe_food071 = RecipeFood.create(quantity: 1, food_id: 139, recipe_id: 46);
 
 recipe_food072 = RecipeFood.create(quantity: 2, food_id: 287, recipe_id: 46);
 
-food302 = Food.create(name: 'Mini marshmallows', unit: ' cups', price: 11, user_id: admin.id);
+food302 = Food.create(name: 'Mini marshmallows', unit: ' cups', price: 11, user_id: 1);
 recipe_food302 = RecipeFood.create(quantity: 2.5, food_id: 302, recipe_id: 46);
 
-food303 = Food.create(name: 'Chocolate sauce for drizzling', unit: '', price: 11, user_id: admin.id);
+food303 = Food.create(name: 'Chocolate sauce for drizzling', unit: '', price: 11, user_id: 1);
 recipe_food303 = RecipeFood.create(quantity: 1, food_id: 303, recipe_id: 46);
 
 recipe47 = Recipe.create(
@@ -2015,7 +2015,7 @@ recipe47 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '1 hr 30 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         'Tear 500g white or wholemeal bread into a large mixing bowl and add 500g mixed dried fruit, 85g mixed peel and 1 ½ tbsp mixed spice.',
@@ -2028,31 +2028,31 @@ recipe47 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-424712_11-9409dbe.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food304 = Food.create(name: 'White or wholemeal bread', unit: '00g', price: 3, user_id: admin.id);
+food304 = Food.create(name: 'White or wholemeal bread', unit: '00g', price: 3, user_id: 1);
 recipe_food304 = RecipeFood.create(quantity: 5, food_id: 304, recipe_id: 47);
 
-food305 = Food.create(name: 'Mixed dried fruit', unit: '00g/ 1lb 2oz', price: 3, user_id: admin.id);
+food305 = Food.create(name: 'Mixed dried fruit', unit: '00g/ 1lb 2oz', price: 3, user_id: 1);
 recipe_food305 = RecipeFood.create(quantity: 5, food_id: 305, recipe_id: 47);
 
-food306 = Food.create(name: 'Mixed peel', unit: '5g', price: 3, user_id: admin.id);
+food306 = Food.create(name: 'Mixed peel', unit: '5g', price: 3, user_id: 1);
 recipe_food306 = RecipeFood.create(quantity: 8, food_id: 306, recipe_id: 47);
 
-food307 = Food.create(name: 'Mixed spice', unit: ' tbsp', price: 3, user_id: admin.id);
+food307 = Food.create(name: 'Mixed spice', unit: ' tbsp', price: 3, user_id: 1);
 recipe_food307 = RecipeFood.create(quantity: 1.5, food_id: 307, recipe_id: 47);
 
 recipe_food073 = RecipeFood.create(quantity: 6, food_id: 11, recipe_id: 47);
 
 recipe_food074 = RecipeFood.create(quantity: 2, food_id: 45, recipe_id: 47);
 
-food308 = Food.create(name: 'Light muscovado sugar', unit: '40', price: 15, user_id: admin.id);
+food308 = Food.create(name: 'Light muscovado sugar', unit: '40', price: 15, user_id: 1);
 recipe_food308 = RecipeFood.create(quantity: 1, food_id: 308, recipe_id: 47);
 
-food309 = Food.create(name: 'Zest 1 lemon (optional)', unit: '', price: 15, user_id: admin.id);
+food309 = Food.create(name: 'Zest 1 lemon (optional)', unit: '', price: 15, user_id: 1);
 recipe_food309 = RecipeFood.create(quantity: 1, food_id: 309, recipe_id: 47);
 
 recipe_food075 = RecipeFood.create(quantity: 9, food_id: 227, recipe_id: 47);
 
-food310 = Food.create(name: 'Demerara sugar', unit: ' tbsp', price: 1, user_id: admin.id);
+food310 = Food.create(name: 'Demerara sugar', unit: ' tbsp', price: 1, user_id: 1);
 recipe_food310 = RecipeFood.create(quantity: 2, food_id: 310, recipe_id: 47);
 
 recipe48 = Recipe.create(
@@ -2061,7 +2061,7 @@ recipe48 = Recipe.create(
     prep_time: '30 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         'To make the base, butter and line a 23cm loose-bottomed tin with baking parchment. Put the digestive biscuits in a plastic food bag and crush to crumbs using a rolling pin. 
@@ -2081,24 +2081,24 @@ recipe48 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1028453_10-36f879a.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food311 = Food.create(name: 'Digestive biscuits', unit: '50g', price: 15, user_id: admin.id);
+food311 = Food.create(name: 'Digestive biscuits', unit: '50g', price: 15, user_id: 1);
 recipe_food311 = RecipeFood.create(quantity: 2, food_id: 311, recipe_id: 48);
 
 recipe_food076 = RecipeFood.create(quantity: 7, food_id: 227, recipe_id: 48);
 
-food312 = Food.create(name: 'Vanilla', unit: ' pod', price: 5, user_id: admin.id);
+food312 = Food.create(name: 'Vanilla', unit: ' pod', price: 5, user_id: 1);
 recipe_food312 = RecipeFood.create(quantity: 1, food_id: 312, recipe_id: 48);
 
-food313 = Food.create(name: 'Full fat soft cheese', unit: '00g', price: 5, user_id: admin.id);
+food313 = Food.create(name: 'Full fat soft cheese', unit: '00g', price: 5, user_id: 1);
 recipe_food313 = RecipeFood.create(quantity: 6, food_id: 313, recipe_id: 48);
 
-food314 = Food.create(name: 'Icing sugar', unit: '00g', price: 15, user_id: admin.id);
+food314 = Food.create(name: 'Icing sugar', unit: '00g', price: 15, user_id: 1);
 recipe_food314 = RecipeFood.create(quantity: 1, food_id: 314, recipe_id: 48);
 
-food315 = Food.create(name: 'Pot of double cream', unit: '84ml', price: 25, user_id: admin.id);
+food315 = Food.create(name: 'Pot of double cream', unit: '84ml', price: 25, user_id: 1);
 recipe_food315 = RecipeFood.create(quantity: 2, food_id: 315, recipe_id: 48);
 
-food316 = Food.create(name: 'Punnet of strawberries, halved', unit: '00g', price: 6, user_id: admin.id);
+food316 = Food.create(name: 'Punnet of strawberries, halved', unit: '00g', price: 6, user_id: 1);
 recipe_food316 = RecipeFood.create(quantity: 4, food_id: 316, recipe_id: 48);
 
 recipe49 = Recipe.create(
@@ -2107,7 +2107,7 @@ recipe49 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '5 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         'Crush the digestive biscuits in a food bag with a rolling pin or in the food processor. Melt the butter in a saucepan, take off heat and stir in the brown sugar and biscuit crumbs.',
@@ -2119,22 +2119,22 @@ recipe49 = Recipe.create(
 
 recipe_food075 = RecipeFood.create(quantity: 2, food_id: 310, recipe_id: 49);
 
-food317 = Food.create(name: 'Butter', unit: '0g', price: 3, user_id: admin.id);
+food317 = Food.create(name: 'Butter', unit: '0g', price: 3, user_id: 1);
 recipe_food317 = RecipeFood.create(quantity: 5, food_id: 317, recipe_id: 49);
 
-food318 = Food.create(name: 'Light brown soft sugar', unit: '5g', price: 2, user_id: admin.id);
+food318 = Food.create(name: 'Light brown soft sugar', unit: '5g', price: 2, user_id: 1);
 recipe_food318 = RecipeFood.create(quantity: 2, food_id: 318, recipe_id: 49);
 
-food319 = Food.create(name: 'Mascarpone', unit: '50g', price: 8, user_id: admin.id);
+food319 = Food.create(name: 'Mascarpone', unit: '50g', price: 8, user_id: 1);
 recipe_food319 = RecipeFood.create(quantity: 3, food_id: 319, recipe_id: 49);
 
-food320 = Food.create(name: 'Caster sugar', unit: '5g', price: 0.5, user_id: admin.id);
+food320 = Food.create(name: 'Caster sugar', unit: '5g', price: 0.5, user_id: 1);
 recipe_food320 = RecipeFood.create(quantity: 7, food_id: 320, recipe_id: 49);
 
-food321 = Food.create(name: 'Lemon, zested', unit: '', price: 5, user_id: admin.id);
+food321 = Food.create(name: 'Lemon, zested', unit: '', price: 5, user_id: 1);
 recipe_food321 = RecipeFood.create(quantity: 1, food_id: 321, recipe_id: 49);
 
-food322 = Food.create(name: 'Lemons, juiced (about 90ml)', unit: '-3', price: 5, user_id: admin.id);
+food322 = Food.create(name: 'Lemons, juiced (about 90ml)', unit: '-3', price: 5, user_id: 1);
 recipe_food322 = RecipeFood.create(quantity: 2, food_id: 322, recipe_id: 49);
 
 recipe50 = Recipe.create(
@@ -2143,7 +2143,7 @@ recipe50 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '2 hrs',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category5.id,
     instructions: [
         'Heat the oven to 150C/130C fan/gas 2. Wash and drain the rice. Butter a 850ml baking dish, then tip in the rice and sugar and stir through the milk. Sprinkle in the nutmeg and top with the 
@@ -2154,22 +2154,22 @@ recipe50 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-373473_11-dad1f50.jpg?quality=90&webp=true&resize=500,454'
 )
 
-food323 = Food.create(name: 'Pudding rice', unit: '00g', price: 10, user_id: admin.id);
+food323 = Food.create(name: 'Pudding rice', unit: '00g', price: 10, user_id: 1);
 recipe_food323 = RecipeFood.create(quantity: 2, food_id: 323, recipe_id: 50);
 
-food324 = Food.create(name: 'Butter, for the dish', unit: '', price: 10, user_id: admin.id);
+food324 = Food.create(name: 'Butter, for the dish', unit: '', price: 10, user_id: 1);
 recipe_food324 = RecipeFood.create(quantity: 1, food_id: 324, recipe_id: 50);
 
-food325 = Food.create(name: 'Sugar', unit: '0g', price: 0.5, user_id: admin.id);
+food325 = Food.create(name: 'Sugar', unit: '0g', price: 0.5, user_id: 1);
 recipe_food325 = RecipeFood.create(quantity: 5, food_id: 325, recipe_id: 50);
 
-food326 = Food.create(name: 'Semi-skimmed milk', unit: '00ml', price: 2, user_id: admin.id);
+food326 = Food.create(name: 'Semi-skimmed milk', unit: '00ml', price: 2, user_id: 1);
 recipe_food326 = RecipeFood.create(quantity: 7, food_id: 326, recipe_id: 50);
 
-food327 = Food.create(name: 'Grated nutmeg or strip lemon zest', unit: ' pinch', price: 2, user_id: admin.id);
+food327 = Food.create(name: 'Grated nutmeg or strip lemon zest', unit: ' pinch', price: 2, user_id: 1);
 recipe_food327 = RecipeFood.create(quantity: 1, food_id: 327, recipe_id: 50);
 
-food328 = Food.create(name: 'Bay leaf, or strip lemon zest', unit: ' pinch', price: 16, user_id: admin.id);
+food328 = Food.create(name: 'Bay leaf, or strip lemon zest', unit: ' pinch', price: 16, user_id: 1);
 recipe_food328 = RecipeFood.create(quantity: 1, food_id: 328, recipe_id: 50);
 
 recipe51 = Recipe.create(
@@ -2179,7 +2179,7 @@ recipe51 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '10 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Heat 1 cup of water or milk to a simmer on the stove.',
@@ -2189,25 +2189,25 @@ recipe51 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2016/12/malted-instant-hot-chocolate-mix-3-of-9.jpg'
 )
 
-food329 = Food.create(name: "Confectioner’s powdered sugar", unit: ' cups', price: 5, user_id: admin.id);
+food329 = Food.create(name: "Confectioner’s powdered sugar", unit: ' cups', price: 5, user_id: 1);
 recipe_food329 = RecipeFood.create(quantity: 2, food_id: 329, recipe_id: 51);
 
-food330 = Food.create(name: "Unsweetened cocoa", unit: ' cups', price: 6, user_id: admin.id);
+food330 = Food.create(name: "Unsweetened cocoa", unit: ' cups', price: 6, user_id: 1);
 recipe_food330 = RecipeFood.create(quantity: 1, food_id: 330, recipe_id: 51);
 
-food331 = Food.create(name: "Nonfat dry milk powder", unit: ' cup', price: 4, user_id: admin.id);
+food331 = Food.create(name: "Nonfat dry milk powder", unit: ' cup', price: 4, user_id: 1);
 recipe_food331 = RecipeFood.create(quantity: 1, food_id: 331, recipe_id: 51);
 
-food332 = Food.create(name: "Malted milk powder chocolate", unit: ' 0.5 cup', price: 7, user_id: admin.id);
+food332 = Food.create(name: "Malted milk powder chocolate", unit: ' 0.5 cup', price: 7, user_id: 1);
 recipe_food332 = RecipeFood.create(quantity: 1, food_id: 332, recipe_id: 51);
 
-food333 = Food.create(name: "Cornstarch", unit: ' tsp', price: 7, user_id: admin.id);
+food333 = Food.create(name: "Cornstarch", unit: ' tsp', price: 7, user_id: 1);
 recipe_food333 = RecipeFood.create(quantity: 2, food_id: 333, recipe_id: 51);
 
-food334 = Food.create(name: "Salt", unit: ' tsp', price: 0.25, user_id: admin.id);
+food334 = Food.create(name: "Salt", unit: ' tsp', price: 0.25, user_id: 1);
 recipe_food334 = RecipeFood.create(quantity: 1, food_id: 334, recipe_id: 51);
 
-food335 = Food.create(name: "Milk or hot water", unit: '', price: 0, user_id: admin.id);
+food335 = Food.create(name: "Milk or hot water", unit: '', price: 0, user_id: 1);
 recipe_food335 = RecipeFood.create(quantity: 1, food_id: 335, recipe_id: 51);
 
 recipe52 = Recipe.create(
@@ -2216,7 +2216,7 @@ recipe52 = Recipe.create(
     prep_time: '10 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'In a large blender, combine mango chunks, limeade concentrate, 2 cups water, tequila, and hot sauce. Blend until well combined. You may need to add more water for a thinner consistency.',
@@ -2228,27 +2228,27 @@ recipe52 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2015/06/chili-mango-margaritas-6-of-7.jpg'
 )
 
-food336 = Food.create(name: "Frozen mango chunks", unit: '0 ounces', price: 10, user_id: admin.id);
+food336 = Food.create(name: "Frozen mango chunks", unit: '0 ounces', price: 10, user_id: 1);
 recipe_food336 = RecipeFood.create(quantity: 2, food_id: 336, recipe_id: 52);
 
-food337 = Food.create(name: "Can frozen limeade concentrate", unit: ' 12 ounce', price: 20, user_id: admin.id);
+food337 = Food.create(name: "Can frozen limeade concentrate", unit: ' 12 ounce', price: 20, user_id: 1);
 recipe_food337 = RecipeFood.create(quantity: 1, food_id: 337, recipe_id: 52);
 
-food338 = Food.create(name: "Water depending on desired consistency", unit: '-3 cups', price: 0, user_id: admin.id);
+food338 = Food.create(name: "Water depending on desired consistency", unit: '-3 cups', price: 0, user_id: 1);
 recipe_food338 = RecipeFood.create(quantity: 2, food_id: 338, recipe_id: 52);
 
-food339 = Food.create(name: "Good quality tequila optional", unit: ' ounces', price: 5, user_id: admin.id);
+food339 = Food.create(name: "Good quality tequila optional", unit: ' ounces', price: 5, user_id: 1);
 recipe_food339 = RecipeFood.create(quantity: 3, food_id: 339, recipe_id: 52);
 
-food340 = Food.create(name: "Dash hot sauce optional", unit: ' ounces', price: 29, user_id: admin.id);
+food340 = Food.create(name: "Dash hot sauce optional", unit: ' ounces', price: 29, user_id: 1);
 recipe_food340 = RecipeFood.create(quantity: 1, food_id: 340, recipe_id: 52);
 
 recipe_food076 = RecipeFood.create(quantity: 1, food_id: 248, recipe_id: 52);
 
-food341 = Food.create(name: "Chili powder for rim", unit: '', price: 9, user_id: admin.id);
+food341 = Food.create(name: "Chili powder for rim", unit: '', price: 9, user_id: 1);
 recipe_food341 = RecipeFood.create(quantity: 1, food_id: 341, recipe_id: 52);
 
-food342 = Food.create(name: "Lime slices for garnish", unit: '', price: 17, user_id: admin.id);
+food342 = Food.create(name: "Lime slices for garnish", unit: '', price: 17, user_id: 1);
 recipe_food342 = RecipeFood.create(quantity: 1, food_id: 342, recipe_id: 52);
 
 recipe53 = Recipe.create(
@@ -2258,7 +2258,7 @@ recipe53 = Recipe.create(
     prep_time: '5 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Use a high-powered blender to mix frozen strawberries and lemonade',
@@ -2270,22 +2270,22 @@ recipe53 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/07/strawberry-lemonade-party-punch-2-of-9.jpg'
 )
 
-food343 = Food.create(name: "Frozen strawberries", unit: ' ounces', price: 1, user_id: admin.id);
+food343 = Food.create(name: "Frozen strawberries", unit: ' ounces', price: 1, user_id: 1);
 recipe_food343 = RecipeFood.create(quantity: 24, food_id: 343, recipe_id: 53);
 
-food344 = Food.create(name: "Lemonade", unit: ' liter bottle', price: 12, user_id: admin.id);
+food344 = Food.create(name: "Lemonade", unit: ' liter bottle', price: 12, user_id: 1);
 recipe_food344 = RecipeFood.create(quantity: 2, food_id: 344, recipe_id: 53);
 
-food345 = Food.create(name: "Lemon Lime Soda", unit: ' liter bottle', price: 12, user_id: admin.id);
+food345 = Food.create(name: "Lemon Lime Soda", unit: ' liter bottle', price: 12, user_id: 1);
 recipe_food345 = RecipeFood.create(quantity: 2, food_id: 345, recipe_id: 53);
 
-food346 = Food.create(name: "Everclear", unit: ' cup', price: 7, user_id: admin.id);
+food346 = Food.create(name: "Everclear", unit: ' cup', price: 7, user_id: 1);
 recipe_food346 = RecipeFood.create(quantity: 1, food_id: 346, recipe_id: 53);
 
-food347 = Food.create(name: "Extra frozen strawberries for punch bowl", unit: '', price: 1, user_id: admin.id);
+food347 = Food.create(name: "Extra frozen strawberries for punch bowl", unit: '', price: 1, user_id: 1);
 recipe_food347 = RecipeFood.create(quantity: 5, food_id: 347, recipe_id: 53);
 
-food348 = Food.create(name: "Lemon and strawberry slices for garnish", unit: '', price: 19, user_id: admin.id);
+food348 = Food.create(name: "Lemon and strawberry slices for garnish", unit: '', price: 19, user_id: 1);
 recipe_food348 = RecipeFood.create(quantity: 1, food_id: 348, recipe_id: 53);
 
 
@@ -2296,7 +2296,7 @@ recipe54 = Recipe.create(
     prep_time: '2 hrs 5 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Over medium heat, combine two cups of water and sugar, bringing to a boil until sugar is dissolved. Turn off of the heat and stir in honey and lavender.',
@@ -2308,18 +2308,18 @@ recipe54 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2015/02/lavender-lemonade-4.jpg'
 )
 
-food349 = Food.create(name: "Water divided", unit: ' cups', price: 0, user_id: admin.id);
+food349 = Food.create(name: "Water divided", unit: ' cups', price: 0, user_id: 1);
 recipe_food349 = RecipeFood.create(quantity: 6, food_id: 349, recipe_id: 54);
 
 recipe_food077 = RecipeFood.create(quantity: 1, food_id: 299, recipe_id: 54);
 
-food350 = Food.create(name: "Honey", unit: ' cup', price: 10, user_id: admin.id);
+food350 = Food.create(name: "Honey", unit: ' cup', price: 10, user_id: 1);
 recipe_food350 = RecipeFood.create(quantity: 0.25, food_id: 350, recipe_id: 54);
 
-food351 = Food.create(name: "Dried lavender", unit: ' tbsp', price: 0.5, user_id: admin.id);
+food351 = Food.create(name: "Dried lavender", unit: ' tbsp', price: 0.5, user_id: 1);
 recipe_food351 = RecipeFood.create(quantity: 3, food_id: 351, recipe_id: 54);
 
-food352 = Food.create(name: "Lemon juice", unit: ' cups', price: 20, user_id: admin.id);
+food352 = Food.create(name: "Lemon juice", unit: ' cups', price: 20, user_id: 1);
 recipe_food352 = RecipeFood.create(quantity: 2, food_id: 352, recipe_id: 54);
 
 recipe55 = Recipe.create(
@@ -2328,7 +2328,7 @@ recipe55 = Recipe.create(
     prep_time: '10 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Simply add everything to a blender and blend til smooth.',
@@ -2337,16 +2337,16 @@ recipe55 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2021/08/orange-julius-recipe-3.jpg'
 )
 
-food353 = Food.create(name: "Ice", unit: ' cups', price: 0, user_id: admin.id);
+food353 = Food.create(name: "Ice", unit: ' cups', price: 0, user_id: 1);
 recipe_food353 = RecipeFood.create(quantity: 3, food_id: 353, recipe_id: 55);
 
-food354 = Food.create(name: "Milk", unit: ' cups', price: 0, user_id: admin.id);
+food354 = Food.create(name: "Milk", unit: ' cups', price: 0, user_id: 1);
 recipe_food354 = RecipeFood.create(quantity: 2, food_id: 354, recipe_id: 55);
 
-food355 = Food.create(name: "Frozen orange juice concentrate", unit: ' 0.5 cups', price: 10, user_id: admin.id);
+food355 = Food.create(name: "Frozen orange juice concentrate", unit: ' 0.5 cups', price: 10, user_id: 1);
 recipe_food355 = RecipeFood.create(quantity: 1, food_id: 355, recipe_id: 55);
 
-food356 = Food.create(name: "Frozen orange juice concentrate", unit: ' 0.5 cups', price: 10, user_id: admin.id);
+food356 = Food.create(name: "Frozen orange juice concentrate", unit: ' 0.5 cups', price: 10, user_id: 1);
 recipe_food356 = RecipeFood.create(quantity: 1, food_id: 356, recipe_id: 55);
 
 recipe_food078 = RecipeFood.create(quantity: 1, food_id: 291, recipe_id: 55);
@@ -2362,7 +2362,7 @@ recipe56 = Recipe.create(
     prep_time: '20 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Heat together the water and sugar and let cool.',
@@ -2375,14 +2375,14 @@ recipe56 = Recipe.create(
 
 recipe_food081 = RecipeFood.create(quantity: 2, food_id: 347, recipe_id: 56);
 
-food357 = Food.create(name: "White sugar", unit: ' cup', price: 6, user_id: admin.id);
+food357 = Food.create(name: "White sugar", unit: ' cup', price: 6, user_id: 1);
 recipe_food357 = RecipeFood.create(quantity: 1, food_id: 357, recipe_id: 56);
 
 recipe_food082 = RecipeFood.create(quantity: 10, food_id: 339, recipe_id: 56);
 
 recipe_food083 = RecipeFood.create(quantity: 1, food_id: 350, recipe_id: 56);
 
-food358 = Food.create(name: "Vodka OPTIONAL", unit: ' cup', price: 15, user_id: admin.id);
+food358 = Food.create(name: "Vodka OPTIONAL", unit: ' cup', price: 15, user_id: 1);
 recipe_food358 = RecipeFood.create(quantity: 1, food_id: 358, recipe_id: 56);
 
 recipe57 = Recipe.create(
@@ -2391,7 +2391,7 @@ recipe57 = Recipe.create(
     prep_time: '10 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Blend the mango, water, sugar and lime juice.',
@@ -2404,25 +2404,25 @@ recipe57 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2021/02/mangonadas-recipe-5.jpg'
 )
 
-food359 = Food.create(name: "Frozen mangoL", unit: ' cups', price: 10, user_id: admin.id);
+food359 = Food.create(name: "Frozen mangoL", unit: ' cups', price: 10, user_id: 1);
 recipe_food359 = RecipeFood.create(quantity: 4, food_id: 359, recipe_id: 57);
 
 recipe_food084 = RecipeFood.create(quantity: 1, food_id: 347, recipe_id: 57);
 
 recipe_food085 = RecipeFood.create(quantity: 1/3, food_id: 273, recipe_id: 57);
 
-food360 = Food.create(name: "Lime juice", unit: ' cups', price: 30, user_id: admin.id);
+food360 = Food.create(name: "Lime juice", unit: ' cups', price: 30, user_id: 1);
 recipe_food360 = RecipeFood.create(quantity: 1/3, food_id: 360, recipe_id: 57);
 
-food361 = Food.create(name: "Chamoy juice for serving", unit: '', price: 30, user_id: admin.id);
+food361 = Food.create(name: "Chamoy juice for serving", unit: '', price: 30, user_id: 1);
 recipe_food361 = RecipeFood.create(quantity: 1, food_id: 361, recipe_id: 57);
 
-food362 = Food.create(name: "Tajin seasoning", unit: '', price: 20, user_id: admin.id);
+food362 = Food.create(name: "Tajin seasoning", unit: '', price: 20, user_id: 1);
 recipe_food362 = RecipeFood.create(quantity: 1, food_id: 362, recipe_id: 57);
 
 recipe_food086 = RecipeFood.create(quantity: 2, food_id: 351, recipe_id: 57);
 
-food363 = Food.create(name: "Diced fresh mango", unit: ' cup', price: 20, user_id: admin.id);
+food363 = Food.create(name: "Diced fresh mango", unit: ' cup', price: 20, user_id: 1);
 recipe_food363 = RecipeFood.create(quantity: 1, food_id: 363, recipe_id: 57);
 
 recipe58 = Recipe.create(
@@ -2432,7 +2432,7 @@ recipe58 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '15 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'In a small saucepan set over medium heat, bring water to a boil. Add sugar, and stir until the sugar has dissolved. Remove from the heat and pour the simple syrup into a heat-resistant, airtight jar to cool completely (and store).',
@@ -2446,10 +2446,10 @@ recipe58 = Recipe.create(
 
 recipe_food087 = RecipeFood.create(quantity: 7, food_id: 347, recipe_id: 58);
 
-food364 = Food.create(name: "Sugar granulated, super-fine, organic, coconut or brown", unit: ' cup', price: 5, user_id: admin.id);
+food364 = Food.create(name: "Sugar granulated, super-fine, organic, coconut or brown", unit: ' cup', price: 5, user_id: 1);
 recipe_food364 = RecipeFood.create(quantity: 1, food_id: 364, recipe_id: 58);
 
-food365 = Food.create(name: "Family-size cold brew tea bags", unit: '-3', price: 1, user_id: admin.id);
+food365 = Food.create(name: "Family-size cold brew tea bags", unit: '-3', price: 1, user_id: 1);
 recipe_food365 = RecipeFood.create(quantity: 2, food_id: 365, recipe_id: 58);
 
 recipe59 = Recipe.create(
@@ -2458,7 +2458,7 @@ recipe59 = Recipe.create(
     prep_time: '5 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Mix the hot espresso with the sugar until it dissolves.',
@@ -2468,10 +2468,10 @@ recipe59 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/iced-latte-30188f7.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food366 = Food.create(name: "Espresso shots (60ml)", unit: '', price: 2.99, user_id: admin.id);
+food366 = Food.create(name: "Espresso shots (60ml)", unit: '', price: 2.99, user_id: 1);
 recipe_food366 = RecipeFood.create(quantity: 2, food_id: 366, recipe_id: 59);
 
-food367 = Food.create(name: "Sugar, honey or maple syrup (to taste)", unit: ' tsp', price: 2.99, user_id: admin.id);
+food367 = Food.create(name: "Sugar, honey or maple syrup (to taste)", unit: ' tsp', price: 2.99, user_id: 1);
 recipe_food367 = RecipeFood.create(quantity: 2, food_id: 367, recipe_id: 59);
 
 recipe_food088 = RecipeFood.create(quantity: 1, food_id: 351, recipe_id: 59);
@@ -2484,7 +2484,7 @@ recipe60 = Recipe.create(
     prep_time: '10 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category6.id,
     instructions: [
         'Blitz the ice cream, milk and vanilla extract in a blender until combined and creamy. Pour into a large jug.',
@@ -2494,7 +2494,7 @@ recipe60 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/12/classic-vanilla-milkshake-9e7745f.jpg?quality=90&webp=true&resize=544,494'
 )
 
-food368 = Food.create(name: "Vanilla ice cream", unit: '00g', price: 20, user_id: admin.id);
+food368 = Food.create(name: "Vanilla ice cream", unit: '00g', price: 20, user_id: 1);
 recipe_food368 = RecipeFood.create(quantity: 2, food_id: 368, recipe_id: 60);
 
 recipe_food090 = RecipeFood.create(quantity: 5, food_id: 25, recipe_id: 60);
@@ -2509,7 +2509,7 @@ recipe61 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '10 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category7.id,
     instructions: [
         'Place the sliced pancetta in a large skillet over medium heat. Cook until crisp and light golden brown.',
@@ -2521,31 +2521,31 @@ recipe61 = Recipe.create(
     img: 'https://www.thecookierookie.com/wp-content/uploads/2018/05/best-sauteed-asparagus-3-of-5.jpg'
 )
 
-food369 = Food.create(name: "Pancetta cut into ¼ inch slices", unit: ' ounces', price: 5, user_id: admin.id);
+food369 = Food.create(name: "Pancetta cut into ¼ inch slices", unit: ' ounces', price: 5, user_id: 1);
 recipe_food369 = RecipeFood.create(quantity: 4, food_id: 369, recipe_id: 61);
 
 recipe_food092 = RecipeFood.create(quantity: 1, food_id: 140, recipe_id: 61);
 
-food370 = Food.create(name: "Asparagus woody ends trimmed and sliced into 2-inch pieces on the bias", unit: ' pound', price: 15, user_id: admin.id);
+food370 = Food.create(name: "Asparagus woody ends trimmed and sliced into 2-inch pieces on the bias", unit: ' pound', price: 15, user_id: 1);
 recipe_food370 = RecipeFood.create(quantity: 1, food_id: 370, recipe_id: 61);
 
-food371 = Food.create(name: "Sliced leek thinly sliced crosswise (white & pale green parts)", unit: ' 0.25 cups', price: 15, user_id: admin.id);
+food371 = Food.create(name: "Sliced leek thinly sliced crosswise (white & pale green parts)", unit: ' 0.25 cups', price: 15, user_id: 1);
 recipe_food371 = RecipeFood.create(quantity: 1, food_id: 371, recipe_id: 61);
 
 recipe_food093 = RecipeFood.create(quantity: 2, food_id: 17, recipe_id: 61);
 
 recipe_food094 = RecipeFood.create(quantity: 1, food_id: 98, recipe_id: 61);
 
-food372 = Food.create(name: "Orange zest", unit: ' tsp', price: 1, user_id: admin.id);
+food372 = Food.create(name: "Orange zest", unit: ' tsp', price: 1, user_id: 1);
 recipe_food372 = RecipeFood.create(quantity: 1, food_id: 372, recipe_id: 61);
 
-food373 = Food.create(name: "Toasted pine nuts or sunflower seeds", unit: ' tsp', price: 3, user_id: admin.id);
+food373 = Food.create(name: "Toasted pine nuts or sunflower seeds", unit: ' tsp', price: 3, user_id: 1);
 recipe_food373 = RecipeFood.create(quantity: 2, food_id: 373, recipe_id: 61);
 
-food374 = Food.create(name: "Fresh Italian parsley chopped", unit: '-2 tsp', price: 0.5, user_id: admin.id);
+food374 = Food.create(name: "Fresh Italian parsley chopped", unit: '-2 tsp', price: 0.5, user_id: 1);
 recipe_food374 = RecipeFood.create(quantity: 1, food_id: 374, recipe_id: 61);
 
-food375 = Food.create(name: "Kosher salt & freshly ground black pepper to taste", unit: '', price: 10, user_id: admin.id);
+food375 = Food.create(name: "Kosher salt & freshly ground black pepper to taste", unit: '', price: 10, user_id: 1);
 recipe_food375 = RecipeFood.create(quantity: 1, food_id: 375, recipe_id: 61);
 
 recipe62 = Recipe.create(
@@ -2554,7 +2554,7 @@ recipe62 = Recipe.create(
     prep_time: '5 mins',
     cook_time: '35 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category7.id,
     instructions: [
         'Combine cream, water, potatoes, 1-tablespoon kosher salt and 1-teaspoon black pepper in a large saucepan, set over medium heat.',
@@ -2573,19 +2573,19 @@ recipe_food095 = RecipeFood.create(quantity: 2, food_id: 352, recipe_id: 62);
 
 recipe_food096 = RecipeFood.create(quantity: 3, food_id: 347, recipe_id: 62);
 
-food376 = Food.create(name: "Yukon Gold Potatoes peeled and cubed", unit: ' pounds', price: 6, user_id: admin.id);
+food376 = Food.create(name: "Yukon Gold Potatoes peeled and cubed", unit: ' pounds', price: 6, user_id: 1);
 recipe_food376 = RecipeFood.create(quantity: 3, food_id: 376, recipe_id: 62);
 
 recipe_food097 = RecipeFood.create(quantity: 2, food_id: 300, recipe_id: 62);
 
 recipe_food098 = RecipeFood.create(quantity: 1.5, food_id: 239, recipe_id: 62);
 
-food377 = Food.create(name: "Stick unsalted butter, cut into 6-8 pieces", unit: ' cup', price: 6, user_id: admin.id);
+food377 = Food.create(name: "Stick unsalted butter, cut into 6-8 pieces", unit: ' cup', price: 6, user_id: 1);
 recipe_food377 = RecipeFood.create(quantity: 1, food_id: 377, recipe_id: 62);
 
 recipe_food099 = RecipeFood.create(quantity: 1, food_id: 173, recipe_id: 62);
 
-food378 = Food.create(name: 'Shredded or grated cheese', unit: '0g', price: 30, user_id: admin.id);
+food378 = Food.create(name: 'Shredded or grated cheese', unit: '0g', price: 30, user_id: 1);
 recipe_food378 = RecipeFood.create(quantity: 1, food_id: 378, recipe_id: 62);
 
 recipe63 = Recipe.create(
@@ -2595,7 +2595,7 @@ recipe63 = Recipe.create(
     prep_time: '20 mins',
     cook_time: '2 hrs 20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category7.id,
     instructions: [
         'Prep: Preheat oven to 325°F, line a large roasting pan with foil, spray both sides of a wire rack with nonstick cooking spray, and place the wire rack over the pan.',
@@ -2613,26 +2613,26 @@ recipe63 = Recipe.create(
 
 recipe_food100 = RecipeFood.create(quantity: 1, food_id: 378, recipe_id: 63);
 
-food379 = Food.create(name: 'Minced garlic', unit: '', price: 35, user_id: admin.id);
+food379 = Food.create(name: 'Minced garlic', unit: '', price: 35, user_id: 1);
 recipe_food379 = RecipeFood.create(quantity: 1, food_id: 379, recipe_id: 63);
 
 recipe_food101 = RecipeFood.create(quantity: 1, food_id: 168, recipe_id: 63);
 
-food380 = Food.create(name: 'Rosemary', unit: '', price: 25, user_id: admin.id);
+food380 = Food.create(name: 'Rosemary', unit: '', price: 25, user_id: 1);
 recipe_food380 = RecipeFood.create(quantity: 1, food_id: 380, recipe_id: 63);
 
-food381 = Food.create(name: 'Sage', unit: '', price: 25, user_id: admin.id);
+food381 = Food.create(name: 'Sage', unit: '', price: 25, user_id: 1);
 recipe_food381 = RecipeFood.create(quantity: 1, food_id: 381, recipe_id: 63);
 
 recipe_food102 = RecipeFood.create(quantity: 1, food_id: 74, recipe_id: 63);
 
-food382 = Food.create(name: 'Salt & Pepper', unit: '', price: 25, user_id: admin.id);
+food382 = Food.create(name: 'Salt & Pepper', unit: '', price: 25, user_id: 1);
 recipe_food382 = RecipeFood.create(quantity: 1, food_id: 382, recipe_id: 63);
 
-food383 = Food.create(name: 'Lemon Juice', unit: '', price: 15, user_id: admin.id);
+food383 = Food.create(name: 'Lemon Juice', unit: '', price: 15, user_id: 1);
 recipe_food383 = RecipeFood.create(quantity: 1, food_id: 383, recipe_id: 63);
 
-food384 = Food.create(name: 'Lemon Zest', unit: '', price: 15, user_id: admin.id);
+food384 = Food.create(name: 'Lemon Zest', unit: '', price: 15, user_id: 1);
 recipe_food384 = RecipeFood.create(quantity: 1, food_id: 384, recipe_id: 63);
 
 recipe64 = Recipe.create(
@@ -2641,7 +2641,7 @@ recipe64 = Recipe.create(
     prep_time: '15 mins',
     cook_time: '20 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category7.id,
     instructions: [
         'Put a large saucepan of water on to boil and cook the rice following pack instructions. Meanwhile, heat the oil in a large, wide saucepan over a medium heat and add the onions. Cook for 5-10 mins until softened and starting to colour. Add the 
@@ -2651,7 +2651,7 @@ recipe64 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/fish-mappas-a84eed1.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food385 = Food.create(name: 'Basmati rice', unit: '00g', price: 10, user_id: admin.id);
+food385 = Food.create(name: 'Basmati rice', unit: '00g', price: 10, user_id: 1);
 recipe_food385 = RecipeFood.create(quantity: 3, food_id: 385, recipe_id: 64);
 
 recipe_food103 = RecipeFood.create(quantity: 1, food_id: 14, recipe_id: 64);
@@ -2662,16 +2662,16 @@ recipe_food105 = RecipeFood.create(quantity: 2, food_id: 17, recipe_id: 64);
 
 recipe_food106 = RecipeFood.create(quantity: 5, food_id: 20, recipe_id: 64);
 
-food386 = Food.create(name: 'Tikka curry paste', unit: ' tbsp', price: 0.5, user_id: admin.id);
+food386 = Food.create(name: 'Tikka curry paste', unit: ' tbsp', price: 0.5, user_id: 1);
 recipe_food386 = RecipeFood.create(quantity: 3, food_id: 386, recipe_id: 64);
 
-food387 = Food.create(name: 'Can coconut milk', unit: '00g', price: 7, user_id: admin.id);
+food387 = Food.create(name: 'Can coconut milk', unit: '00g', price: 7, user_id: 1);
 recipe_food387 = RecipeFood.create(quantity: 4, food_id: 387, recipe_id: 64);
 
-food388 = Food.create(name: 'Skinless, boneless pollock fillets (about 150g/51/2oz each), or other sustainable white fish, cut into 4cm/11/2in chunks', unit: '', price: 15, user_id: admin.id);
+food388 = Food.create(name: 'Skinless, boneless pollock fillets (about 150g/51/2oz each), or other sustainable white fish, cut into 4cm/11/2in chunks', unit: '', price: 15, user_id: 1);
 recipe_food388 = RecipeFood.create(quantity: 4, food_id: 388, recipe_id: 64);
 
-food389 = Food.create(name: 'Small pack coriander, roughly chopped', unit: '', price: 4, user_id: admin.id);
+food389 = Food.create(name: 'Small pack coriander, roughly chopped', unit: '', price: 4, user_id: 1);
 recipe_food389 = RecipeFood.create(quantity: 1, food_id: 389, recipe_id: 64);
 
 recipe65 = Recipe.create(
@@ -2680,7 +2680,7 @@ recipe65 = Recipe.create(
     prep_time: '5 mins',
     cook_time: 'No cook',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category7.id,
     instructions: [
         'Tip tortilla chips on to a baking tray, pour over salsa and scatter over a few sliced spring onions.',
@@ -2689,26 +2689,26 @@ recipe65 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-2507_11-bb80af0.jpg?quality=90&webp=true&resize=500,454'
 )
 
-food390 = Food.create(name: 'Packet plain tortilla chips', unit: '75g', price: 29, user_id: admin.id);
+food390 = Food.create(name: 'Packet plain tortilla chips', unit: '75g', price: 29, user_id: 1);
 recipe_food390 = RecipeFood.create(quantity: 1, food_id: 390, recipe_id: 65);
 
-food391 = Food.create(name: 'Salsa', unit: '25g', price: 22, user_id: admin.id);
+food391 = Food.create(name: 'Salsa', unit: '25g', price: 22, user_id: 1);
 recipe_food391 = RecipeFood.create(quantity: 2, food_id: 391, recipe_id: 65);
 
 recipe_food107 = RecipeFood.create(quantity: 2, food_id: 53, recipe_id: 65);
 
 recipe_food108 = RecipeFood.create(quantity: 2, food_id: 28, recipe_id: 65);
 
-food392 = Food.create(name: 'Crushed chilli flakes', unit: ' pinch', price: 0.5, user_id: admin.id);
+food392 = Food.create(name: 'Crushed chilli flakes', unit: ' pinch', price: 0.5, user_id: 1);
 recipe_food392 = RecipeFood.create(quantity: 1, food_id: 392, recipe_id: 65);
 
-food393 = Food.create(name: 'Golden caster sugar', unit: '½ tsp', price: 1, user_id: admin.id);
+food393 = Food.create(name: 'Golden caster sugar', unit: '½ tsp', price: 1, user_id: 1);
 recipe_food393 = RecipeFood.create(quantity: 1, food_id: 393, recipe_id: 65);
 
-food394 = Food.create(name: 'Chipotle paste', unit: ' tbsp', price: 3, user_id: admin.id);
+food394 = Food.create(name: 'Chipotle paste', unit: ' tbsp', price: 3, user_id: 1);
 recipe_food394 = RecipeFood.create(quantity: 2, food_id: 394, recipe_id: 65);
 
-food395 = Food.create(name: 'Red wine vinegar', unit: ' tbsp', price: 0.5, user_id: admin.id);
+food395 = Food.create(name: 'Red wine vinegar', unit: ' tbsp', price: 0.5, user_id: 1);
 recipe_food395 = RecipeFood.create(quantity: 2, food_id: 395, recipe_id: 65);
 
 
@@ -2718,7 +2718,7 @@ recipe66 = Recipe.create(
     prep_time: '10 mins',
     cook_time: '25 mins - 30 mins',
     public: true,
-    user_id: admin.id,
+    user_id: 1,
     recipe_catogory_id: category1.id,
     instructions: [
         'Bring a large pan of salted water to the boil. Add the potatoes and boil for 5 mins until just tender. Drain well and leave in the colander to steam-dry.',
@@ -2733,19 +2733,19 @@ recipe66 = Recipe.create(
     img: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/ham-potato-hash-with-baked-beans-healthy-fried-eggs-8075b24.jpg?quality=90&webp=true&resize=440,400'
 )
 
-food396 = Food.create(name: 'Potato , diced', unit: 'g', price: 10, user_id: admin.id);
+food396 = Food.create(name: 'Potato , diced', unit: 'g', price: 10, user_id: 1);
 recipe_food396 = RecipeFood.create(quantity: 6, food_id: 396, recipe_id: 66);
 
-food397 = Food.create(name: 'Leeks , trimmed, washed and sliced', unit: '', price: 10, user_id: admin.id);
+food397 = Food.create(name: 'Leeks , trimmed, washed and sliced', unit: '', price: 10, user_id: 1);
 recipe_food397 = RecipeFood.create(quantity: 2, food_id: 397, recipe_id: 66);
 
-food398 = Food.create(name: 'Lean ham , weighed after trimming and discarding any fat, chopped', unit: '75g', price: 50, user_id: admin.id);
+food398 = Food.create(name: 'Lean ham , weighed after trimming and discarding any fat, chopped', unit: '75g', price: 50, user_id: 1);
 recipe_food398 = RecipeFood.create(quantity: 1, food_id: 398, recipe_id: 66);
 
-food399 = Food.create(name: 'Wholegrain mustard', unit: ' tbsp', price: 2, user_id: admin.id);
+food399 = Food.create(name: 'Wholegrain mustard', unit: ' tbsp', price: 2, user_id: 1);
 recipe_food399 = RecipeFood.create(quantity: 2, food_id: 399, recipe_id: 66);
 
-food400 = Food.create(name: 'Cans reduced sugar & salt baked beans', unit: ' x 415g', price: 25, user_id: admin.id);
+food400 = Food.create(name: 'Cans reduced sugar & salt baked beans', unit: ' x 415g', price: 25, user_id: 1);
 recipe_food400 = RecipeFood.create(quantity: 2, food_id: 400, recipe_id: 66);
 
 recipe_food109 = RecipeFood.create(quantity: 5, food_id: 59, recipe_id: 66);
