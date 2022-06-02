@@ -8,7 +8,7 @@
   align-items: center;
   padding: 20px;
   width: 100%;
-  background-color: #EADEB8;
+  background-color: #eadeb8;
   min-height: 100vh;
 }
 
@@ -63,11 +63,12 @@
   border-radius: 2vw;
   text-align: center;
   padding: 1vw;
+  width: 100% !important;
 }
 
 .recipe-view-btn {
   text-decoration: none !important;
-  background-color: #261C2C;
+  background-color: #261c2c;
   color: white;
   padding: 1vw;
   font-size: large;
@@ -88,7 +89,7 @@
 
 .recipe-cont p {
   margin: 0;
-  width: 35rem;
+  width: auto;
   padding: 1.5rem 1rem;
 }
 
@@ -147,8 +148,7 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 40px;
-  background-color: #EADEB8;
-
+  background-color: #eadeb8;
 }
 
 .recipe-show h1 {
@@ -248,7 +248,7 @@ hr {
   column-gap: 8vw;
   width: 100vw;
   padding: 40px;
-  background-color: #EADEB8;
+  background-color: #eadeb8;
   padding-top: 30px !important;
 }
 
@@ -256,10 +256,11 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
   box-shadow: 5px 5px 5px 2px rgba(88, 88, 88, 0.815);
   padding: 20px;
-  background-color: #184D47;
+  background-color: #184d47;
   z-index: 2;
   border-radius: 15px;
   color: white;
@@ -273,13 +274,13 @@ hr {
   padding: 20px;
   text-decoration: none;
   border-radius: 20px;
-  background-color: #C56824;
+  background-color: #c56824;
   color: white;
   width: 100%;
 }
 
 .view-btn:hover {
-  background-color: #A09F57;
+  background-color: #a09f57;
   color: white;
 }
 
@@ -287,13 +288,13 @@ hr {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #EADEB8;
+  background-color: #eadeb8;
   min-height: 200vh;
 }
 
 .d- {
   padding: 1vw;
-  background-color: #BABD42;
+  background-color: #babd42;
   font-size: larger;
   width: min-content;
   text-align: center;
@@ -332,11 +333,11 @@ hr {
 
 .app-con tr {
   border: 1px solid white !important;
-  background-color: #9A9483;
+  background-color: #9a9483;
 }
 
 .app-con tr:nth-child(even) {
-  background-color: #C7BEA2 !important;
+  background-color: #c7bea2 !important;
   padding-left: 1vw;
 }
 
@@ -349,7 +350,7 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #EADEB8;
+  background-color: #eadeb8;
   padding: 40px;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -368,16 +369,16 @@ hr {
   margin: 0;
 }
 
-.btn-primary:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
 .btn-primary {
   background-color: transparent !important;
   border: none !important;
   font-size: smaller !important;
   padding-bottom: 0;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn-primary:hover {
@@ -401,33 +402,30 @@ hr {
   font-weight: 100;
 }
 
-.wrap{
-  perspective-origin: auto auto;
-}
-
-.svg{
-  stroke:green;
-  position:absolute;
+.svg {
+  stroke: green;
+  position: absolute;
   bottom: -100vh;
   transform-style: preserve-3d;
   opacity: 0.4;
 }
 
 $total: 10;
+
 @for $i from 1 through $total {
-  $scale:random(2) - .4;
-  
-  .svg:nth-child(#{$i}){
-    left:random(100) * 1% - 20;
+  $scale:random(2) - 0.4;
+
+  .svg:nth-child(#{$i}) {
+    left: random(100) * 1% - 20;
     animation: raise#{$i} 6 + random(15) +s linear infinite;
-    animation-delay:random(5) - 5 + s;
-    transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+    animation-delay: random(5) - 5 + s;
+    transform: scale(0.3 * $i - 0.6) rotate(random(360) + deg);
     z-index: 1;
 
     @keyframes raise#{$i} {
-      to{
-       bottom:150vh;
-       transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+      to {
+        bottom: 150vh;
+        transform: scale(0.3 * $i - 0.6) rotate(random(360) + deg);
       }
     }
   }
@@ -441,116 +439,139 @@ $total: 10;
     padding: 20px;
     padding-top: 100px !important;
   }
+
   #desktop-header {
     display: none !important;
   }
+
   .cat-img {
     height: 70vw;
     width: 75vw;
   }
+
   .svg {
     height: 5vw !important;
   }
+
   #mobile-header {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
-    background-color: #05595B !important;
+    background-color: #05595b !important;
     position: fixed !important;
     width: 100vw !important;
     z-index: 4 !important;
     padding: 2vw;
     padding-left: 8vw;
   }
+
   #mobile-header h5 {
     border-bottom: 1px solid white;
     white-space: nowrap;
     font-size: smaller;
   }
+
   .navbar {
     background-color: transparent !important;
   }
+
   .logo {
     height: 50px !important;
     width: 50px !important;
   }
+
   .recipe {
     grid-template-columns: 100%;
     min-height: 30vh !important;
     padding: 5vw;
     gap: 5vh;
   }
+
   .recipe-show {
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .recipe-cont {
-    width: 100% !important;
-  }
+
   .recipe-cont p {
     width: 100% !important;
     padding: 1vw !important;
   }
+
   .recipe-con {
     padding-top: 100px !important;
   }
+
   .recipe-details {
     flex-direction: column;
     width: 100% !important;
     text-align: center !important;
   }
+
   .recipe-details-cont {
     width: 100%;
   }
+
   .r-img {
     height: 300px;
     width: 305px;
     max-width: 100%;
   }
+
   .recipe-instructions {
     grid-template-columns: auto;
     width: 90%;
     gap: 5vw;
   }
+
   .instruction {
     padding: 2vw;
   }
+
   .instruction-number {
     padding: 3vw;
     margin-right: 2vw;
   }
+
   #shop-con {
     padding-top: 80px !important;
   }
+
   .d- {
     padding: 5vw;
     margin-bottom: 2vh;
   }
+
   .about-container {
     padding-top: 90px;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .logo-2 {
     height: 200px !important;
     width: 200px !important;
   }
+
   .logo-3 {
     width: 30vw;
     height: 30vw;
     margin-bottom: 5vh;
   }
+
   #devise-con {
     padding-top: 80px !important;
   }
+
   .edit {
     width: auto !important;
     padding: 5vw !important;
   }
+
   .ingr-btn {
     width: auto !important;
   }
+
   .category-div p {
     width: auto;
   }

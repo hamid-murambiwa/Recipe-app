@@ -1,3 +1,3 @@
 class RecipeCatogory < ApplicationRecord
-    has_many :recipes
+  has_many :recipes
 end

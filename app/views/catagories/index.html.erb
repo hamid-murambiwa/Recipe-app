@@ -1,6 +1,7 @@
 <div id="category-container">
   <% @categories.includes(:recipes).each do |category| %>
-  <h1><%= category.name %></h1>
+  <h2><%= category.name %></h2>
   <%= image_tag url_for(category.image_url), :class => "cat-img" %>
   <p><%= category.description %></p>
+  <% end %>
 </div>
