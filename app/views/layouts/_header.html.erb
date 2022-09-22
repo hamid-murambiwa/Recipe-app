@@ -1,5 +1,4 @@
-<% if user_signed_in? %>
-  <div id="desktop-header">
+<div id="desktop-header">
   <nav class="navbar">
   <nav class="navbar navbar-expand-lg navbar-light" id="desktop-header">
     <div class="container-fluid">
@@ -37,9 +36,18 @@
               <li>
               <%= link_to 'Edit Account', edit_user_registration_path, class: "dropdown-item" %>
               </li>
+              <% if user_signed_in? %> 
               <li>
               <%= link_to 'Logout', '/users/sign_out', class: "dropdown-item" %>
               </li>
+              <% else %>
+              <li>
+              <%= link_to 'Sign up', ' /users/sign_up', class: "dropdown-item" %>
+              </li>
+              <li>
+              <%= link_to 'Login', '/users/sign_in', class: "dropdown-item" %>
+              </li>
+              <% end %>
             </ul>
             </div>
           </li>
@@ -92,4 +100,3 @@
   </div>
 </nav>
   </div>
-<% end %> 
